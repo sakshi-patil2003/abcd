@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { FaStar, FaBuilding, FaUsers, FaLaptop, FaGraduationCap, FaChartLine } from 'react-icons/fa'; // Added FaChartLine for the new card icon
-import MyImage from '../../assets/images/repairing.webp'; // Import your PNG image
+import MyImage from '../../assets/images/ICEM 1.jpg'; // Import your first PNG image
+import AnotherImage from '../../assets/images/app1.jpg'; // Import your second PNG image
+import ThirdImage from '../../assets/images/com-lab.jpg'; // Import your third PNG image
 import AOS from 'aos'; // Import AOS
 import 'aos/dist/aos.css'; // Import AOS styles
 
@@ -72,9 +74,30 @@ function CompStudying() {
         </div>
       </div>
 
-      {/* 30% Right Side */}
-      <div className="w-[30%]" data-aos="fade-left">
-        <img src={MyImage} alt="Indira College Image" className="w-full h-auto object-cover" />
+      {/* 30% Right Side with 3 Images */}
+      <div className="w-[45%] mt-6 flex flex-col justify-center">
+        {/* First Image */}
+        <div className="mb-6">
+          <img 
+            src={MyImage} 
+            alt="Indira College Image" 
+            className="w-full h-72 object-cover rounded-lg shadow-lg" 
+          />
+        </div>
+
+        {/* Two other images side by side */}
+        <div className="flex gap-2">
+          <img 
+            src={AnotherImage} 
+            alt="Another Image" 
+            className="w-1/2 h-56 object-cover rounded-lg shadow-lg" 
+          />
+          <img 
+            src={ThirdImage} 
+            alt="Third Image" 
+            className="w-1/2 h-56 object-cover rounded-lg shadow-lg" 
+          />
+        </div>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import image from "../../src/assets/images/robot.png";
 
 // Sample questions and options
@@ -62,6 +62,19 @@ function ChatNowButton() {
   const handleRobotVisibility = () => {
     setRobotVisible((prevState) => !prevState); // Toggle robot visibility
   };
+
+  useEffect(() => {
+    if (thankYouDisplayed) {
+      // Automatically hide the popup after 2 seconds
+      const timer = setTimeout(() => {
+        setShowPopup(false);
+        setThankYouDisplayed(false);
+      }, 2500);
+
+      // Clean up the timer on component unmount or if "thankYouDisplayed" changes
+      return () => clearTimeout(timer);
+    }
+  }, [thankYouDisplayed]);
 
   return (
     <div className="fixed px-4 md:px-8 right-0 bottom-5 z-60">

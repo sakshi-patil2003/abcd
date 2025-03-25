@@ -22,10 +22,15 @@ function ItBrochure() {
           </p>
         </div>
         <div>
-          <button className="bg-[#001E5D] border-2 border-[#002b73] text-white px-6 py-3 rounded-3xl hover:bg-[#002b73] transition duration-300 flex items-center space-x-2">
+          {/* Anchor tag to trigger file download */}
+          <a
+            href="/path/to/your/dummy/brochure.pdf" // Link to your dummy file (replace with actual path)
+            download="Brochure.pdf" // The file will be downloaded with this name
+            className="bg-[#001E5D] border-2 border-[#002b73] text-white px-6 py-3 rounded-3xl hover:bg-[#002b73] transition duration-300 flex items-center space-x-2"
+          >
             <FontAwesomeIcon icon={faDownload} />
             <span>Download Brochure</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>

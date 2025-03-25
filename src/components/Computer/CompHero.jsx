@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import backgroundImage from "../../assets/images/herocomp-e.jpg";
 import mouseIcon from "../../assets/images/white.png"; // Make sure the path to your PNG is correct
-
+import Somthing from '../Computer/Something.jsx'
 function CompHero() {
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -201,6 +201,7 @@ function CompHero() {
           <p className="text-sm text-gray-300">to know more</p>
         </div>
       </div>
+      {/* <Somthing/> */}
     </div>
   );
 }

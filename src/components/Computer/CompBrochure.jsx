@@ -15,10 +15,15 @@ function CompBrochure() {
           <p className="text-lg text-gray-200">Best-in-class content by leading trainers and industry leaders in the form of videos, real life case studies, projects and live-sessions.</p>
         </div>
         <div>
-          <button className="bg-blue-900 border-2 border-blue-800 text-white px-6 py-3 rounded-3xl hover:bg-blue-800 transition duration-300 flex items-center space-x-2">
+          {/* Anchor tag to trigger file download */}
+          <a
+            href="/path/to/your/dummy/brochure.pdf" // Link to your dummy file
+            download="Brochure.pdf" // The file will be downloaded with this name
+            className="bg-blue-900 border-2 border-blue-800 text-white px-6 py-3 rounded-3xl hover:bg-blue-800 transition duration-300 flex items-center space-x-2"
+          >
             <FontAwesomeIcon icon={faDownload} />
             <span>Download Brochure</span>
-          </button>
+          </a>
         </div>
       </div>
     </div>

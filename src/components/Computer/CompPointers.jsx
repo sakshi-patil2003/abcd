@@ -24,11 +24,11 @@ function CompPointers() {
           className="bg-[#F6FBFF] p-6 shadow-lg  flex items-center justify-center" // Added justify-center here
           data-aos="fade-up" // AOS animation trigger
         >
-          <div className="flex items-center justify-center mr-4 space-x-4"> {/* Added space-x-4 to create gap */}
+          <div className="flex flex-col items-center justify-center "> {/* Added space-x-4 to create gap */}
             <FaCalendarAlt size={40} className="text-[#8BC5FF]" />
             <div className="text-center"> {/* Added text-center to center the text */}
               <h2>Program Format</h2>
-              <p className="mt-2 text-2xl font-semibold">Offline</p>
+              <p className=" text-2xl font-semibold">Offline</p>
             </div>
           </div>
         </div>
@@ -38,11 +38,11 @@ function CompPointers() {
           className="bg-[#F6FBFF] p-6 shadow-lg  flex items-center justify-center" // Added justify-center here
           data-aos="fade-up" // AOS animation trigger
         >
-          <div className="flex items-center justify-center mr-4 space-x-4"> {/* Added space-x-4 to create gap */}
+          <div className="flex flex-col items-center justify-center"> {/* Added space-x-4 to create gap */}
             <FaRegClock size={40} className="text-[#8BC5FF]" />
             <div className="text-center"> {/* Added text-center to center the text */}
               <h2>Duration</h2>
-              <p className="mt-2 text-2xl font-semibold">4 Years</p>
+              <p className=" text-2xl font-semibold">4 Years</p>
             </div>
           </div>
         </div>
@@ -52,11 +52,11 @@ function CompPointers() {
           className="bg-[#F6FBFF] p-6 shadow-lg  flex items-center justify-center" // Added justify-center here
           data-aos="fade-up" // AOS animation trigger
         >
-          <div className="flex items-center justify-center mr-4 space-x-4"> {/* Added space-x-4 to create gap */}
+          <div className="flex flex-col items-center justify-center"> {/* Added space-x-4 to create gap */}
             <FaMoneyBillWave size={40} className="text-[#8BC5FF]" />
             <div className="text-center"> {/* Added text-center to center the text */}
               <h2>Program Fees</h2>
-              <p className="mt-2 text-2xl font-semibold">Rs. 108000/-</p>
+              <p className=" text-2xl font-semibold">Rs. 108000/-</p>
             </div>
           </div>
         </div>

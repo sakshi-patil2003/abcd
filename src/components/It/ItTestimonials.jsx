@@ -12,19 +12,19 @@ import aartiImage from "../../assets/images/user-aids.png";
 import raviImage from "../../assets/images/user-aids.png"; // Added missing import
 import anitaImage from "../../assets/images/user-aids.png"; // Added missing import
 import rajeshImage from "../../assets/images/user-aids.png"; // Added missing import
-import newImage from "../../assets/images/testimony.webp"; // New Image for the right section
-import force from '../../assets/images/logos/force.png'
-import tata from "../../assets/images/logos/tata.png"
-import bluestar from "../../assets/images/logos/bluestar.png"
-import techM from "../../assets/images/logos/techM.png"
-import thys from "../../assets/images/logos/thys.png"
-import kpit from "../../assets/images/logos/kpit.png"
-import rudder from "../../assets/images/logos/rudder.png"
-import thai from "../../assets/images/logos/thai.png"
-import hettich from "../../assets/images/logos/hettich.png"
-import faurecia from "../../assets/images/logos/faurecia.png"
-import vander from "../../assets/images/logos/vander.png"
-import skf from "../../assets/images/logos/skf.png"
+//Recruters...
+import palo from '../../assets/images/IT,Com,AIDS/palo.jpg'
+import philips from "../../assets/images/IT,Com,AIDS/philips.jpg"
+import avalara from "../../assets/images/IT,Com,AIDS/avalara.jpg"
+import wipro from "../../assets/images/IT,Com,AIDS/wipro.jpg"
+import tcs from "../../assets/images/IT,Com,AIDS/Tcs.jpg"
+import yash from "../../assets/images/IT,Com,AIDS/yash.jpg"
+import kpmg from "../../assets/images/IT,Com,AIDS/kpmg.jpg"
+import persi from "../../assets/images/IT,Com,AIDS/Persistent.jpg"
+import datax from "../../assets/images/IT,Com,AIDS/dataaxle.jpg"
+import jaspay from "../../assets/images/IT,Com,AIDS/jaspay.jpg"
+import fis from "../../assets/images/IT,Com,AIDS/fis.jpg"
+import sas from "../../assets/images/IT,Com,AIDS/sas.jpg"
 function ItTestimonials() {
   const testimonials = [
     {
@@ -220,19 +220,19 @@ function ItTestimonials() {
             </Slider>
           </div>
 
-           <div class="grid grid-cols-3 grid-rows-4  gap-4 ">
-               <img src={tata} alt="Image 1" class="w-full h-auto"/>
-               <img src={techM} alt="Image 2" class="w-full h-auto"/>
-               <img src={faurecia} alt="Image 3" class="w-full h-auto"/>
-               <img src={vander} alt="Image 4" class="w-full h-auto"/>
-               <img src={thys} alt="Image 5" class="w-full h-auto"/>
-               <img src={thai} alt="Image 6" class="w-full h-auto"/>
-               <img src={skf} alt="Image 7" class="w-full h-auto"/>
-               <img src={kpit} alt="Image 8" class="w-full h-auto"/>
-               <img src={rudder} alt="Image 9" class="w-full h-auto"/>
-               <img src={hettich} alt="Image 10" class="w-full h-auto"/>
-               <img src={bluestar} alt="Image 11" class="w-full h-auto"/>
-               <img src={force} alt="Image 12" class="w-full h-auto"/>
+           <div class="grid grid-cols-3 grid-rows-4 p-8 gap-4 ">
+               <img src={palo} alt="Image 1" class="w-full h-auto"/>
+               <img src={philips} alt="Image 2" class="w-full h-auto"/>
+               <img src={avalara} alt="Image 3" class="w-full h-auto"/>
+               <img src={wipro} alt="Image 4" class="w-full h-auto"/>
+               <img src={tcs} alt="Image 5" class="w-full h-auto"/>
+               <img src={yash} alt="Image 6" class="w-full h-auto"/>
+               <img src={kpmg} alt="Image 7" class="w-full h-auto"/>
+               <img src={persi} alt="Image 8" class="w-full h-auto"/>
+               <img src={datax} alt="Image 9" class="w-full h-auto"/>
+               <img src={jaspay} alt="Image 10" class="w-full h-auto"/>
+               <img src={fis} alt="Image 11" class="w-full h-auto"/>
+               <img src={sas} alt="Image 12" class="w-full h-auto"/>
             </div>
         </div>
       </div>
