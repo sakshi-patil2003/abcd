@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { FaStar, FaBuilding, FaUsers, FaLaptop, FaGraduationCap, FaChartLine } from 'react-icons/fa'; // Added FaChartLine for the new card icon
 import MyImage from '../../assets/images/ICEM 1.jpg'; // Import your first PNG image
-import AnotherImage from '../../assets/images/app1.jpg'; // Import your second PNG image
-import ThirdImage from '../../assets/images/com-lab.jpg'; // Import your third PNG image
+import AnotherImage from '../../assets/images/logos/app1.jpg'; // Import your second PNG image
+import ThirdImage from '../../assets/images/logos/app2.jpg'; // Import your third PNG image
 import AOS from 'aos'; // Import AOS
 import 'aos/dist/aos.css'; // Import AOS styles
 

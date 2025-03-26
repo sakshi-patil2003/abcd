@@ -7,9 +7,9 @@ import {
   FaHandsHelping,
   FaChartLine,
 } from "react-icons/fa";
-import indira from "../../assets/images/ICEM 1.jpg";
-import Image1 from "../../assets/images/app1.JPG";
-import Image2 from "../../assets/images/app2.JPG";
+import indira from "../../assets/images/logos/app1.jpg";
+import Image1 from "../../assets/images/logos/app2.jpg";
+import Image2 from "../../assets/images/logos/app2.jpg";
 
 function ItStudying() {
   return (
