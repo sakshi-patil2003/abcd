@@ -67,19 +67,21 @@ function MechHero() {
 
       {/* Left side content for large screens */}
       <div className="flex flex-col items-start z-20 w-full hidden md:block sm:block mb-4 sm:mb-6">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[clamp(28px,4vw,48px)] syne-regular text-[#ffffff] font-semibold leading-tight mb-6 hidden md:block">
-          Lead the Mechanical{" "}
-          <span className="relative inline-block">
-            {currentText}
-            <span className="ml-1 animate-blink">|</span>
-          </span>{" "}
-          with{" "}
-          <span className="text-[#ff5d12] font-bold mech-hero-wrapper">Mechanical Engineering</span> at ICEM
-        </h1>
-        <p className="mt-4 text-2xl sm:text-3xl md:text-4xl text-[clamp(18px,2.8vw,32px)]">
-          Mechanical Engineering at ICEM – Build, Innovate, and Lead!
-        </p>
-      </div>
+  {/* First Paragraph - Largest */}
+  <p className="mt-4 text-[#ff5d12] py-2 leading-tight font-semibold text-3xl sm:text-4xl md:text-5xl text-[clamp(18px,5vw,48px)]">
+    Mechanical Engineering at Indira College of Engineering & Management
+  </p>
+
+  {/* Second Paragraph - Medium size */}
+  <p className="mt-4 text-xl sm:text-2xl md:text-3xl text-[clamp(18px,2.8vw,32px)]">
+    30 Years of Excellence in Education | 5 Specializations | 100% Placement Assistance
+  </p>
+
+  {/* Third Paragraph - Smaller than the second */}
+  <p className="mt-4 text-sm sm:text-xl md:text-2xl  text-[clamp(18px,2.8vw,24px)]">
+    Mechanical Engineering at ICEM – Build, Innovate, and Lead!
+  </p>
+</div>
 
 
       {/* Right side form container (Always visible on mobile) */}
