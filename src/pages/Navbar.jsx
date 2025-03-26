@@ -7,19 +7,27 @@ import autonomousLogo from '../../src/assets/images/ICEM-Autonomous-logo.png';
 function Navbar() {
   return (
     <nav className="bg-gray-900 shadow-lg w-full">
-      <div className="mx-auto flex items-center justify-between px-2 md:px-16">
+      <div className="mx-auto flex items-center justify-between px-4 sm:px-8 md:px-16 py-4">
         
         {/* Left Logo */}
-        <div className="p-2">
+        <div className="p-2 flex-shrink-0">
           <a href="/">
-            <img src={logo} alt="Logo" className="h-auto max-w-xs md:max-w-xs" />
+            <img
+              src={logo}
+              alt="Logo"
+              className="h-auto max-w-[140px] sm:max-w-[170px] md:max-w-[200px]"
+            />
           </a>
         </div>
 
         {/* Right Logo */}
-        <div className="p-2">
+        <div className="p-2 flex-shrink-0">
           <a href="/">
-            <img src={autonomousLogo} alt="Autonomous Logo" className="h-auto max-w-xs md:max-w-28" />
+            <img
+              src={autonomousLogo}
+              alt="Autonomous Logo"
+              className="h-auto max-w-[100px] sm:max-w-[120px] md:max-w-[160px]"
+            />
           </a>
         </div>
       </div>

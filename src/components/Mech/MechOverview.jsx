@@ -1,16 +1,13 @@
 import React, { useEffect } from 'react';
-// Import the images
-import ProgramImage from '../../assets/images/3d-mech-org.jpg';
 import HatImage from '../../assets/images/hat.png';  // Import the floating hat image
 import GearImage1 from '../../assets/images/gear-a.png';  // Import the first floating gear image
 import GearImage2 from '../../assets/images/gear-b.png';  // Import the second floating gear image
-import car from '../../assets/Car split Down Model.jpg';
+import car from '../../assets/Car split Down Model.jpg';  // Import car image
 
-// Import AOS and its CSS
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function MechOverview() {
+const MechOverview = () => {
   useEffect(() => {
     // Initialize AOS
     AOS.init({
@@ -21,10 +18,10 @@ function MechOverview() {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0 md:space-x-8 px-8 md:px-16 py-3 md:py-6 poppins-regular">
+    <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start space-y-8 lg:space-y-0 lg:space-x-8 px-8 md:px-16 py-6 poppins-regular">
       {/* Left Part: Heading and Paragraph */}
       <div className="flex-1" data-aos="fade-right">
-        <h2 className="text-3xl font-bold text-[#ff5d12] mb-4 relative">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#ff5d12] mb-4 relative">
           {/* Floating Hat Above the "P" */}
           <img
             src={HatImage}
@@ -33,29 +30,29 @@ function MechOverview() {
           />
           Program Overview
         </h2>
-        <p className="text-2xl text-gray-600 tracking-wide">
-          The Mechanical Engineering Department was established in the academic year 2005. Currently, the department offers one undergraduate program, B.E in Mechanical Engineering, with an intake of 120. The department is equipped with state-of-the-art laboratories and has a dedicated faculty team with advanced degrees in mechanical engineering fields.
+        <p className="text-md sm:text-2xl md:text-xl text-gray-600 tracking-wide mt-4">
+          At Indira College of Engineering & Management (ICEM), the Mechanical Engineering program is designed to shape future innovators and problem-solvers. With a strong foundation in core engineering principles and hands-on exposure to advanced manufacturing, automation, and design technologies, our curriculum bridges the gap between theory and real-world applications. Set within a sprawling, modern campus, ICEM provides students with state-of-the-art labs, expert mentorship, and industry collaborations, ensuring they graduate as highly skilled professionals ready to lead in the ever-evolving world of engineering.
         </p>
       </div>
 
       {/* Right Part: Image */}
-      <div className="flex-1 bg-white relative" data-aos="fade-left">  {/* Make container transparent */}
+      <div className="flex-1 bg-white relative" data-aos="fade-left">
         <img
           src={car} // Use the imported image
-          alt="Iphone"
-          className="w-full h-96 object-contain"
+          alt="Car"
+          className="w-full h-80 md:h-[30rem] lg:h-[25rem] object-contain"
         />
         {/* Floating Gear 1 at the left top of the Program Image */}
         <img
           src={GearImage1} // First gear image
           alt="Gear 1"
-          className="absolute left-[-10px] top-[-10px] w-28 h-28 animate-floating-gear"  // Position closer to top left
+          className="absolute left-[-10px] top-[-10px] w-24 h-24 md:w-32 md:h-32 animate-floating-gear"  // Position closer to top left
         />
         {/* Floating Gear 2 at the right middle of the Program Image */}
         <img
           src={GearImage2} // Second gear image
           alt="Gear 2"
-          className="absolute right-[-10px] bottom-[-10px] w-28 h-28 animate-floating-gear"  // Position closer to right middle
+          className="absolute right-[-10px] bottom-[-10px] w-24 h-24 md:w-32 md:h-32 animate-floating-gear"  // Position closer to right middle
         />
       </div>
 

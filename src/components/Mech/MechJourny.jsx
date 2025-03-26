@@ -6,12 +6,13 @@ import ias from '../../assets/images/logos/ias.jpg'; // Company logo
 import tesla from '../../assets/images/logos/tesla.jpg'; // Company logo
 import army from '../../assets/images/logos/army.png'; // Company logo
 import abn from '../../assets/images/logos/abn.jpg'; // Company logo
-import hansala from '../../assets/images/Hansala.png'
-import arpita from '../../assets/images/Arpita.png'
-import nikhil from '../../assets/images/Nikhil.png'
-import ankur from '../../assets/images/Ankur.png'
-import nilesh from '../../assets/images/Nileshkumar.png'
-import apurv from '../../assets/images/Apoorva.png'
+import hansala from '../../assets/images/Hansala.png';
+import arpita from '../../assets/images/Arpita.png';
+import nikhil from '../../assets/images/Nikhil.png';
+import ankur from '../../assets/images/Ankur.png';
+import nilesh from '../../assets/images/Nileshkumar.png';
+import apurv from '../../assets/images/Apoorva.png';
+
 // Successor Data (updated with location, degree, and company logo)
 const successors = [
   {
@@ -21,7 +22,7 @@ const successors = [
     details: (<>'an Indira alumnus who graduated in 2013, secured a position as a Mechanical Engineer at Vanderlande. Presently, he is based in Jidah, <strong>Saudi Arabia</strong>.'</>),
     location: 'Jidah, Saudi Arabia',
     degree: '(Mechanical Engineer)',
-    companyLogo: vandar
+    companyLogo: vandar,
   },
   {
     id: 2,
@@ -29,8 +30,8 @@ const successors = [
     image: arpita,
     details: (<>'An exemplary scholar from Indira, initially served as a content writer.  she received an <strong>Internship+ PPO offer from Microsoft</strong>, but instead she chose to embark on her entrepreneurial journey.'</>),
     location: 'India',
-    degree: '(Computer Engineering) ',
-    companyLogo:micro
+    degree: '(Computer Engineering)',
+    companyLogo: micro,
   },
   {
     id: 3,
@@ -39,7 +40,7 @@ const successors = [
     details: (<>'A former student of Indira, commenced his professional journey at Bridgestone in 2013 & presently holds the esteemed position of a <strong>global supply manager at Tesla in Germany </strong> .'</>),
     location: 'Germany',
     degree: '(Mechanical Engineering)',
-    companyLogo: tesla
+    companyLogo: tesla,
   },
   {
     id: 4,
@@ -47,34 +48,26 @@ const successors = [
     image: ankur,
     details: (<>'One of our esteemed students, holds the rank of Major in the <strong>Indian Army</strong>. Indira takes immense pride in having him as an alumnus.'</>),
     location: 'India',
-    degree: '(Mechanical Engineering) ',
-    companyLogo: army
+    degree: '(Mechanical Engineering)',
+    companyLogo: army,
   },
   {
     id: 5,
     name: 'Nileshkumar Kshirsagar',
     image: nilesh,
-    details: (<>'An alumnus of Indira who graduated in 2011, 
-    has displayed exceptional 
-    achievements and is currently
-     serving as an <strong>IAS officer</strong> in the 
-     Chhattisgarh Cadre. (MBA)'</>),
+    details: (<>'An alumnus of Indira who graduated in 2011, has displayed exceptional achievements and is currently serving as an <strong>IAS officer</strong> in the Chhattisgarh Cadre. (MBA)'</>),
     location: 'Chhattisgarh, India',
-    degree: '(MBA) ',
-    companyLogo: ias
+    degree: '(MBA)',
+    companyLogo: ias,
   },
   {
     id: 6,
     name: 'Apoorva Kakkar',
     image: apurv,
-    details: (<>'Our alumni Apoorva Kakkar, a 
-      Mechanical Engineering passout 
-      works as a Business Data Modeller 
-      at <strong>ABN Amro Bank, Netherlands.</strong> 
-       '</>),
-    location: 'Netherland',
+    details: (<>'Our alumni Apoorva Kakkar, a Mechanical Engineering passout works as a Business Data Modeller at <strong>ABN Amro Bank, Netherlands.</strong>'</>),
+    location: 'Netherlands',
     degree: '(Mechanical Engineering)',
-    companyLogo: abn
+    companyLogo: abn,
   },
 ];
 
@@ -105,30 +98,30 @@ const MechJourny = () => {
   };
 
   return (
-    <div className="w-full h-auto bg-white my-2 shadow-lg" >
-    <h3 className='text-center font-bold text-2xl text-[#0c3249]  mb-6   '>Alumni Speak</h3>
-         {/* Slider for the 3 Successor Cards */}
+    <div className="w-full h-auto bg-white my-6 shadow-lg px-4 md:px-16">
+      <h3 className="text-center font-bold text-2xl text-[#0c3249] mb-6">Alumni Speak</h3>
+      {/* Slider for the 3 Successor Cards */}
       <Slider {...settings}>
         {successors.map((successor) => (
           <div
             key={successor.id}
-            className="w-full h-auto bg-white rounded-lg shadow-lg p-4 flex flex-col items-center mx-4 relative"  // Flexbox layout and relative positioning
+            className="w-full h-[285px] bg-white rounded-lg shadow-lg p-4 flex flex-col items-center  relative" // Fixed height for uniformity
           >
             {/* Company Logo on left side */}
             <div className="absolute top-0 left-0 p-2">
               <img
                 src={successor.companyLogo}
                 alt={`${successor.name} Company Logo`}
-                className="w-20 h-20 object-contain pl-2"
+                className="w-16 h-16 object-contain pl-2"
               />
             </div>
 
             {/* Successor's Image (Centered within card) */}
-            <div className="flex justify-center items-center w-full h-28 mb-2 flex-shrink-0 rounded-lg overflow-hidden  ">
+            <div className="flex justify-center items-center w-full h-28 mb-2 flex-shrink-0 rounded-lg overflow-hidden">
               <img
                 src={successor.image}
                 alt={successor.name}
-                className="w-22 h-22 object-cover rounded-full shadow-lg"
+                className="w-24 h-24 object-cover rounded-full shadow-lg"
               />
             </div>
 
@@ -151,4 +144,3 @@ const MechJourny = () => {
 };
 
 export default MechJourny;
-

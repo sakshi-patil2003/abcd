@@ -42,7 +42,7 @@ function MechHero() {
 
   return (
     <div
-      className="px-8 md:px-16 relative pt-8 h-screen bg-cover bg-right md:bg-center bg-no-repeat text-white flex items-start"
+      className="px-4 sm:px-8 md:px-16 relative pt-8 h-auto bg-cover bg-right md:bg-center bg-no-repeat text-white flex items-start"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Add custom style for selected text */}
@@ -62,12 +62,12 @@ function MechHero() {
       <img
         src={gearImage}
         alt="Half Gear"
-        className="absolute bottom-0 left-0 w-2/6 z-5 transform scale-x-[-1]"
+        className="absolute bottom-0 left-0 w-2/6 z-5 transform scale-x-[-1] mb-4 sm:mb-8 md:mb-16"
       />
 
-      {/* Left side content */}
-      <div className="flex flex-col items-start z-20 w-full hidden md:block sm:block">
-        <h1 className="text-6xl md:text-5xl syne-regular text-[#ffffff] font-semibold leading-tight mb-6">
+      {/* Left side content for large screens */}
+      <div className="flex flex-col items-start z-20 w-full hidden md:block sm:block mb-4 sm:mb-6">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-[clamp(28px,4vw,48px)] syne-regular text-[#ffffff] font-semibold leading-tight mb-6 hidden md:block">
           Lead the Mechanical{" "}
           <span className="relative inline-block">
             {currentText}
@@ -76,18 +76,19 @@ function MechHero() {
           with{" "}
           <span className="text-[#ff5d12] font-bold mech-hero-wrapper">Mechanical Engineering</span> at ICEM
         </h1>
-        <p className="mt-4 text-3xl md:text-4xl">
-          Innovative programs, expert faculty, and endless opportunities for growth await you.
+        <p className="mt-4 text-2xl sm:text-3xl md:text-4xl text-[clamp(18px,2.8vw,32px)]">
+          Mechanical Engineering at ICEM – Build, Innovate, and Lead!
         </p>
       </div>
 
-      {/* Right side form container */}
-      <div className="flex justify-end z-20 w-full ">
+
+      {/* Right side form container (Always visible on mobile) */}
+      <div className="flex justify-end z-20 w-full mb-4 sm:mb-6 md:mb-12 mt-4 md:mt-0">
         <div
-          className="p-6 max-w-md w-full shadow-md ml-5 rounded-md "
+          className="p-6 max-w-md w-full shadow-md ml-5 rounded-md"
           style={{ backgroundColor: "rgba(139, 197, 255, 0.3)" }}
         >
-          <form className="space-y-3 p-1 ">
+          <form className="space-y-3 p-1">
             <div>
               <input
                 type="text"

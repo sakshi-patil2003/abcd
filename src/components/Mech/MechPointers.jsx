@@ -11,7 +11,7 @@ function MechPointers() {
   useEffect(() => {
     // Initialize AOS
     AOS.init({
-      duration: 1000, // Animation duration
+      duration: 1000, // Animation duration (1 second)
       once: true, // Animation happens only once
     });
   }, []);
@@ -23,12 +23,13 @@ function MechPointers() {
         <div
           className="bg-[#fff4e6] p-6 z-10 shadow-lg flex items-center justify-center"
           data-aos="fade-up" // AOS animation trigger
+          data-aos-delay="100" // Optional: Staggered animation
         >
-          <div className="flex items-center justify-center mr-4 space-x-4">
+          <div className="flex flex-col items-center justify-center">
             <FaCog size={40} className="text-[#ff5d12]" />
             <div className="text-center">
-              <h2>Program Format</h2>
-              <p className="mt-2 text-2xl font-semibold">Offline</p>
+              <h2 className="text-lg sm:text-xl md:text-2xl">Program Format</h2>
+              <p className=" text-xl sm:text-2xl font-semibold">Offline</p>
             </div>
           </div>
         </div>
@@ -37,26 +38,28 @@ function MechPointers() {
         <div
           className="bg-[#fff4e6] p-6 z-10 shadow-lg flex items-center justify-center"
           data-aos="fade-up"
+          data-aos-delay="200" // Optional: Staggered animation
         >
-          <div className="flex items-center justify-center mr-4 space-x-4">
+          <div className="flex flex-col items-center justify-center">
             <FaTools size={40} className="text-[#ff5d12]" />
             <div className="text-center">
-              <h2>Duration</h2>
-              <p className="mt-2 text-2xl font-semibold">4 Years</p>
+              <h2 className="text-lg sm:text-xl md:text-2xl">Duration</h2>
+              <p className=" text-xl sm:text-2xl font-semibold">4 Years</p>
             </div>
           </div>
         </div>
 
         {/* Card 3: Program Fees */}
         <div
-          className="bg-[#fff4e6] p-6 z-10 shadow-lg flex items-center justify-center"
+          className="bg-[#fff4e6] p-6 z-10 shadow-lg flex items-center justify-center sm:col-span-2 md:col-span-1" // Center last card on tablet screen
           data-aos="fade-up"
+          data-aos-delay="300" // Optional: Staggered animation
         >
-          <div className="flex items-center justify-center mr-4 space-x-4">
+          <div className="flex flex-col items-center justify-center">
             <FaIndustry size={40} className="text-[#ff5d12]" />
             <div className="text-center">
-              <h2>Program Fees</h2>
-              <p className="mt-2 text-2xl font-semibold">Rs. 108000/-</p>
+              <h2 className="text-lg sm:text-xl md:text-2xl">Program Fees</h2>
+              <p className=" text-xl sm:text-2xl font-semibold">Rs. 108000/-</p>
             </div>
           </div>
         </div>
