@@ -16,6 +16,8 @@ function MechOfferings() {
       once: true,
     });
 
+
+    
     const elements = document.querySelectorAll('.circle');
     const icons = document.querySelectorAll('.icon');
 
