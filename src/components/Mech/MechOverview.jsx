@@ -31,8 +31,7 @@ const MechOverview = () => {
           Program Overview
         </h2>
         <p className="text-md sm:text-2xl md:text-xl text-gray-600 tracking-wide mt-4">
-          At Indira College of Engineering & Management (ICEM), the Mechanical Engineering program is designed to shape future innovators and problem-solvers. With a strong foundation in core engineering principles and hands-on exposure to advanced manufacturing, automation, and design technologies, our curriculum bridges the gap between theory and real-world applications. Set within a sprawling, modern campus, ICEM provides students with state-of-the-art labs, expert mentorship, and industry collaborations, ensuring they graduate as highly skilled professionals ready to lead in the ever-evolving world of engineering.
-        </p>
+        At Indira College of Engineering & Management (ICEM), the Mechanical Engineering program is designed to shape future innovators and problem-solvers. With a strong foundation in core engineering principles and hands-on exposure to advanced manufacturing, automation, and design technologies, our curriculum bridges the gap between theory and real-world applications. we ensure our graduates become highly skilled professionals ready to lead in the ever-evolving world of engineering.         </p>
       </div>
 
       {/* Right Part: Image */}

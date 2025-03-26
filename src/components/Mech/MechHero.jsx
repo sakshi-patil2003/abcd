@@ -79,7 +79,7 @@ function MechHero() {
 
   {/* Third Paragraph - Smaller than the second */}
   <p className="mt-4 text-sm sm:text-xl md:text-2xl  text-[clamp(18px,2.8vw,24px)]">
-    Mechanical Engineering at ICEM – Build, Innovate, and Lead!
+     Build, Innovate, and Lead!
   </p>
 </div>
 
