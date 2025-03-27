@@ -54,7 +54,7 @@ function MechStudying() {
         </p>
 
         {/* 2x3 Grid for Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-2 ">
           {/* Card 1 */}
           <div className="bg-[#fff4e6] p-4 shadow-lg shadow-[#ffcc66]/50 flex justify-between items-center rounded-lg">
             <span className="flex items-center">

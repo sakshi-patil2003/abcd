@@ -28,7 +28,7 @@ function CompStudying() {
         </p>
 
         {/* 2x3 Grid for Cards */}
-        <div className="grid grid-cols-2 grid-rows-3 gap-12">
+        <div className="grid grid-cols-2 grid-rows-3 gap-8">
           {/* Card 1 */}
           <div className="bg-white p-4 shadow-lg shadow-blue-500/50 flex justify-between items-center rounded-lg" data-aos="zoom-in">
             <span className="flex items-center">
