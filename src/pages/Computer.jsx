@@ -5,8 +5,8 @@ import CompOfferings from "../components/Computer/CompOfferings";
 import CompStudying from "../components/Computer/CompStudying";
 import CompBrochure from "../components/Computer/CompBrochure";
 import CompHighlights from "../components/Computer/CompHighlights";
-import CompCarrer from "../components/Computer/CompCarrer";
-import CompRecruiter from "../components/Computer/CompRecruiter";
+// import CompCarrer from "../components/Computer/CompCarrer";
+// import CompRecruiter from "../components/Computer/CompRecruiter";
 import CompJoin from "../components/Computer/CompJoin";
 import AutoChatbot from "../components/AutoChatbot"; // Import AutoChatbot
 import MechJourny from "../components/Mech/MechJourny";
