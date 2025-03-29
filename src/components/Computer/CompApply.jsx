@@ -14,7 +14,7 @@ const AdmissionProcess = () => {
         <h2 className="text-3xl font-semibold mb-6">How to Apply</h2>
         <p className="text-lg mb-6">
           Follow these simple steps to apply for the Computer Engineering
-          program at ICEM College Pune::
+          program at ICEM College Pune:
         </p>
 
         {/* Container for steps */}
