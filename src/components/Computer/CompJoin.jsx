@@ -1,5 +1,5 @@
 import React from 'react';
-import backgroundImage from '../../assets/images/join-bg.jpg'; // Adjust the path as necessary
+import backgroundImage from '../../assets/images/Com-Images/join-bg.avif'; // Adjust the path as necessary
 
 function CompJoin() {
   return (

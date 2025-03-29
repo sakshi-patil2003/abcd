@@ -1,5 +1,5 @@
 import React from 'react';
-import bannerImage from '../../assets/images/ComPlacement (2).jpg';
+import bannerImage from '../../assets/images/Com-Images/ComPlacement (2).avif';
 
 const ComPlacement = () => {
   return (
