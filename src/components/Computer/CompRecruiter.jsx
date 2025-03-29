@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import logo1 from "../../assets/images/IT-Com-AIDS/palo (1).avif";
-import logo2 from "../../assets/Images/IT-Com-AIDS/yash.AVIF";
+import logo2 from "../../assets/Images/IT-Com-AIDS/yash.avif";
 import logo3 from "../../assets/Images/IT-Com-AIDS/philips.AVIF";
 import logo4 from "../../assets/images/IT-Com-AIDS/jaspay.avif";
 import logo5 from "../../assets/Images/IT-Com-AIDS/zs.avif";
