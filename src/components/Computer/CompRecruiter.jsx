@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import logo1 from "../../assets/images/IT-Com-AIDS/palo.AVIF";
+// import logo1 from "../../assets/images/IT-Com-AIDS/palo.AVIF";
 import logo2 from "../../assets/Images/IT-Com-AIDS/yash.AVIF";
 import logo3 from "../../assets/Images/IT-Com-AIDS/philips.AVIF";
 import logo4 from "../../assets/images/IT-Com-AIDS/jaspay.AVIF";
@@ -32,7 +32,7 @@ const sponsorsData = [
   {
     title: "IT RECRUITERS",
     logos: [
-      logo1,
+      // logo1,z
       logo2,
       logo3,
       logo4,
