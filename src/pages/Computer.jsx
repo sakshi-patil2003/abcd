@@ -26,7 +26,7 @@ function Computer() {
       <ComReasons/>
       <CompOffringICEM/>
       <ComPlacement/>
-      <CompRecruiter />
+      {/* <CompRecruiter /> */}
       <CompOfferings />
       <CompStudying />
       <CompBrochure />
