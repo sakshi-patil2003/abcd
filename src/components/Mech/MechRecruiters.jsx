@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
  
 import logo1 from "../../assets/images/logos/bluestar.png";
-import logo2 from "../../assets/Images/logos/faurecia.PNG";
+import logo2 from "../../assets/Images/logos/faurecia.png";
 import logo3 from "../../assets/Images/logos/force.png";
 import logo4 from "../../assets/images/logos/hettich.png";
 import logo5 from "../../assets/Images/logos/kpit.png";
