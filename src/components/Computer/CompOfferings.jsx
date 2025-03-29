@@ -38,70 +38,69 @@ function CompOfferings() {
         Top Offerings
       </h2>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4 md:gap-x-20">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-y-6 md:gap-y-8 gap-x-4 md:gap-x-20">
         {/* Excellent Academic Interface */}
         <div
-          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
+          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-2 md:p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
           data-aos="fade-up"
         >
           <FaGraduationCap size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Excellent Academic Interface</p>
+          <p className="text-md md:text-lg font-semibold text-white">Excellent Academic Interface</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-blue-600 rounded-full shadow-2xl"></div>
         </div>
 
         {/* Quality Holistic Infrastructure */}
         <div
-          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
+          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-2 md:p-4shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
           data-aos="fade-up"
         >
           <FaUniversity size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Quality Holistic Infrastructure</p>
+          <p className="text-md md:text-lg font-semibold text-white">Quality Holistic Infrastructure</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-blue-600 rounded-full shadow-2xl"></div>
         </div>
 
         {/* Customized MPSC/MPSC-ES/UPSC Training Program */}
         <div
-          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
+          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-2 md:p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
           data-aos="fade-up"
         >
           <FaChalkboardTeacher size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Customized MPSC/MPSC-ES /UPSC Training Program</p>
+          <p className="text-md md:text-lg font-semibold text-white">Customized MPSC/MPSC-ES /UPSC Training Program</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-blue-600 rounded-full shadow-2xl"></div>
         </div>
 
         {/* Guaranteed Core Placements for Core Branches */}
         <div
-          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
+          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-2 md:p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
           data-aos="fade-up"
         >
           <FaBriefcase size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Guaranteed Core Placements for Core Branches</p>
+          <p className="text-md md:text-lg font-semibold text-white">Guaranteed Core Placements for Core Branches</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-blue-600 rounded-full shadow-2xl"></div>
         </div>
 
         {/* Product Companies for Campus Placements */}
         <div
-          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
+          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-2 md:p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
           data-aos="fade-up"
         >
           <FaDesktop size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Product Companies for Campus Placements</p>
+          <p className="text-md md:text-lg font-semibold text-white">Product Companies for Campus Placements</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-blue-600 rounded-full shadow-2xl"></div>
         </div>
 
         {/* Foreign Languages (German, Japanese, French) */}
         <div
-          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
+          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-2 md:p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
           data-aos="fade-up"
         >
           <FaLanguage size={50} className="text-white mb-4 icon" />
-          <p className="text-lg font-semibold text-white">Foreign Languages (German, Japanese, French)</p>
+          <p className="text-md md:text-lg font-semibold text-white">Foreign Languages (German, Japanese, French)</p>
           <div className="circle absolute bottom-[-20px] right-[-20px] w-12 h-12 bg-blue-600 rounded-full shadow-2xl"></div>
         </div>
       </div>
     </div>
   );
 }
-
 
 export default CompOfferings;

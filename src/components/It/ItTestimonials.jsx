@@ -13,18 +13,8 @@ import raviImage from "../../assets/images/user-aids.png"; // Added missing impo
 import anitaImage from "../../assets/images/user-aids.png"; // Added missing import
 import rajeshImage from "../../assets/images/user-aids.png"; // Added missing import
 //Recruters...
-import palo from '../../assets/images/IT,Com,AIDS/palo.jpg'
-import philips from "../../assets/images/IT,Com,AIDS/philips.jpg"
-import avalara from "../../assets/images/IT,Com,AIDS/avalara.jpg"
-import wipro from "../../assets/images/IT,Com,AIDS/wipro.jpg"
-import tcs from "../../assets/images/IT,Com,AIDS/Tcs.jpg"
-import yash from "../../assets/images/IT,Com,AIDS/yash.jpg"
-import kpmg from "../../assets/images/IT,Com,AIDS/kpmg.jpg"
-import persi from "../../assets/images/IT,Com,AIDS/Persistent.jpg"
-import datax from "../../assets/images/IT,Com,AIDS/dataaxle.jpg"
-import jaspay from "../../assets/images/IT,Com,AIDS/jaspay.jpg"
-import fis from "../../assets/images/IT,Com,AIDS/fis.jpg"
-import sas from "../../assets/images/IT,Com,AIDS/sas.jpg"
+
+
 function ItTestimonials() {
   const testimonials = [
     {
@@ -117,8 +107,8 @@ function ItTestimonials() {
     dots: true, // Navigation dots
     infinite: true,
     speed: 500,
-    slidesToShow: 1, // Show 1 slide at a time (to ensure each slide holds 2 items)
-    slidesToScroll: 1,
+    slidesToShow: 2, // Show 1 slide at a time (to ensure each slide holds 2 items)
+    slidesToScroll: 2,
     vertical: false, // Change to false for horizontal scrolling
     centerMode: true, // Center the active slide
     centerPadding: "0", // No padding around centered slide
@@ -154,26 +144,23 @@ function ItTestimonials() {
   return (
     <div className="mb-8 px-8 md:px-16">
       {/* Main Heading outside the white rectangle */}
-      <div className="flex justify-around">
-      <h2 className="text-4xl font-semibold text-[#001E5D] text-center mb-8">
-        What Our Students Say
-      </h2>
-      <h2 className="text-4xl font-semibold text-[#001E5D] text-center mb-8">
-        Our Recruiters
-      </h2>
+      <div className="flex justify-center mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#390161] text-center mb-8">
+          What Our Students Say
+        </h2>
       </div>
 
       {/* Single white rectangle container */}
-      <div className="bg-white shadow-lg">
+      <div className="bg-[#F7F0FC] shadow-lg">
         <div className="flex justify-between items-center gap-4">
           {/* Testimonial Section - 60% */}
-          <div className="w-3/6">
+          <div className="w-full">
             {/* Slick Slider */}
             <Slider {...settings}>
               {pairedTestimonials.map((pair, index) => (
                 <div key={index} className="flex flex-col">
                   {/* First Card: Profile and Testimonial */}
-                  <div className="p-6 flex flex-col mb-6 bg-[#e6f2ff] border border-[#001E5D] rounded-lg">
+                  <div className="p-6 flex flex-col mb-6 bg-[#F7F0FC] border border-[#390161] rounded-lg mx-2">
                     <div className="flex items-center mb-4">
                       <img
                         src={pair[0].image}
@@ -181,11 +168,11 @@ function ItTestimonials() {
                         className="w-12 h-12 rounded-full mr-4"
                       />
                       <div className="text-left">
-                        <p className="text-lg font-semibold text-[#4e4e4e]">
+                        <p className="text-lg font-semibold text-[#390161]">
                           {pair[0].name}
                         </p>
                         <hr className="my-1 border-t border-gray-300" />
-                        <p className="text-sm text-[#001E5D]">
+                        <p className="text-sm text-[#390161]">
                           {pair[0].department} | {pair[0].year}
                         </p>
                       </div>
@@ -195,7 +182,7 @@ function ItTestimonials() {
 
                   {/* Second Card (for the next testimonial) */}
                   {pair[1] && (
-                    <div className="p-6 flex flex-col mb-6 bg-[#e6f2ff] border border-[#001E5D] rounded-lg">
+                    <div className="p-4 flex flex-col mb-6 bg-[#F7F0FC] border border-[#390161] rounded-lg mx-2">
                       <div className="flex items-center mb-4">
                         <img
                           src={pair[1].image}
@@ -203,11 +190,11 @@ function ItTestimonials() {
                           className="w-12 h-12 rounded-full mr-4"
                         />
                         <div className="text-left">
-                          <p className="text-lg font-semibold text-[#4e4e4e]">
+                          <p className="text-lg font-semibold text-[#390161]">
                             {pair[1].name}
                           </p>
                           <hr className="my-1 border-t border-gray-300" />
-                          <p className="text-sm text-[#001E5D]">
+                          <p className="text-sm text-[#390161]">
                             {pair[1].department} | {pair[1].year}
                           </p>
                         </div>
@@ -219,21 +206,6 @@ function ItTestimonials() {
               ))}
             </Slider>
           </div>
-
-           <div class="grid grid-cols-3 grid-rows-4 p-8 gap-4 ">
-               <img src={palo} alt="Image 1" class="w-full h-auto"/>
-               <img src={philips} alt="Image 2" class="w-full h-auto"/>
-               <img src={avalara} alt="Image 3" class="w-full h-auto"/>
-               <img src={wipro} alt="Image 4" class="w-full h-auto"/>
-               <img src={tcs} alt="Image 5" class="w-full h-auto"/>
-               <img src={yash} alt="Image 6" class="w-full h-auto"/>
-               <img src={kpmg} alt="Image 7" class="w-full h-auto"/>
-               <img src={persi} alt="Image 8" class="w-full h-auto"/>
-               <img src={datax} alt="Image 9" class="w-full h-auto"/>
-               <img src={jaspay} alt="Image 10" class="w-full h-auto"/>
-               <img src={fis} alt="Image 11" class="w-full h-auto"/>
-               <img src={sas} alt="Image 12" class="w-full h-auto"/>
-            </div>
         </div>
       </div>
     </div>

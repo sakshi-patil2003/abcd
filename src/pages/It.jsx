@@ -9,19 +9,28 @@ import ItApply from '../components/It/ItApply';
 import ItTestimonials from '../components/It/ItTestimonials';
 import AutoChatbot from '../components/AutoChatbot'; // Import AutoChatbot
 import MechJourny from '../components/Mech/MechJourny';
+import ItInovation from '../components/It/ItInovation';
+import ItOverview from '../components/It/ItOverview';
+import ItReasons from '../components/It/ItReasons';
+import ItPlacement from '../components/It/ItPlacement';
+import CompRecruter from '../components/Computer/CompRecruiter';
 
 function It() {
   return (
     <div>
-      <ItHero />  {/* Call the ItHero component */}
-      <ItPointers />  {/* Call the ItPointers component */}
-      <ItOfferings />  {/* Call the ItOfferings component */}
-      <ItStudying />  {/* Call the ItStudying component */}
-      <ItBrochure />  {/* Call the ItBrochure component */}
-      <ItHighlights />  {/* Call the ItHighlights component */}
-      <ItApply />  {/* Call the ItApply component */}
-      <ItTestimonials />  {/* Call the ItTestimonials component */}
-      {/* Include the chatbot on this page */}
+      <ItHero />  
+      <ItPointers />  
+      <ItInovation/>
+      <ItOverview/>
+      <ItReasons/>
+      <ItPlacement/>
+      <CompRecruter/>
+      <ItOfferings />
+      <ItStudying /> 
+      <ItBrochure />  
+      <ItHighlights /> 
+      <ItApply />  
+      <ItTestimonials />
       <AutoChatbot />
       <MechJourny/>
     </div>

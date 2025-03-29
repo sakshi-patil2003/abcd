@@ -3,7 +3,7 @@ import { FaRobot, FaIndustry, FaCar, FaBriefcase, FaGlobe, FaTrophy, FaMicrophon
 
 function MechReasons() {
   return (
-    <div className="px-8 md:px-14 py-6 poppins-regular">
+    <div className="px-8 md:px-14 py-2 poppins-regular">
       <h1 className="text-3xl md:text-4xl font-semibold text-left mb-6 text-[#000000]">
         Why Choose ICEM for Your Mechanical Engineering Journey?
       </h1>

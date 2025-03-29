@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 // Import the images
 import ProgramImage from '../../assets/images/robot-overview.png'; // Replace with the correct image path
-import HatImage from '../../assets/images/hat.png';  // Import the floating hat image
+import HatImage from '../../assets/images/hat.avif';  // Import the floating hat image
 
 // Import AOS and its CSS
 import AOS from 'aos';

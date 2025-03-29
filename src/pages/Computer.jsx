@@ -10,6 +10,10 @@ import CompRecruiter from "../components/Computer/CompRecruiter";
 import CompJoin from "../components/Computer/CompJoin";
 import AutoChatbot from "../components/AutoChatbot"; // Import AutoChatbot
 import MechJourny from "../components/Mech/MechJourny";
+import ComCreative from "../components/Computer/ComCreative";
+import ComReasons from "../components/Computer/ComReasons";
+import CompOffringICEM from "../components/Computer/CompOffringICEM";
+import ComPlacement from "../components/Computer/ComPlacement";
 
 function Computer() {
   return (
@@ -17,14 +21,19 @@ function Computer() {
       {/* Render the child component */}
       <CompHero />
       <CompPointers />
+      <ComCreative/>
       <ProgramOverview />
+      <ComReasons/>
+      <CompOffringICEM/>
+      <ComPlacement/>
+      <CompRecruiter />
       <CompOfferings />
       <CompStudying />
       <CompBrochure />
       <CompHighlights />
       <CompJoin />
-      <CompCarrer />
-      {/* <CompRecruiter /> */}
+      {/* <CompCarrer /> */}
+    
       <AutoChatbot />
       <MechJourny/>
     </div>

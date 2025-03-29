@@ -8,11 +8,11 @@ const ItApply = () => {
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Light gray overlay */}
-      <div className="absolute inset-0 bg-[#004896] opacity-60 z-0"></div>
+      <div className="absolute inset-0 bg-[#F7F0FC] opacity-60 z-0"></div>
 
       <div className="relative z-10">
-        <h2 className="text-3xl font-semibold text-[#001E5D] mb-6">How to Apply</h2>
-        <p className="text-lg mb-6">
+        <h2 className="text-3xl font-semibold text-[#390161] mb-6">How to Apply</h2>
+        <p className="text-lg mb-6 text-[#390161]">
           Follow these simple steps to apply for the Information Technology
           program at ICEM College Pune:
         </p>
@@ -22,7 +22,7 @@ const ItApply = () => {
           {/* Step 1 */}
           <div
             className="relative bg-[#001E5D] p-6 shadow-xl w-full "
-            style={{ backgroundColor: "rgba(0, 30, 93, 0.3)" }}  
+            style={{ backgroundColor: "#390161" }}  
           >
             <div
               className="absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
@@ -36,7 +36,7 @@ const ItApply = () => {
           {/* Step 2 */}
           <div
             className="relative bg-[#001E5D] p-6 shadow-xl w-full "
-            style={{ backgroundColor: "rgba(0, 30, 93, 0.3)" }}  
+            style={{ backgroundColor: "#390161" }}  
           >
             <div
               className="absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
@@ -50,7 +50,7 @@ const ItApply = () => {
           {/* Step 3 */}
           <div
             className="relative bg-[#001E5D] p-6 shadow-xl w-full "
-            style={{ backgroundColor: "rgba(0, 30, 93, 0.3)" }}  
+            style={{ backgroundColor: "#390161" }}  
           >
             <div
               className="absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
@@ -64,7 +64,7 @@ const ItApply = () => {
           {/* Step 4 */}
           <div
             className="relative bg-[#001E5D] p-6 shadow-xl w-full "
-            style={{ backgroundColor: "rgba(0, 30, 93, 0.3)" }}  
+            style={{ backgroundColor: "#390161" }}  
           >
             <div
               className="absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
@@ -78,7 +78,7 @@ const ItApply = () => {
           {/* Step 5 */}
           <div
             className="relative bg-[#001E5D] p-6 shadow-xl w-full "
-            style={{ backgroundColor: "rgba(0, 30, 93, 0.3)" }}  
+            style={{ backgroundColor: "#390161" }}  
           >
             <div
               className="absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
@@ -90,7 +90,7 @@ const ItApply = () => {
           </div>
         </div>
 
-        <button className="bg-white text-[#001E5D] py-3 px-8 rounded-full text-xl hover:bg-gray-200 transition-all mt-8">
+        <button className="bg-white text-black py-3 px-8 rounded-full text-xl hover:bg-[#001E5D] hover:text-white transition-all mt-8">
           Apply Now
         </button>
       </div>

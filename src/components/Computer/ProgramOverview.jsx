@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 // Import the image
-import ProgramImage from '../../assets/images/macpng.png';
-import HatImage from '../../assets/images/hat.png';  // Import the floating hat image
+import ProgramImage from '../../assets/images/Com-Images/macpng.png';
+import HatImage from '../../assets/images/hat.avif';  // Import the floating hat image
 
 // Import AOS and its CSS
 import AOS from 'aos';
@@ -30,9 +30,8 @@ function ProgramOverview() {
           />
           Program Overview
         </h2>
-        <p className="text-2xl text-gray-600 tracking-wide">
-          The Computer Engineering Department was established in the academic year 2007. Currently, the department offers one undergraduate program, B.E in Computer Engineering, with an intake of 120. The department has a team of highly qualified, motivated, and experienced faculty members with doctorates (Ph.D.) and M.E./M.Tech qualifications in various areas of specialization.
-        </p>
+        <p className="text-md sm:text-2xl md:text-xl text-gray-600 tracking-wide mt-4">
+        At ICEM, learning goes beyond textbooks. Our modern, lush-green campus is a hub of innovation, collaboration, and hands-on learning. With world-class infrastructure, cutting-edge labs, and industry partnerships, we ensure our students are career-ready from day one. Our Computer Engineering program is designed to provide a strong foundation in software development, AI, and networking, with real-world projects, hackathons, and expert mentoring.          </p>
       </div>
 
       {/* Right Part: Image */}

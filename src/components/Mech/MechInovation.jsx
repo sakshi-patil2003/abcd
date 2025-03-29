@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 // Import the images
-import ProgramImage from '../../assets/images/inov.jpg';
+import ProgramImage from '../../assets/images/Mech-Images/inov.avif';
 
 // Import AOS and its CSS
 import AOS from 'aos';
@@ -19,7 +19,7 @@ function MechOverview() {
   return (
     <div className="flex flex-col px-4 md:px-10 lg:px-16 py-4 mb-2">
       {/* Heading */}
-      <div className="flex flex-col md:flex-row items-center justify-center md:space-x-8">
+      <div className="flex flex-col md:flex-row items-center justify-center">
         {/* Left Part: Image */}
         <div className="w-full md:w-1/2">
           <img
@@ -34,7 +34,7 @@ function MechOverview() {
           <h2 className="text-3xl sm:text-2xl md:text-3xl font-bold text-center text-[#ff5d12] mt-2">
             Where Innovation Meets Motion
           </h2>
-          <p className="text-xl sm:text-2xl md:text-xl text-gray-600 tracking-wide mt-4 px-2">
+          <p className="text-md sm:text-2xl md:text-xl text-gray-600 tracking-wide mt-4 px-2">
             Ever wondered what it takes to design a Formula 1 car, build a Mars rover, or create a next-gen robotic arm? Mechanical Engineering is the powerhouse behind these revolutionary innovations! At Indira College of Engineering and Management (ICEM), we turn ideas into reality by blending technology, creativity, and real-world applications.
           </p>
         </div>

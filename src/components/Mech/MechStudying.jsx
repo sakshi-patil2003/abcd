@@ -7,8 +7,8 @@ import {
   FaHandsHelping,
   FaChartLine,
 } from "react-icons/fa";
-import std1 from '../../assets/images/std1.jpg';
-import std2 from '../../assets/images/std2.jpg';
+import std1 from '../../assets/images/Mech-Images/std1.avif';
+import std2 from '../../assets/images/Mech-Images/std2.avif';
 import indira from '../../assets/images/ICEM 1.jpg';
 
 function MechStudying() {
@@ -42,7 +42,7 @@ function MechStudying() {
       </div>
 
       {/* Right Side (Updated Text Content Section) */}
-      <div className="w-full md:w-1/2 pl-8 mt-6 md:mt-0">
+      <div className="w-full md:w-1/2 pl-0 md:pl-8 mt-6 md:mt-0">
         <h1 className="text-2xl md:text-4xl font-semibold text-left mb-4 text-[#000000]">
           Grow. Connect. Lead with Indira!!  
         </h1>

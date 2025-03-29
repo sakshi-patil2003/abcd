@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import backgroundImage from "../../assets/images/herocomp-e.jpg";
+import backgroundImage from "../../assets/images/Com-Images/herocomp-e.avif";
 import gearImage from "../../assets/images/gears.png";
 
 function MechHero() {
@@ -67,8 +67,8 @@ function MechHero() {
       {/* Left side content for large screens */}
       <div className="flex flex-col items-start z-20 w-full hidden md:block sm:block mb-4 sm:mb-6">
   {/* First Paragraph - Largest */}
-  <p className="mt-4 text-bg-[#006BB3] py-2 leading-tight font-semibold text-3xl sm:text-4xl md:text-5xl text-[clamp(18px,5vw,48px)]">
-    Mechanical Engineering at Indira College of Engineering & Management
+  <p className="mt-4 text-[#006BB3] py-2 leading-tight font-semibold text-3xl sm:text-4xl md:text-5xl text-[clamp(18px,5vw,48px)]">
+    Computer Engineering at Indira College of Engineering & Management
   </p>
 
   {/* Second Paragraph - Medium size */}

@@ -1,60 +1,71 @@
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-// Importing images
-import logo1 from '../../assets/images/came/1.avif';
-import logo2 from '../../assets/images/came/2.avif';
-import logo3 from '../../assets/images/came/3.avif';
-import logo21 from '../../assets/images/came/21.avif';
-import logo22 from '../../assets/images/came/22.avif';
-import logo6 from '../../assets/images/came/24.avif';
-import logo7 from '../../assets/images/came/7.avif';
-import logo8 from '../../assets/images/came/8.avif';
-import logo9 from '../../assets/images/came/9.avif';
-import logo10 from '../../assets/images/came/10.avif';
-import logo11 from '../../assets/images/came/11.avif';
-import logo12 from '../../assets/images/came/12.avif';
-import logo13 from '../../assets/images/came/13.avif';
-import logo15 from '../../assets/images/came/15.avif';
-import logo19 from '../../assets/images/came/19.avif';
-import logo20 from '../../assets/images/came/20.avif';
-import logo25 from '../../assets/images/came/25.avif';
-import logo29 from '../../assets/images/came/29.avif';
-import logo32 from '../../assets/images/came/32.avif';
-import logo34 from '../../assets/images/came/34.avif';
-import logo37 from '../../assets/images/came/37.avif';
-import logo39 from '../../assets/images/came/39.avif';
-import logo40 from '../../assets/images/came/40.avif';
-import logo41 from '../../assets/images/came/41.avif';
-import logo42 from '../../assets/images/came/42.avif';
-import logo43 from '../../assets/images/came/43.avif';
-import logo44 from '../../assets/images/came/44.avif';
-import logo46 from '../../assets/images/came/46.avif';
-import logo47 from '../../assets/images/came/47.avif';
-import logo48 from '../../assets/images/came/48.avif';
-import logo50 from '../../assets/images/came/50.avif';
-import logo51 from '../../assets/images/came/51.avif';
-
+import logo1 from "../../assets/images/IT,Com,AIDS/palo (1).avif";
+import logo2 from "../../assets/Images/IT,Com,AIDS/yash.avif";
+import logo3 from "../../assets/Images/IT,Com,AIDS/philips.avif";
+import logo4 from "../../assets/images/IT,Com,AIDS/jaspay.avif";
+import logo5 from "../../assets/Images/IT,Com,AIDS/zs.avif";
+import logo6 from "../../assets/images/IT,Com,AIDS/avalara.avif";
+import logo7 from "../../assets/Images/IT,Com,AIDS/capgi.avif";
+import logo8 from "../../assets/Images/IT,Com,AIDS/dataaxle.avif";
+import logo9 from "../../assets/Images/IT,Com,AIDS/e-zest.avif";
+import logo10 from "../../assets/Images/IT,Com,AIDS/wipro.avif";
+import logo11 from "../../assets/Images/IT,Com,AIDS/fis.avif";
+import logo12 from "../../assets/Images/IT,Com,AIDS/gslab.avif";
+import logo13 from "../../assets/Images/IT,Com,AIDS/infosys.avif";
+import logo14 from "../../assets/Images/IT,Com,AIDS/kpit.avif";
+import logo15 from "../../assets/Images/IT,Com,AIDS/kpmg.avif";
+import logo16 from "../../assets/Images/IT,Com,AIDS/l&T.avif";
+import logo17 from "../../assets/Images/IT,Com,AIDS/nttdata.avif";
+import logo18 from "../../assets/Images/IT,Com,AIDS/Persistent.avif";
+import logo19 from "../../assets/Images/IT,Com,AIDS/pubmatic.avif";
+import logo20 from "../../assets/Images/IT,Com,AIDS/sas.avif";
+import logo21 from "../../assets/Images/IT,Com,AIDS/Tcs.avif";
+import logo22 from "../../assets/Images/IT,Com,AIDS/tibco.avif";
+import logo23 from "../../assets/Images/IT,Com,AIDS/veritas.avif";
+import logo24 from "../../assets/Images/IT,Com,AIDS/e-zest.avif";
 
 const sponsorsData = [
   {
-    title: 'PARTICIPATING DELEGATES',
+    title: "IT RECRUITERS",
     logos: [
-      logo1, logo2, logo3, logo21, logo22, logo6, logo7, logo8, logo9, 
-      logo10, logo11, logo12, logo13, logo15, logo19, logo20,
+      logo1,
+      logo2,
+      logo3,
+      logo4,
+      logo5,
+      logo6,
+      logo7,
+      logo8,
+      logo9,
+      logo10,
+      logo11,
+      logo12,
     ],
   },
   {
-    title: 'PARTICIPATING DELEGATES',
+    title: "IT RECRUITERS",
     logos: [
-      logo25, logo29, logo32, logo34, logo37, logo39, logo40, logo41, logo42, 
-      logo43, logo44, logo46, logo47, logo48, logo50, logo51,
+      logo13,
+      logo14,
+      logo15,
+      logo16,
+      logo17,
+      logo18,
+      logo19,
+      logo20,
+      logo21,
+      logo22,
+      logo23,
+      logo24,
     ],
   },
 ];
 
-const App = () => {
+const CompRecruter = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -66,26 +77,26 @@ const App = () => {
   };
 
   return (
-    <div className="flex poppins-regular flex-col justify-center items-center py-6 md:py-12 bg-white px-0 md:px-16 font-poppins">
+    <div className="flex flex-col justify-center items-center py-2 md:py-12 bg-white px-4 md:px-16 overflow-hidden">
       {/* Heading above the slider */}
-      <div className="text-xl md:text-3xl font-semibold text-gray-800 mb-6">
-        Our Recruiters
+      <div className="text-xl md:text-4xl font-semibold text-[#001E5D] mb-2 text-center">
+        Our IT Recruiters
       </div>
-      
+
       <Slider {...settings} className="w-full">
         {sponsorsData.map((slide, index) => (
           <div key={index} className="flex flex-col items-center">
             <div className="flex flex-row justify-center items-center w-full px-4">
               <div
-                className="grid grid-cols-4 md:grid-cols-8 gap-4 justify-items-center w-full px-6"
-                style={{ gridTemplateRows: 'repeat(2, auto)' }} // Enforcing only two rows
+                className="grid grid-cols-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 justify-items-center w-full px-4"
+                style={{ gridTemplateRows: "repeat(2, auto)" }} // Enforcing only two rows
               >
                 {slide.logos.map((logo, idx) => (
                   <div key={idx} className="flex justify-center">
                     <img
                       src={logo}
                       alt={`Logo ${idx + 1}`}
-                      className="rounded-none shadow-none w-auto h-auto object-contain" // Logos will scale dynamically without any background styling
+                      className="rounded-none shadow-none w-full h-auto object-contain" // Logos will scale dynamically without any background styling
                     />
                   </div>
                 ))}
@@ -94,9 +105,8 @@ const App = () => {
           </div>
         ))}
       </Slider>
-      
     </div>
   );
 };
 
-export default App;
+export default CompRecruter;

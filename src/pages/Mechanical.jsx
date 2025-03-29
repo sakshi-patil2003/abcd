@@ -12,20 +12,24 @@ import MechTestimonials from '../components/Mech/MechTestimonials'
 // import AutoChatbot from '../components/AutoChatbot'  // Import AutoChatbot
 import MechJourny from '../components/Mech/MechJourny'
 import MechReasons from '../components/Mech/MechReasons.jsx'
+import MechRecruiters from '../components/Mech/MechRecruiters.jsx'
+import MechPlacement from '../components/Mech/MechPlacement.jsx'
 function Mechanical() {
   return (
     <div>
-      <Mechhero />  {/* Call the Mechhero component */}
-      <MechPointers />  {/* Call the MechPointers component */}
+      <Mechhero />  
+      <MechPointers />  
       <MechInovation/>
-      <MechOverview />  {/* Call the MechOverview component */}
+      <MechOverview />  
       <MechReasons/>
-      <MechOfferings />  {/* Call the MechOfferings component */}
-      <MechStudying />  {/* Call the MechStudying component */}
+      <MechPlacement/>
+      <MechRecruiters/>
+      <MechOfferings /> 
+      <MechStudying /> 
       <MechBrochure />  {/* Call the MechBrochure component */}
       <MechHighlights />  {/* Call the MechHighlights component */}
-      {/* <MechCarrer />  Call the MechCarrer component */}
-      <MechApply />  {/* Call the MechApply component */}
+      {/* <MechCarrer /> */}
+      {/* <MechApply />  Call the MechApply component */}
       <MechTestimonials />  {/* Call the MechTestimonials component */}
       <MechJourny/>
     </div>

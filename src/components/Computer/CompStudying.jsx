@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { FaStar, FaBuilding, FaUsers, FaLaptop, FaGraduationCap, FaChartLine } from 'react-icons/fa'; // Added FaChartLine for the new card icon
-import MyImage from '../../assets/images/ICEM 1.jpg'; // Import your first PNG image
-import AnotherImage from '../../assets/images/logos/app1.jpg'; // Import your second PNG image
-import ThirdImage from '../../assets/images/logos/app2.jpg'; // Import your third PNG image
+import MyImage from '../../assets/images/ICEM 1.avif'; // Import your first PNG image
+import AnotherImage from '../../assets/images/IT-Images/app1.avif'; // Import your second PNG image
+import ThirdImage from '../../assets/images/IT-Images/app2.avif'; // Import your third PNG image
 import AOS from 'aos'; // Import AOS
 import 'aos/dist/aos.css'; // Import AOS styles
 
@@ -16,66 +16,64 @@ function CompStudying() {
   }, []);
 
   return (
-    <div className="flex px-8 md:px-16 py-6 poppins-regular">
+    <div className="flex flex-col md:flex-row px-8 md:px-16 py-6 poppins-regular">
       {/* 70% Left Side */}
-      <div className="w-[70%] pr-8" data-aos="fade-right">
-        <h1 className="text-4xl font-semibold text-left mb-4">Studying with Indira College of</h1>
-        <h1 className="text-4xl font-extralight text-left text-[#0080FF] mb-6">Engineering & Management</h1>
-        <p className="text-left text-lg mb-6" data-aos="fade-up">
-          Indira College of Engineering & Management offers a robust academic environment, blending advanced 
-          theoretical knowledge with practical applications. We provide our students with opportunities to excel 
-          both in academics and in real-world industry settings.
+      <div className="w-full md:w-[70%] pr-0 md:pr-8" data-aos="fade-right">
+        <h1 className="text-4xl font-semibold text-left mb-4">Grow. Connect. Lead with Indira!!</h1>
+        <h1 className="text-2xl font-extralight text-center text-[#0080FF] mb-6">Engineering & Management</h1>
+        <p className="text-left text-md md:text-lg mb-5" data-aos="fade-up">
+          Indira College of Engineering & Management offers a comprehensive mechanical engineering program that blends theoretical knowledge with hands-on experience. Nestled within a vast, vibrant, and lush green campus, the institute provides an inspiring learning environment where innovation meets excellence. The fresh, open spaces and state-of-the-art infrastructure create the perfect setting for students to thrive academically and personally. Our students gain exposure to cutting-edge technologies, industrial practices, and expert mentoring, preparing them for a successful career in the engineering field.
         </p>
 
         {/* 2x3 Grid for Cards */}
         <div className="grid grid-cols-2 grid-rows-3 gap-8">
           {/* Card 1 */}
-          <div className="bg-white p-4 shadow-lg shadow-blue-500/50 flex justify-between items-center rounded-lg" data-aos="zoom-in">
-            <span className="flex items-center">
+          <div className="bg-white p-4 shadow-lg shadow-blue-500/50 flex  justify-between items-center rounded-lg" data-aos="zoom-in">
+            <span className="flex flex-col md:flex-row items-center">
               <FaStar className="text-yellow-500 mr-4 text-4xl" /> 
-              <span className="text-sm">15+ YEARS OF ACADEMIC EXCELLENCE</span>
+              <span className="text-sm text-center">15+ YEARS OF ACADEMIC EXCELLENCE</span>
             </span>
           </div>
           {/* Card 2 */}
           <div className="bg-white p-4 shadow-lg shadow-blue-500/50 flex justify-between items-center rounded-lg" data-aos="zoom-in">
-            <span className="flex items-center">
+            <span className="flex flex-col md:flex-row items-center">
               <FaUsers className="text-blue-500 mr-4 text-4xl" /> 
-              <span className="text-sm">350+ LEADING RECRUITERS</span>
+              <span className="text-sm text-center">350+ LEADING RECRUITERS</span>
             </span>
           </div>
           {/* Card 3 */}
           <div className="bg-white p-4 shadow-lg shadow-blue-500/50 flex justify-between items-center rounded-lg" data-aos="zoom-in">
-            <span className="flex items-center">
+            <span className="flex flex-col md:flex-row items-center">
               <FaBuilding className="text-blue-500 mr-4 text-4xl" /> 
-              <span className="text-sm">INDIRA STUDENT DEVELOPMENT PROGRAM</span>
+              <span className="text-sm text-center">INDIRA STUDENT DEVELOPMENT PROGRAM</span>
             </span>
           </div>
           {/* Card 4 */}
           <div className="bg-white p-4 shadow-lg shadow-blue-500/50 flex justify-between items-center rounded-lg" data-aos="zoom-in">
-            <span className="flex items-center">
+            <span className="flex flex-col md:flex-row items-center">
               <FaLaptop className="text-blue-500 mr-4 text-4xl" /> 
-              <span className="text-sm">14 LAKHS HIGHEST PACKAGE OFFERED</span>
+              <span className="text-sm text-center">14 LAKHS HIGHEST PACKAGE OFFERED</span>
             </span>
           </div>
           {/* Card 5 */}
           <div className="bg-white p-4 shadow-lg shadow-blue-500/50 flex justify-between items-center rounded-lg" data-aos="zoom-in">
-            <span className="flex items-center">
+            <span className="flex flex-col md:flex-row items-center">
               <FaGraduationCap className="text-green-500 mr-4 text-4xl" /> 
-              <span className="text-sm">STATE OF THE ART INFRASTRUCTURE</span>
+              <span className="text-sm text-center">STATE OF THE ART INFRASTRUCTURE</span>
             </span>
           </div>
           {/* Card 6 */}
           <div className="bg-white p-4 shadow-lg shadow-blue-500/50 flex justify-between items-center rounded-lg" data-aos="zoom-in">
-            <span className="flex items-center">
+            <span className="flex flex-col md:flex-row items-center">
               <FaChartLine className="text-orange-500 mr-4 text-4xl" /> {/* New Icon */}
-              <span className="text-sm">EXCEPTIONAL GROWTH OPPORTUNITIES</span> {/* New Text */}
+              <span className="text-sm text-center">EXCEPTIONAL GROWTH OPPORTUNITIES</span> {/* New Text */}
             </span>
           </div>
         </div>
       </div>
 
       {/* 30% Right Side with 3 Images */}
-      <div className="w-[45%] mt-6 flex flex-col justify-center">
+      <div className="w-full md:w-[45%] mt-6 flex flex-col justify-center">
         {/* First Image */}
         <div className="mb-6">
           <img 
@@ -86,16 +84,16 @@ function CompStudying() {
         </div>
 
         {/* Two other images side by side */}
-        <div className="flex gap-2">
+        <div className="flex md:flex-row gap-2">
           <img 
             src={AnotherImage} 
             alt="Another Image" 
-            className="w-1/2 h-56 object-cover rounded-lg shadow-lg" 
+            className="h-7 w-40 md:w-1/2 h-56 object-cover rounded-lg shadow-lg" 
           />
           <img 
             src={ThirdImage} 
             alt="Third Image" 
-            className="w-1/2 h-56 object-cover rounded-lg shadow-lg" 
+            className=" h-7 w-40 md:w-1/2 h-56 object-cover rounded-lg shadow-lg" 
           />
         </div>
       </div>

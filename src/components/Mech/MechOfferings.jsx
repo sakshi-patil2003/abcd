@@ -2,12 +2,12 @@ import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import AOS from 'aos';  // Import AOS
 import 'aos/dist/aos.css';  // Import AOS CSS
-import offer1Image from '../../assets/images/offer-6.jpg';  // Import the CAD/CAM image
-import offer2Image from '../../assets/images/offer-4.jpg';  // Import the robotics image
-import offer3Image from '../../assets/images/offer-3.jpg';  // Import the thermal engineering image
-import offer4Image from '../../assets/images/offer-5.jpg';  // Import the energy solutions image
-import offer5Image from '../../assets/images/offer-2.jpg';  // Import the prototyping image
-import offer6Image from '../../assets/images/offer-1.jpg';  // Import the internships image
+import offer1Image from '../../assets/images/Mech-Images/offer-6.avif';  // Import the CAD/CAM image
+import offer2Image from '../../assets/images/Mech-Images/offer-5.avif';  // Import the robotics image
+import offer3Image from '../../assets/images/Mech-Images/offer-4.avif';  // Import the thermal engineering image
+import offer4Image from '../../assets/images/Mech-Images/offer-3.avif';  // Import the energy solutions image
+import offer5Image from '../../assets/images/Mech-Images/offer-2.avif';  // Import the prototyping image
+import offer6Image from '../../assets/images/Mech-Images/offer-1.avif';  // Import the internships image
 
 function MechOfferings() {
   useEffect(() => {
@@ -16,8 +16,6 @@ function MechOfferings() {
       once: true,
     });
 
-
-    
     const elements = document.querySelectorAll('.circle');
     const icons = document.querySelectorAll('.icon');
 

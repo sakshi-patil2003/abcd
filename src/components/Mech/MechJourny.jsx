@@ -4,7 +4,7 @@ import vandar from '../../assets/images/logos/abc.svg'; // Company logo
 import micro from '../../assets/images/logos/Microsoft.jpg'; // Company logo
 import ias from '../../assets/images/logos/ias.jpg'; // Company logo
 import tesla from '../../assets/images/logos/tesla.jpg'; // Company logo
-import army from '../../assets/images/logos/army.png'; // Company logo
+import army from '../../assets/images/logos/army.avif'; // Company logo
 import abn from '../../assets/images/logos/abn.jpg'; // Company logo
 import hansala from '../../assets/images/Hansala.png';
 import arpita from '../../assets/images/Arpita.png';
@@ -19,7 +19,7 @@ const successors = [
     id: 1,
     name: 'Hansala',
     image: hansala,
-    details: (<>'an Indira alumnus who graduated in 2013, secured a position as a Mechanical Engineer at Vanderlande. Presently, he is based in Jidah, <strong>Saudi Arabia</strong>.'</>),
+    details: (<>'An Indira alumnus who graduated in 2013, secured a position as a Mechanical Engineer at Vanderlande. Presently, he is based in Jidah, <strong>Saudi Arabia</strong>.'</>),
     location: 'Jidah, Saudi Arabia',
     degree: '(Mechanical Engineer)',
     companyLogo: vandar,
@@ -28,7 +28,7 @@ const successors = [
     id: 2,
     name: 'Arpita Jha',
     image: arpita,
-    details: (<>'An exemplary scholar from Indira, initially served as a content writer.  she received an <strong>Internship+ PPO offer from Microsoft</strong>, but instead she chose to embark on her entrepreneurial journey.'</>),
+    details: (<>'An exemplary scholar from Indira, initially served as a content writer. She received an <strong>Internship+ PPO offer from Microsoft</strong>, but instead she chose to embark on her entrepreneurial journey.'</>),
     location: 'India',
     degree: '(Computer Engineering)',
     companyLogo: micro,
@@ -37,7 +37,7 @@ const successors = [
     id: 3,
     name: 'Nikhil Pawar',
     image: nikhil,
-    details: (<>'A former student of Indira, commenced his professional journey at Bridgestone in 2013 & presently holds the esteemed position of a <strong>global supply manager at Tesla in Germany </strong> .'</>),
+    details: (<>'A former student of Indira, commenced his professional journey at Bridgestone in 2013 & presently holds the esteemed position of a <strong>global supply manager at Tesla in Germany</strong>.</>),
     location: 'Germany',
     degree: '(Mechanical Engineering)',
     companyLogo: tesla,
@@ -98,21 +98,21 @@ const MechJourny = () => {
   };
 
   return (
-    <div className="w-full h-auto bg-white my-6 shadow-lg px-4 md:px-16">
+    <div className="w-full h-auto bg-white my-6 shadow-lg px-4 md:px-16 overflow-hidden">
       <h3 className="text-center font-bold text-2xl text-[#0c3249] mb-6">Alumni Speak</h3>
       {/* Slider for the 3 Successor Cards */}
       <Slider {...settings}>
         {successors.map((successor) => (
           <div
             key={successor.id}
-            className="w-full h-[285px] bg-white rounded-lg shadow-lg p-4 flex flex-col items-center  relative" // Fixed height for uniformity
+            className="w-full bg-white rounded-lg shadow-lg p-4 flex flex-col items-center relative mb-6" // Margin-bottom added for spacing between cards
           >
             {/* Company Logo on left side */}
-            <div className="absolute top-0 left-0 p-2">
+            <div className="absolute top-4 left-4 p-2 bg-white rounded-full shadow-lg">
               <img
                 src={successor.companyLogo}
                 alt={`${successor.name} Company Logo`}
-                className="w-16 h-16 object-contain pl-2"
+                className="w-16 h-16 object-contain"
               />
             </div>
 

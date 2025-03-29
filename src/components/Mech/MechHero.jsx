@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import backgroundImage from "../../assets/images/mech-hero.jpg";
-import gearImage from "../../assets/images/gears.png";
+import backgroundImage from "../../assets/images/ICEM 1.avif";
+// import gearImage from "../../assets/images/gears.png";
 import MechForklift from "./MechForklift"; // Import the MechForklift component
 
 function MechHero() {
@@ -42,7 +42,7 @@ function MechHero() {
 
   return (
     <div
-      className="px-4 sm:px-8 md:px-16 relative pt-8 h-auto bg-cover bg-right md:bg-center bg-no-repeat text-white flex items-start"
+      className="px-4 sm:px-8 md:px-16 relative pt-8 h-auto bg-cover bg-right md:bg-center bg-no-repeat text-white flex items-start overflow-hidden"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Add custom style for selected text */}
@@ -56,33 +56,25 @@ function MechHero() {
       </style>
 
       {/* Black Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70 z-10"></div>
-
-      {/* Small Half Gear Image */}
-      <img
-        src={gearImage}
-        alt="Half Gear"
-        className="absolute bottom-0 left-0 w-2/6 z-5 transform scale-x-[-1] mb-4 sm:mb-8 md:mb-16"
-      />
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-10"></div>
 
       {/* Left side content for large screens */}
       <div className="flex flex-col items-start z-20 w-full hidden md:block sm:block mb-4 sm:mb-6">
-  {/* First Paragraph - Largest */}
-  <p className="mt-4 text-[#ff5d12] py-2 leading-tight font-semibold text-3xl sm:text-4xl md:text-5xl text-[clamp(18px,5vw,48px)]">
-    Mechanical Engineering at Indira College of Engineering & Management
-  </p>
+        {/* First Paragraph - Largest */}
+        <p className="mt-4 text-[#ff5d12] py-2 leading-tight font-bold text-3xl sm:text-4xl md:text-4xl text-[clamp(18px,5vw,48px)]">
+          Mechanical Engineering at Indira College of Engineering & Management
+        </p>
 
-  {/* Second Paragraph - Medium size */}
-  <p className="mt-4 text-xl sm:text-2xl md:text-3xl text-[clamp(18px,2.8vw,32px)]">
-    30 Years of Excellence in Education | 5 Specializations | 100% Placement Assistance
-  </p>
+        {/* Second Paragraph - Medium size */}
+        <p className="mt-4 text-xl sm:text-2xl md:text-3xl text-[clamp(18px,2.8vw,32px)]">
+          30 Years of Excellence in Education | 5 Specializations | 100% Placement Assistance
+        </p>
 
-  {/* Third Paragraph - Smaller than the second */}
-  <p className="mt-4 text-sm sm:text-xl md:text-2xl  text-[clamp(18px,2.8vw,24px)]">
-     Build, Innovate, and Lead!
-  </p>
-</div>
-
+        {/* Third Paragraph - Smaller than the second */}
+        <p className="mt-4 text-sm sm:text-xl md:text-2xl  text-[clamp(18px,2.8vw,24px)]">
+          Build, Innovate, and Lead!
+        </p>
+      </div>
 
       {/* Right side form container (Always visible on mobile) */}
       <div className="flex justify-end z-20 w-full mb-4 sm:mb-6 md:mb-12 mt-4 md:mt-0">
