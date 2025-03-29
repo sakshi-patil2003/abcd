@@ -2,17 +2,17 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
  
-import logo1 from "../../assets/images/logos/bluestar.PNG";
-import logo2 from "../../assets/Images/logos/faurecia.PNG";
-import logo3 from "../../assets/Images/logos/force.PNG";
-import logo4 from "../../assets/images/logos/hettich.PNG";
-import logo5 from "../../assets/Images/logos/kpit.PNG";
-import logo6 from "../../assets/Images/logos/rudder.PNG";
-import logo7 from "../../assets/Images/logos/skf.PNG";
-import logo8 from "../../assets/Images/logos/tata.PNG";
-import logo9 from "../../assets/Images/logos/techM.PNG";
-import logo10 from "../../assets/Images/logos/thai.PNG";
-import logo11 from "../../assets/Images/logos/thys.PNG";
+import logo1 from "../../assets/images/logos/bluestar.png";
+import logo2 from "../../assets/Images/logos/faurecia.png";
+import logo3 from "../../assets/Images/logos/force.png";
+import logo4 from "../../assets/images/logos/hettich.png";
+import logo5 from "../../assets/Images/logos/kpit.png";
+import logo6 from "../../assets/Images/logos/rudder.png";
+import logo7 from "../../assets/Images/logos/skf.png";
+import logo8 from "../../assets/Images/logos/tata.png";
+import logo9 from "../../assets/Images/logos/techM.png";
+import logo10 from "../../assets/Images/logos/thai.png";
+import logo11 from "../../assets/Images/logos/thys.png";
 import logo12 from "../../assets/Images/logos/abc.svg";
 
 const sponsorsData = [
