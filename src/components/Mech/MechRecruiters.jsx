@@ -2,11 +2,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
  
-import logo1 from "../../assets/images/Mech-Images/bluestar.avif";
-import logo2 from "../../assets/Images/Mech-Images/faurecia.avif";
-import logo3 from "../../assets/Images/Mech-Images/force.avif";
-import logo4 from "../../assets/images/Mech-Images/hettich.avif";
-import logo5 from "../../assets/Images/Mech-Images/kpit.avif";
+import logo1 from "../../assets/images/Mech-Images/bluestar.webp";
+import logo2 from "../../assets/Images/Mech-Images/faurecia.webp";
+import logo3 from "../../assets/Images/Mech-Images/force.webp";
+import logo4 from "../../assets/images/Mech-Images/hettich.webp";
+import logo5 from "../../assets/Images/Mech-Images/kpit.webp";
 import logo6 from "../../assets/Images/Mech-Images/rudder.avif";
 import logo7 from "../../assets/Images/Mech-Images/skf.avif";
 import logo8 from "../../assets/Images/Mech-Images/tata.avif";
