@@ -23,7 +23,7 @@ function Mechanical() {
       <MechOverview />  
       <MechReasons/>
       <MechPlacement/>
-      <MechRecruiters/>
+      {/* <MechRecruiters/> */}
       <MechOfferings /> 
       <MechStudying /> 
       <MechBrochure />  {/* Call the MechBrochure component */}
