@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
  
 import logo1 from "../../assets/images/Mech-Images/bluestar.webp";
-import logo2 from "../../assets/Images/Mech-Images/faurecia.webp";
+import logo2 from "../../assets/Images/Mech-Images/kpit.webp";
 import logo3 from "../../assets/Images/Mech-Images/force.webp";
 import logo4 from "../../assets/images/Mech-Images/hettich.webp";
 import logo5 from "../../assets/Images/Mech-Images/kpit.webp";
