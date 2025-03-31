@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import HatImage from '../../assets/images/hat.avif';  // Import the floating hat image
 import GearImage1 from '../../assets/images/gear-a.avif';  // Import the first floating gear image
 import GearImage2 from '../../assets/images/gear-b.avif';  // Import the second floating gear image
-import car from '../../assets/images/Mech-Images/Car split Down Model.avif';  // Import car image
+import car from '/public/Mech-Images/Car split Down Model.avif';  // Import car image
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';

@@ -3,64 +3,40 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// import logo1 from "../../assets/images/IT-Com-AIDS/palo.avif";
-// import logo2 from "../../assets/Images/IT-Com-AIDS/yash.avif";
-// import logo3 from "../../assets/Images/IT-Com-AIDS/philips.avif";
-// import logo4 from "../../assets/images/IT-Com-AIDS/jaspay.avif";
-// import logo5 from "../../assets/Images/IT-Com-AIDS/zs.avif";
-// import logo6 from "../../assets/images/IT-Com-AIDS/avalara.avif";
-// import logo7 from "../../assets/Images/IT-Com-AIDS/capgi.avif";
-// import logo8 from "../../assets/Images/IT-Com-AIDS/dataaxle.avif";
-// import logo9 from "../../assets/Images/IT-Com-AIDS/e-zest.avif";
-// import logo10 from "../../assets/Images/IT-Com-AIDS/gslab.avif";
-// import logo11 from "../../assets/Images/IT-Com-AIDS/fis.avif";
-// import logo12 from "../../assets/Images/IT-Com-AIDS/gslab.avif";
-// import logo13 from "../../assets/Images/IT-Com-AIDS/infosys.avif";
-// import logo14 from "../../assets/Images/IT-Com-AIDS/kpit.avif";
-// import logo15 from "../../assets/Images/IT-Com-AIDS/kpmg.avif";
-// import logo16 from "../../assets/Images/IT-Com-AIDS/l&T.avif";
-// import logo17 from "../../assets/Images/IT-Com-AIDS/nttdata.avif";
-// import logo18 from "../../assets/Images/IT-Com-AIDS/Persistent.avif";
-// import logo19 from "../../assets/Images/IT-Com-AIDS/pubmatic.avif";
-// import logo20 from "../../assets/Images/IT-Com-AIDS/sas.avif";
-// import logo21 from "../../assets/Images/IT-Com-AIDS/Tcs.avif";
-// import logo22 from "../../assets/Images/IT-Com-AIDS/tibco.avif";
-// import logo23 from "../../assets/Images/IT-Com-AIDS/veritas.avif";
-// import logo24 from "../../assets/Images/IT-Com-AIDS/e-zest.avif";
-
+// Define the image paths (can be dynamically imported or hardcoded)
 const sponsorsData = [
   {
     title: "IT RECRUITERS",
     logos: [
-      <img src="../../assets/images/IT-Com-AIDS/palo.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/philips.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/yash.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/jaspay.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/zs.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/avalara.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/capgi.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/dataaxle.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/e-zest.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/gslab.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/fis.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/gslab.avif" alt="" />,
+      "/public/IT-Com-AIDS/palo.avif",
+      "/public/IT-Com-AIDS/philips.avif",
+      "/public/IT-Com-AIDS/yash.avif",
+      "/public/IT-Com-AIDS/jaspay.avif",
+      "/public/IT-Com-AIDS/zs.avif",
+      "/public/IT-Com-AIDS/avalara.avif",
+      "/public/IT-Com-AIDS/capgi.avif",
+      "/public/IT-Com-AIDS/dataaxle.avif",
+      "/public/IT-Com-AIDS/e-zest.avif",
+      "/public/IT-Com-AIDS/gslab.avif",
+      "/public/IT-Com-AIDS/fis.avif",
+      "/public/IT-Com-AIDS/gslab.avif",
     ],
   },
   {
     title: "IT RECRUITERS",
     logos: [
-      <img src="../../assets/images/IT-Com-AIDS/infosys.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/kpit.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/kpmg.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/l&T.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/nttdata.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/Persistent.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/pubmatic.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/sas.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/Tcs.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/tibco.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/e-zest.avif" alt="" />,
-      <img src="../../assets/images/IT-Com-AIDS/veritas.avif" alt="" />,
+      "/public/IT-Com-AIDS/infosys.avif",
+      "/public/IT-Com-AIDS/kpit.avif",
+      "/public/IT-Com-AIDS/kpmg.avif",
+      "/public/IT-Com-AIDS/l&T.avif",
+      "/public/IT-Com-AIDS/nttdata.avif",
+      "/public/IT-Com-AIDS/Persistent.avif",
+      "/public/IT-Com-AIDS/pubmatic.avif",
+      "/public/IT-Com-AIDS/sas.avif",
+      "/public/IT-Com-AIDS/Tcs.avif",
+      "/public/IT-Com-AIDS/tibco.avif",
+      "/public/IT-Com-AIDS/e-zest.avif",
+      "/public/IT-Com-AIDS/veritas.avif",
     ],
   },
 ];
@@ -88,7 +64,7 @@ const CompRecruter = () => {
           <div key={index} className="flex flex-col items-center">
             <div className="flex flex-row justify-center items-center w-full px-4">
               <div
-                className="grid grid-cols-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 justify-items-center w-full px-4"
+                className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 justify-items-center w-full px-4"
                 style={{ gridTemplateRows: "repeat(2, auto)" }} // Enforcing only two rows
               >
                 {slide.logos.map((logo, idx) => (

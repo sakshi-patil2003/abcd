@@ -2,12 +2,12 @@ import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import AOS from 'aos';  // Import AOS
 import 'aos/dist/aos.css';  // Import AOS CSS
-import offer1Image from '../../assets/images/Mech-Images/offer-6.avif';  // Import the CAD/CAM image
-import offer2Image from '../../assets/images/Mech-Images/offer-5.avif';  // Import the robotics image
-import offer3Image from '../../assets/images/Mech-Images/offer-4.avif';  // Import the thermal engineering image
-import offer4Image from '../../assets/images/Mech-Images/offer-3.avif';  // Import the energy solutions image
-import offer5Image from '../../assets/images/Mech-Images/offer-2.avif';  // Import the prototyping image
-import offer6Image from '../../assets/images/Mech-Images/offer-1.avif';  // Import the internships image
+import offer1Image from '/public/Mech-Images/offer-6.avif';  // Import the CAD/CAM image
+import offer2Image from '/public/Mech-Images/offer-5.avif';  // Import the robotics image
+import offer3Image from '/public/Mech-Images/offer-4.avif';  // Import the thermal engineering image
+import offer4Image from '/public/Mech-Images/offer-3.avif';  // Import the energy solutions image
+import offer5Image from '/public/Mech-Images/offer-2.avif';  // Import the prototyping image
+import offer6Image from '/public/Mech-Images/offer-1.avif';  // Import the internships image
 
 function MechOfferings() {
   useEffect(() => {

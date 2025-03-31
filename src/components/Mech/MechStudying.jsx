@@ -7,8 +7,8 @@ import {
   FaHandsHelping,
   FaChartLine,
 } from "react-icons/fa";
-import std1 from '../../assets/images/Mech-Images/std1.avif';
-import std2 from '../../assets/images/Mech-Images/std2.avif';
+import std1 from '/public/Mech-Images/std1.avif';
+import std2 from '/public/Mech-Images/std2.avif';
 import indira from '../../assets/images/ICEM 1.jpg';
 
 function MechStudying() {
