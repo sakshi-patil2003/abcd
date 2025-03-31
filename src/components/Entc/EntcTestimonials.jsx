@@ -10,18 +10,7 @@ import karanImage from "../../assets/images/user-green.png";
 import nishaImage from "../../assets/images/user-green.png";
 import aartiImage from "../../assets/images/user-green.png";
 // import newImage from "../../assets/images/testimony.webp"; // New Image for the right section
-import force from '../../assets/images/logos/force.png'
-import tata from "../../assets/images/logos/tata.png"
-import bluestar from "../../assets/images/logos/bluestar.png"
-import techM from "../../assets/images/logos/techM.png"
-import thys from "../../assets/images/logos/thys.png"
-import kpit from "../../assets/images/logos/kpit.png"
-import rudder from "../../assets/images/logos/rudder.png"
-import thai from "../../assets/images/logos/thai.png"
-import hettich from "../../assets/images/logos/hettich.png"
-import faurecia from "../../assets/images/logos/faurecia.png"
-import vander from "../../assets/images/logos/vander.png"
-import skf from "../../assets/images/logos/skf.png"
+
 function EntcTestimonials() {
   const testimonials = [
     {
@@ -218,20 +207,7 @@ function EntcTestimonials() {
           </div>
 
           {/* New Section - 40% with Image */}
-          <div class="grid grid-cols-3 grid-rows-4 ">
-                    <img src={tata} alt="Image 1" class="w-full h-auto"/>
-                    <img src={techM} alt="Image 2" class="w-full h-auto"/>
-                    <img src={faurecia} alt="Image 3" class="w-full h-auto"/>
-                    <img src={vander} alt="Image 4" class="w-full h-auto"/>
-                    <img src={thys} alt="Image 5" class="w-full h-auto"/>
-                    <img src={thai} alt="Image 6" class="w-full h-auto"/>
-                    <img src={skf} alt="Image 7" class="w-full h-auto"/>
-                    <img src={kpit} alt="Image 8" class="w-full h-auto"/>
-                    <img src={rudder} alt="Image 9" class="w-full h-auto"/>
-                    <img src={hettich} alt="Image 10" class="w-full h-auto"/>
-                    <img src={bluestar} alt="Image 11" class="w-full h-auto"/>
-                    <img src={force} alt="Image 12" class="w-full h-auto"/>
-                </div>
+       
         </div>
       </div>
     </div>

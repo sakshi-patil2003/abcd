@@ -1,11 +1,11 @@
 import React from 'react';
 import Slider from 'react-slick'; // Import react-slick for carousel functionality
 import vandar from '../../assets/images/logos/abc.avif'; // Company logo
-import micro from '../../assets/images/logos/Microsoft.jpg'; // Company logo
-import ias from '../../assets/images/logos/ias.jpg'; // Company logo
+import micro from '../../assets/images/logos/Microsoft.avif'; // Company logo
+import ias from '../../assets/images/logos/ias.avif'; // Company logo
 import tesla from '../../assets/images/logos/tesla.avif'; // Company logo
 import army from '../../assets/images/logos/army.avif'; // Company logo
-import abn from '../../assets/images/logos/abn.jpg'; // Company logo
+import abn from '../../assets/images/logos/abn.avif'; // Company logo
 import hansala from '../../assets/images/Hansala.png';
 import arpita from '../../assets/images/Arpita.png';
 import nikhil from '../../assets/images/Nikhil.png';
