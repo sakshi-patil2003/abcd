@@ -6,7 +6,7 @@ import CompStudying from "../components/Computer/CompStudying";
 import CompBrochure from "../components/Computer/CompBrochure";
 import CompHighlights from "../components/Computer/CompHighlights";
 // import CompCarrer from "../components/Computer/CompCarrer";
-// import CompRecruiter from "../components/Computer/CompRecruiter";
+import CompRecruiter from "../components/Computer/CompRecruiter";
 import CompJoin from "../components/Computer/CompJoin";
 import AutoChatbot from "../components/AutoChatbot"; // Import AutoChatbot
 import MechJourny from "../components/Mech/MechJourny";
@@ -26,14 +26,13 @@ function Computer() {
       <ComReasons/>
       <CompOffringICEM/>
       <ComPlacement/>
-      {/* <CompRecruiter /> */}
+      <CompRecruiter />
       <CompOfferings />
       <CompStudying />
       <CompBrochure />
       <CompHighlights />
       <CompJoin />
       {/* <CompCarrer /> */}
-    
       <AutoChatbot />
       <MechJourny/>
     </div>
