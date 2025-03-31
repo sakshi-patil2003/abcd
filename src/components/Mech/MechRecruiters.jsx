@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
  
 import logo1 from "../../assets/images/logos/bluestar.avif";
-import logo2 from "../../assets/Images/logos/faurecia.avif";
+// import logo2 from "../../assets/Images/logos/faurecia.avif";
 import logo3 from "../../assets/Images/logos/force.avif";
 import logo4 from "../../assets/images/logos/hettich.avif";
 import logo5 from "../../assets/Images/logos/kpit.avif";
@@ -20,7 +20,7 @@ const sponsorsData = [
     title: "PARTICIPATING DELEGATES",
     logos: [
       logo1,
-      logo2,
+      // logo2,
       logo3,
       logo4,
       logo5,
