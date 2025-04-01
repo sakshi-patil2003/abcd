@@ -2,29 +2,43 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
  
+import logo1 from "../../assets/images/MECH-images/bluestar.avif";
+import logo2 from "../../assets/Images/MECH-images/kpit.avif";
+import logo3 from "../../assets/Images/MECH-images/force.avif";
+import logo4 from "../../assets/images/MECH-images/hettich.avif";
+import logo5 from "../../assets/Images/MECH-images/kpit.avif";
+import logo6 from "../../assets/Images/MECH-images/rudder.avif";
+import logo7 from "../../assets/Images/MECH-images/skf.avif";
+import logo8 from "../../assets/Images/MECH-images/tata.avif";
+import logo9 from "../../assets/Images/MECH-images/techM.avif";
+import logo10 from "../../assets/Images/MECH-images/thai.avif";
+import logo11 from "../../assets/Images/MECH-images/thys.avif";
+import logo12 from "../../assets/Images/MECH-images/abc.avif";
 
 const sponsorsData = [
   {
     title: "PARTICIPATING DELEGATES",
     logos: [
-      "/src/assets/images/MECH-images/skf.avif",
-      "/src/assets/images/MECH-images/kpit.avif",
-      "/src/assets/images/MECH-images/force.avif",
-      "/src/assets/images/MECH-images/hettich.avif",
-      "/src/assets/images/MECH-images/kpit.avif",
-      "/src/assets/images/MECH-images/rudder.avif",
+      logo1,
+      logo2,
+      logo3,
+      logo4,
+      logo5,
+      logo6,
+      
+      
     ],
   },
   {
     title: "PARTICIPATING DELEGATES",
     logos: [
       
-      "/src/assets/images/MECH-images/bluestar.avif",
-      "/src/assets/images/MECH-images/tata.avif",
-      "/src/assets/images/MECH-images/techM.avif",
-      "/src/assets/images/MECH-images/thai.avif",
-      "/src/assets/images/MECH-images/thys.avif",
-      "/src/assets/images/MECH-images/abc.avif",
+      logo7,
+      logo8,
+      logo9,
+      logo10,
+      logo11,
+      logo12,
       
     ],
   },
@@ -43,7 +57,7 @@ const MechRecruiters = () => {
   return (
     <div className="flex poppins-regular flex-col justify-center items-center py-6 md:py-12 bg-white px-0 md:px-16 font-poppins overflow-hidden">
     {/* Heading above the slider */}
-    <div className="text-xl md:text-3xl font-bold text-gray-800 mb-6">
+    <div className="text-xl md:text-3xl font-semibold text-gray-800 mb-6">
       Our Recruiters
     </div>
 
