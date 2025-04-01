@@ -12,8 +12,8 @@ import logo7 from "../../assets/Images/MECH-images/skf.avif";
 import logo8 from "../../assets/Images/MECH-images/tata.avif";
 import logo9 from "../../assets/Images/MECH-images/techM.avif";
 import logo10 from "../../assets/Images/MECH-images/thai.avif";
-import logo11 from "../../assets/Images/MECH-images/thys.avif";
-import logo12 from "../../assets/Images/MECH-images/abc.avif";
+import logo12 from "../../assets/Images/MECH-images/thys.avif";
+import logo11 from "../../assets/Images/MECH-images/abc.avif";
 
 const sponsorsData = [
   {
