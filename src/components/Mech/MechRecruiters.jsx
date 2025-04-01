@@ -2,35 +2,30 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
  
-import logo1 from '../../assets/images/Entc-Images/1.avif';
-import logo2 from '../../assets/images/Entc-Images/2.avif';
-import logo3 from '../../assets/images/Entc-Images/3.avif';
-import logo4 from '../../assets/images/Entc-Images/4.avif';
-import logo5 from '../../assets/images/Entc-Images/5.avif';
-import logo6 from '../../assets/images/Entc-Images/6.avif';
-import logo7 from '../../assets/images/Entc-Images/7.avif';
-import logo8 from '../../assets/images/Entc-Images/8.avif';
-import logo9 from '../../assets/images/Entc-Images/9.avif';
-import logo10 from '../../assets/images/Entc-Images/10.avif';
-import logo11 from '../../assets/images/Entc-Images/11.avif';
-import logo12 from '../../assets/images/Entc-Images/12.avif';
-import logo13 from '../../assets/images/Entc-Images/13.avif';
-import logo14 from '../../assets/images/Entc-Images/14.avif';
-import logo15 from '../../assets/images/Entc-Images/15.avif';
+import logo1 from '../../assets/images/MECH-images/bluestar.avif';
+import logo2 from '../../assets/images/MECH-images/kpit.webp';
+import logo3 from '../../assets/images/MECH-images/force.avif';
+import logo4 from '../../assets/images/MECH-images/hettich.avif';
+import logo5 from '../../assets/images/MECH-images/rudder.avif';
+import logo6 from '../../assets/images/MECH-images/skf.avif';
+import logo7 from '../../assets/images/MECH-images/tata.avif';
+import logo8 from '../../assets/images/MECH-images/techM.avif';
+import logo9 from '../../assets/images/MECH-images/thai.avif';
+import logo10 from '../../assets/images/MECH-images/thys.avif';
+import logo11 from '../../assets/images/MECH-images/abc.avif';
+import logo12 from '../../assets/images/MECH-images/rudder.avif';
+
  
 const sponsorsData = [
   {
     title: "PARTICIPATING DELEGATES",
-    logos: [logo1, logo2, logo3, logo4, logo5],
+    logos: [logo1, logo2, logo3, logo4, logo5, logo6,],
   },
   {
     title: "PARTICIPATING DELEGATES",
-    logos: [logo6, logo7, logo8, logo9, logo10],
+    logos: [ logo7, logo8, logo9, logo10,logo11, logo12,],
   },
-  {
-    title: "PARTICIPATING DELEGATES",
-    logos: [logo11, logo12, logo13, logo14, logo15],
-  },
+
 ];
  
 const MechRecruiters = () => {
@@ -54,7 +49,7 @@ const MechRecruiters = () => {
         {sponsorsData.map((slide, index) => (
           <div key={index} className="w-full">
             {/* Grid with 5 columns ensuring full width */}
-            <div className="grid grid-cols-5 gap-4 w-full">
+            <div className="grid grid-cols-6 gap-2 w-full">
               {slide.logos.map((logo, idx) => (
                 <div key={idx} className="flex justify-center items-center">
                   <img
