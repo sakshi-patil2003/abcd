@@ -7,24 +7,24 @@ const sponsorsData = [
   {
     title: "PARTICIPATING DELEGATES",
     logos: [
-      "/public/Mech-Images/bluestar.avif",
-      "/public/Mech-Images/kpit.avif",
-      "/public/Mech-Images/force.avif",
-      "/public/Mech-Images/hettich.avif",
-      "/public/Mech-Images/kpit.avif",
-      "/public/Mech-Images/rudder.avif",
+      "/src/assets/images/MECH-images/skf.avif",
+      "/src/assets/images/MECH-images/kpit.avif",
+      "/src/assets/images/MECH-images/force.avif",
+      "/src/assets/images/MECH-images/hettich.avif",
+      "/src/assets/images/MECH-images/kpit.avif",
+      "/src/assets/images/MECH-images/rudder.avif",
     ],
   },
   {
     title: "PARTICIPATING DELEGATES",
     logos: [
       
-      "/public/Mech-Images/skf.avif",
-      "/public/Mech-Images/tata.avif",
-      "/public/Mech-Images/techM.avif",
-      "/public/Mech-Images/thai.avif",
-      "/public/Mech-Images/thys.avif",
-      "/public/Mech-Images/abc.avif",
+      "/src/assets/images/MECH-images/bluestar.avif",
+      "/src/assets/images/MECH-images/tata.avif",
+      "/src/assets/images/MECH-images/techM.avif",
+      "/src/assets/images/MECH-images/thai.avif",
+      "/src/assets/images/MECH-images/thys.avif",
+      "/src/assets/images/MECH-images/abc.avif",
       
     ],
   },

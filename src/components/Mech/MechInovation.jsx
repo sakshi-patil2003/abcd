@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 // Import the images
-import ProgramImage from '/public/Mech-Images/inov.avif';
+import ProgramImage from '../../assets/images/MECH-images/inov.avif';
 
 // Import AOS and its CSS
 import AOS from 'aos';
