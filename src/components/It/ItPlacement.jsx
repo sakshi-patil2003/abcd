@@ -1,5 +1,5 @@
 import React from 'react';
-import bannerImage from '../../assets/images/ItPlacement.jpg'; // Replace with your banner image path
+import bannerImage from '../../assets/images/IT-Images/ItPlacement.avif'; // Replace with your banner image path
 
 const ItPlacement = () => {
   return (

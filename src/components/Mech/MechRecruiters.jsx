@@ -2,18 +2,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
  
-// import logo1 from "../../assets/images/Mech-Images/bluestar.webp";
-// import logo2 from "../../assets/Images/Mech-Images/kpit.web";
-// import logo3 from "../../assets/Images/Mech-Images/force.webp";
-// import logo4 from "../../assets/images/Mech-Images/hettich.webp";
-// import logo5 from "../../assets/Images/Mech-Images/kpit.webp";
-// import logo6 from "../../assets/Images/Mech-Images/rudder.avif";
-// import logo7 from "../../assets/Images/Mech-Images/skf.avif";
-// import logo8 from "../../assets/Images/Mech-Images/tata.avif";
-// import logo9 from "../../assets/Images/Mech-Images/techM.avif";
-// import logo10 from "../../assets/Images/Mech-Images/thai.avif";
-// import logo11 from "../../assets/Images/Mech-Images/thys.avif";
-// import logo12 from "../../assets/Images/Mech-Images/abc.avif";
 
 const sponsorsData = [
   {
@@ -55,7 +43,7 @@ const MechRecruiters = () => {
   return (
     <div className="flex poppins-regular flex-col justify-center items-center py-6 md:py-12 bg-white px-0 md:px-16 font-poppins overflow-hidden">
     {/* Heading above the slider */}
-    <div className="text-xl md:text-3xl font-semibold text-gray-800 mb-6">
+    <div className="text-xl md:text-3xl font-bold text-gray-800 mb-6">
       Our Recruiters
     </div>
 

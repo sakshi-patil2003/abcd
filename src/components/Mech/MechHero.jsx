@@ -58,120 +58,125 @@ function MechHero() {
       {/* Black Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-10"></div>
 
-      {/* Left side content for large screens */}
-      <div className="flex flex-col items-start z-20 w-full hidden md:block sm:block mb-4 sm:mb-6">
-        {/* First Paragraph - Largest */}
-        <p className="mt-4 text-[#ff5d12] py-2 leading-tight font-bold text-3xl sm:text-4xl md:text-4xl text-[clamp(18px,5vw,48px)]">
-          Mechanical Engineering at Indira College of Engineering & Management
-        </p>
+      {/* Flex container with column stacking for mobile and row layout for larger screens */}
+      <div className="flex flex-col md:flex-row items-center md:items-start z-20 w-full mb-4 sm:mb-6">
+        {/* Left side content for large screens */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left w-full">
+          {/* First Paragraph - Largest */}
+          <p className="mt-4 text-[#ff5d12] py-2 leading-tight font-bold text-2xl md:text-5xl">
+            Mechanical Engineering at Indira College of Engineering & Management
+          </p>
 
-        {/* Second Paragraph - Medium size */}
-        <p className="mt-4 text-xl sm:text-2xl md:text-3xl text-[clamp(18px,2.8vw,32px)]">
-          30 Years of Excellence in Education | 5 Specializations | 100% Placement Assistance
-        </p>
+          {/* Second Paragraph - Medium size */}
+          <div className="hidden lg:block">
+            <p className="text-xl py-4 italic">
+              30 Years of Excellence in Education | 5 Specializations | 100% Placement Assistance
+            </p>
 
-        {/* Third Paragraph - Smaller than the second */}
-        <p className="mt-4 text-sm sm:text-xl md:text-2xl  text-[clamp(18px,2.8vw,24px)]">
-          Build, Innovate, and Lead!
-        </p>
-      </div>
+            {/* Third Paragraph - Smaller than the second */}
+            <p className="py-4 text-3xl">
+              Build, Innovate, and Lead!
+            </p>
+          </div>
+        </div>
 
-      {/* Right side form container (Always visible on mobile) */}
-      <div className="flex justify-end z-20 w-full mb-4 sm:mb-6 md:mb-12 mt-4 md:mt-0">
-        <div
-          className="p-6 max-w-md w-full shadow-md ml-5 rounded-md"
-          style={{ backgroundColor: "rgba(139, 197, 255, 0.3)" }}
-        >
-          <form className="space-y-3 p-1">
-            <div>
-              <input
-                type="text"
-                id="name"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
-                placeholder="Enter your name"
-                required
-              />
-            </div>
-            <div>
-              <input
-                type="email"
-                id="email"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
-                placeholder="Enter your email"
-                required
-              />
-            </div>
-            <div>
-              <input
-                type="tel"
-                id="mobile"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
-                placeholder="Enter your mobile number"
-                required
-              />
-            </div>
-            <div>
-              <select
-                id="state"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
-                required
-              >
-                <option value="">Select State</option>
-                {/* Add state options here */}
-              </select>
-            </div>
-            <div>
-              <select
-                id="city"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
-                required
-              >
-                <option value="">Select City</option>
-                {/* Add city options here */}
-              </select>
-            </div>
+        {/* Right side form container (Always visible on mobile) */}
+        <div className="flex justify-center md:justify-end w-full mb-2 sm:mb-2 md:mb-2 mt-6 md:mt-0">
+          <div
+            className="p-6 max-w-md w-full shadow-md ml-5 rounded-md"
+            style={{ backgroundColor: "rgba(139, 197, 255, 0.3)" }}
+          >
+            <form className="space-y-3 p-1">
+              <div>
+                <input
+                  type="text"
+                  id="name"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  id="email"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  type="tel"
+                  id="mobile"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
+                  placeholder="Enter your mobile number"
+                  required
+                />
+              </div>
+              <div>
+                <select
+                  id="state"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
+                  required
+                >
+                  <option value="">Select State</option>
+                  {/* Add state options here */}
+                </select>
+              </div>
+              <div>
+                <select
+                  id="city"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
+                  required
+                >
+                  <option value="">Select City</option>
+                  {/* Add city options here */}
+                </select>
+              </div>
 
-            <div>
-              <select
-                id="course"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
-                required
-              >
-                <option value="">Select Course</option>
-                <option value="Mech">Mechanical Engineering</option>
-                <option value="AI">Artificial Intelligence</option>
-                <option value="IT">Information Technology</option>
-                <option value="CS">Computer Science</option>
-                <option value="AIDS">Artificial Intelligence and Data Science</option> {/* Added the new course option */}
-              </select>
-            </div>
-            <div>
-              <select
-                id="program"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
-                required
-              >
-                <option value="">Select Program</option>
-                {/* Add program options here */}
-              </select>
-            </div>
-            <div>
-              <input
-                type="number"
-                id="cet-score"
-                className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
-                placeholder="Enter CET Score"
-              />
-            </div>
-            <div>
-              <button
-                type="submit"
-                className="w-full py-2 bg-[#ff5d12] text-white rounded-lg hover:bg-[#e24601]"
-              >
-                Submit
-              </button>
-            </div>
-          </form>
+              <div>
+                <select
+                  id="course"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
+                  required
+                >
+                  <option value="">Select Course</option>
+                  <option value="Mech">Mechanical Engineering</option>
+                  <option value="AI">Artificial Intelligence</option>
+                  <option value="IT">Information Technology</option>
+                  <option value="CS">Computer Science</option>
+                  <option value="AIDS">Artificial Intelligence and Data Science</option> {/* Added the new course option */}
+                </select>
+              </div>
+              <div>
+                <select
+                  id="program"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
+                  required
+                >
+                  <option value="">Select Program</option>
+                  {/* Add program options here */}
+                </select>
+              </div>
+              <div>
+                <input
+                  type="number"
+                  id="cet-score"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
+                  placeholder="Enter CET Score"
+                />
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  className="w-full py-2 bg-[#ff5d12] text-white rounded-lg hover:bg-[#e24601]"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
 

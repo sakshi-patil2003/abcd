@@ -6,7 +6,7 @@ import MechOfferings from '../components/Mech/MechOfferings'
 import MechStudying from '../components/Mech/MechStudying'
 import MechBrochure from '../components/Mech/MechBrochure'
 import MechHighlights from '../components/Mech/MechHighlights'
-// import MechCarrer from '../components/Mech/MechCarrer'
+import MechCarrer from '../components/Mech/MechCarrer'
 import MechApply from '../components/Mech/MechApply'
 import MechTestimonials from '../components/Mech/MechTestimonials'
 // import AutoChatbot from '../components/AutoChatbot'  // Import AutoChatbot
@@ -22,15 +22,15 @@ function Mechanical() {
       <MechInovation/>
       <MechOverview />  
       <MechReasons/>
-      <MechPlacement/>
-      {/* <MechRecruiters/> */}
       <MechOfferings /> 
       <MechStudying /> 
       <MechBrochure />  {/* Call the MechBrochure component */}
       <MechHighlights />  {/* Call the MechHighlights component */}
-      {/* <MechCarrer /> */}
-      {/* <MechApply />  Call the MechApply component */}
       <MechTestimonials />  {/* Call the MechTestimonials component */}
+      <MechCarrer />
+      <MechPlacement/>
+      <MechRecruiters/>
+      <MechApply />
       <MechJourny/>
     </div>
   )

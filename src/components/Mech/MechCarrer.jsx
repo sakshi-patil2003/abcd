@@ -1,89 +1,33 @@
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import React from 'react';
 
-const MechCareer = () => {
-  const [isOpen, setIsOpen] = useState(false); // State to manage visibility
-
-  const toggleSection = () => {
-    setIsOpen(!isOpen); // Toggle the section visibility
-  };
-
+const MechCarreer = () => {
   return (
-    <div className="w-full mx-auto px-8 md:px-16 py-4">
-      {/* Header */}
-      <div className="bg-[#FF5722] text-white p-6 shadow-lg mb-8 flex items-center justify-between cursor-pointer" onClick={toggleSection}>
-        <h1 className="text-3xl sm:text-4xl font-extrabold tracking-wide">Career Opportunities</h1>
-        {/* Down/Up Arrow Icon */}
-        <FontAwesomeIcon
-          icon={isOpen ? faChevronUp : faChevronDown}
-          className="text-white text-3xl"
-        />
+    <div className="relative px-8 py-1 md:py-8 sm:px-12 shadow-lg transform transition-all duration-700 ease-in-out mt-4">
+      {/* Container with background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/src/assets/images/gear-a.avif')", // Your image path
+        }}
+      >
+        {/* Overlay on the background image */}
+        <div className="absolute inset-0 bg-black opacity-80"></div>
       </div>
 
-      {/* Toggle-able Content */}
-      {isOpen && (
-        <div className="transition-all duration-500">
-          <div className="p-4 mx-auto bg-white rounded-lg shadow-md">
-            {/* Description */}
-            <div className="text-gray-800 mb-8">
-              <p className="text-lg sm:text-xl mb-6">
-                Right Placements present opportunities for students to gain skills aligned with their specific subject or industry of choice. Indira College of Engineering Management specializes in offering Core placement opportunities to Core engineering branch students like mechanical combined with product-based placement as well. We enable students with the right resources which helps them make informed career choices. Indira College of Engineering Management is one of the Hallmark colleges of Engineering in Pune imparting the day-to-day required corporate skills combined with guaranteed placement opportunities. It is affiliated with SPPU (Savitribai Phule Pune University) guaranteeing placement opportunities to core engineering students, with robust remunerations.
-              </p>
-              <p className="font-semibold text-lg sm:text-xl mb-6">
-                Indira College of Engineering Management is currently associated with 750+ clients, offering job Opportunities for Mechanical Engineering placements in the Government Sector like:
-              </p>
-            </div>
+      {/* Content Section */}
+      <div className="relative z-10 max-w-7xl mx-auto text-center">
+        {/* Title Section */}
+        <h2 className="text-2xl sm:text-4xl font-bold md:mb-2 text-[#ff5d12]">
+          Career Prospects & Placements
+        </h2>
 
-            {/* Public Sector Units */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-              {[1, 2, 3].map((item) => (
-                <div key={item} className="bg-red-50 p-6 rounded-lg shadow-md hover:bg-red-100 transition-all duration-300">
-                  <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 bg-black rounded-full"></div>
-                    <p className="text-gray-700 text-sm sm:text-base">Public sector units (Coal India, BHEL, ONGC, NTPC)</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Opportunities Section */}
-            <h2 className="text-2xl sm:text-3xl font-semibold mb-6 text-gray-800">
-              Opportunities for Mechanical Engineering Placements in the Government Sector:
-            </h2>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-red-50 p-6 rounded-lg shadow-md hover:bg-red-100 transition-all duration-300">
-                <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-black rounded-full"></div>
-                  <p className="text-gray-700 text-sm sm:text-base">Aerospace Industries</p>
-                </div>
-              </div>
-              <div className="bg-red-50 p-6 rounded-lg shadow-md hover:bg-red-100 transition-all duration-300">
-                <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-black rounded-full"></div>
-                  <p className="text-gray-700 text-sm sm:text-base">Automotive Industries</p>
-                </div>
-              </div>
-              <div className="bg-red-50 p-6 rounded-lg shadow-md hover:bg-red-100 transition-all duration-300">
-                <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-black rounded-full"></div>
-                  <p className="text-gray-700 text-sm sm:text-base">Construction & Building Sites</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Footer or CTA Section */}
-            <div className="mt-10 text-center">
-              <button className="px-6 py-3 bg-[#FF5722] text-white rounded-full text-lg sm:text-xl font-semibold hover:bg-[#FF7043] transition-all duration-300">
-                Explore Opportunities & Apply Now
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+        {/* Description Section */}
+        <p className="text-sm sm:text-xl font-bold text-white">
+          Our students have been placed with highest packages (11-27 LPA) in top companies like Force Motors, Tata Motors, Mahindra & Mahindra, Vanderlande, and more!
+        </p>
+      </div>
     </div>
   );
 };
 
-export default MechCareer;
+export default MechCarreer;

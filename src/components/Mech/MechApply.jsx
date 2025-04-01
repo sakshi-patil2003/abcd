@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImage from "../../assets/images/plane.png"; // Make sure the path is correct
+import backgroundImage from "../../assets/images/plane.avif"; // Make sure the path is correct
 
 const MechApply = () => {
   return (

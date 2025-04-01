@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrophy, faAward, faMedal, faCertificate } from '@fortawesome/free-solid-svg-icons';
 
 // Import the image
-import bgImage from '../../assets/images/highbg.jpg';
+import bgImage from '../../assets/images/highbg.avif';
 
-function ItHighlights() {
+const ItHighlights = () => {
   return (
     <div
-      className="poppins-regular" // Apply the regular Poppins font to the main content
+      className="poppins-regular"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: 'cover',
@@ -63,6 +63,6 @@ function ItHighlights() {
       </div>
     </div>
   );
-}
+};
 
-export default ItHighlights;
+export default memo(ItHighlights);

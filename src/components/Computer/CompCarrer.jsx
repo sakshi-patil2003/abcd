@@ -1,95 +1,37 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGraduationCap,
-  faUserGraduate,
-  faTrophy,
-  faRocket,
-} from "@fortawesome/free-solid-svg-icons";
-import Testimonials from "./CompTestimonials"; // Import Testimonials component
-import CompApply from "./CompApply"; // Import the CompApply component
+import React from 'react';
 
-function ICEMLandingPage() {
+const CompCarrer = () => {
   return (
-    <div className="bg-[#F6FBFF] py-16  relative poppins-regular">
-      <div className="px-8 md:px-16">
-
-
-      {/* Program Highlights */}
-      <div className="text-center mb-20">
-        <h2 className="text-4xl font-semibold text-[#6095ff] mb-8">
-          Why Choose Computer Engineering at ICEM College?
+    <div className="bg-gradient-to-r from-[#161e3a] via-[#2241ac] to-[#3473cd] text-[#F7F0FC] py-16 px-8 sm:px-12 shadow-lg transform transition-all duration-700 ease-in-out">
+      <div className="max-w-7xl mx-auto text-center">
+        {/* Title Section */}
+        <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-[#F7F0FC]">
+          Career Prospects & Placements
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Card 1 */}
-          <div className="bg-white p-8 shadow-xl  hover:shadow-2xl transition-all flex flex-col items-center">
-            <div className="w-16 h-16 bg-[#ff6f61] text-white rounded-full flex items-center justify-center mb-6">
-              <FontAwesomeIcon icon={faGraduationCap} className="text-2xl" />
-            </div>
-            <h3 className="text-xl font-semibold text-[#000000] mb-4">
-              Top-notch Curriculum
-            </h3>
-            <p className="text-gray-600 text-center">
-              Our Computer Engineering program offers a robust curriculum
-              designed to prepare you for the future of technology. Learn from
-              experts in the field and gain hands-on experience.
-            </p>
-          </div>
 
-          {/* Card 2 */}
-          <div className="bg-white p-8 shadow-xl  hover:shadow-2xl transition-all flex flex-col items-center">
-            <div className="w-16 h-16 bg-[#ffbd59] text-white rounded-full flex items-center justify-center mb-6">
-              <FontAwesomeIcon icon={faUserGraduate} className="text-2xl" />
-            </div>
-            <h3 className="text-xl font-semibold text-[#000000] mb-4">
-              Experienced Faculty
-            </h3>
-            <p className="text-gray-600 text-center">
-              Learn from experienced professors and industry experts who are
-              passionate about educating the next generation of engineers.
-            </p>
-          </div>
+        {/* Description Section */}
+        <p className="text-lg sm:text-xl mb-8 leading-relaxed animate__animated animate__fadeIn animate__delay-1s">
+          With software development, AI, cybersecurity, and cloud computing booming, ICEM’s Computer Engineering graduates are in high demand. Our placement cell connects students with top recruiters like Google, Microsoft, Infosys, TCS, and Amazon, ensuring you step into the tech industry with confidence!
+        </p>
 
-          {/* Card 3 */}
-          <div className="bg-white p-8 shadow-xl  hover:shadow-2xl transition-all flex flex-col items-center">
-            <div className="w-16 h-16 bg-[#4caf50] text-white rounded-full flex items-center justify-center mb-6">
-              <FontAwesomeIcon icon={faTrophy} className="text-2xl" />
-            </div>
-            <h3 className="text-xl font-semibold text-[#000000] mb-4">
-              Excellence in Innovation
-            </h3>
-            <p className="text-gray-600 text-center">
-              ICEM is ranked among the top institutes for innovation in
-              engineering. Our students regularly participate in national and
-              international tech competitions.
-            </p>
+        {/* Logos Section */}
+        <div className="grid grid-cols-4 grid-row-1 sm:grid-cols-3 lg:grid-cols-4 gap-2  sm:px-8">
+          <div className="flex justify-center items-center md:p-4  hover:scale-110 transition-transform duration-300 ease-in-out">
+            <img src="/src/assets/images/Com-Images/Google.png" alt="TCS" className="max-w-full h-auto object-contain rounded-md" />
           </div>
-
-          {/* Card 4 */}
-          <div className="bg-white p-8 shadow-xl  hover:shadow-2xl transition-all flex flex-col items-center">
-            <div className="w-16 h-16 bg-[#2196f3] text-white rounded-full flex items-center justify-center mb-6">
-              <FontAwesomeIcon icon={faRocket} className="text-2xl" />
-            </div>
-            <h3 className="text-xl font-semibold text-[#000000] mb-4">
-              Excellent Placements
-            </h3>
-            <p className="text-gray-600 text-center">
-              Our Computer Engineering graduates have gone on to secure
-              prestigious positions in top companies, with an outstanding
-              placement rate year after year.
-            </p>
+          <div className="flex justify-center items-center md:p-4  hover:scale-110 transition-transform duration-300 ease-in-out">
+            <img src="/src/assets/images/Com-Images/Tcs.avif" alt="Microsoft" className="max-w-full h-auto object-contain rounded-md" />
+          </div>
+          <div className="flex justify-center items-center md:p-4  hover:scale-110 transition-transform duration-300 ease-in-out">
+            <img src="/src/assets/images/Com-Images/Infosys.avif" alt="Infosys" className="max-w-full h-auto object- rounded-md" />
+          </div>
+          <div className="flex justify-center items-center md:p-4 hover:scale-110 transition-transform duration-300 ease-in-out">
+            <img src="/src/assets/images/Com-Images/Microsoft.avif" className="max-w-full h-auto object-contain rounded-md" />
           </div>
         </div>
       </div>
-      </div>
-
-      {/* Admission Process Section */}
-      <CompApply /> {/* Use the CompApply component */}
-
-      {/* Testimonials Section */}
-      <Testimonials /> {/* Use the Testimonials component */}
     </div>
   );
-}
+};
 
-export default ICEMLandingPage;
+export default CompCarrer;

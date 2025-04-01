@@ -1,15 +1,15 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import gearImage from '../../assets/images/gears.png'; // Import the gear image
 
-function ItBrochure() {
+const ItBrochure = () => {
   return (
     <div
       className="flex justify-between items-center bg-[#F7F0FC] text-white shadow-lg h-48 px-8 md:px-16 poppins-regular relative"
       style={{
-        backgroundImage: `url(${gearImage}), url(${gearImage})`, // Use two instances of the same image
-        backgroundPosition: 'left bottom, right top', // Position first at left bottom, second at right top
+        backgroundImage: `url(${gearImage})`,
+        backgroundPosition: 'left bottom, right top',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'contain', // Ensure the image doesn't stretch or repeat
       }}
@@ -39,6 +39,6 @@ function ItBrochure() {
       </div>
     </div>
   );
-}
+};
 
-export default ItBrochure;
+export default memo(ItBrochure); // Wrapping with React.memo to avoid unnecessary re-renders

@@ -8,6 +8,14 @@ import EntcOfferings from '../components/Entc/EntcOfferings'
 import EntcStudying from '../components/Entc/EntcStudying'
 import EntcTestimonials from '../components/Entc/EntcTestimonials'
 import MechJourny from '../components/Mech/MechJourny'
+import EntcInovation from "../components/Entc/EntcInovation"
+import EntcOverview from '../components/Entc/EntcOverview'
+import EntcReasons from "../components/Entc/EntcReasons"
+import EntcCareer from '../components/Entc/EntcCareer'
+import EntcPlacement from '../components/Entc/EntcPlacement'
+import EntcRecruiters from '../components/Entc/EntcRecruiters'
+import EntcHighlights from '../components/Entc/EntcHighlights'
+import EntcAdmission from '../components/Entc/EntcAdmission'
 // import AutoChatbot from '../components/AutoChatbot'  // Import AutoChatbot
 
 function Entc() {
@@ -15,10 +23,17 @@ function Entc() {
     <div>
         <EntcHero />  {/* Call the EntcHero component */}
         <EntcPointers />  {/* Call the EntcPointers component */}
+        <EntcInovation/>
+        <EntcOverview/>
+        <EntcReasons/>
+        <EntcStudying />
+        <EntcBrochure />
+        <EntcCareer/>
+        <EntcPlacement/>
+        <EntcRecruiters/>
         <EntcOfferings />  {/* Call the EntcOfferings component */}
-        <EntcStudying />  {/* Call the EntcStudying component */}
-        <EntcFacility />  {/* Call the EntcFacility component */}
-        <EntcBrochure />  {/* Call the EntcBrochure component */} 
+        <EntcHighlights/>
+        <EntcAdmission/>
         <EntcApply />
         <EntcTestimonials />  {/* Call the EntcTestimonials component */}
         <MechJourny/>

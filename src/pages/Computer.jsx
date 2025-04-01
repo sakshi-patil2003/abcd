@@ -5,7 +5,7 @@ import CompOfferings from "../components/Computer/CompOfferings";
 import CompStudying from "../components/Computer/CompStudying";
 import CompBrochure from "../components/Computer/CompBrochure";
 import CompHighlights from "../components/Computer/CompHighlights";
-// import CompCarrer from "../components/Computer/CompCarrer";
+import CompCarrer from "../components/Computer/CompCarrer";
 import CompRecruiter from "../components/Computer/CompRecruiter";
 import CompJoin from "../components/Computer/CompJoin";
 import AutoChatbot from "../components/AutoChatbot"; // Import AutoChatbot
@@ -14,7 +14,9 @@ import ComCreative from "../components/Computer/ComCreative";
 import ComReasons from "../components/Computer/ComReasons";
 import CompOffringICEM from "../components/Computer/CompOffringICEM";
 import ComPlacement from "../components/Computer/ComPlacement";
-
+import CompBanner from "../components/Computer/CompBanner";
+import CompApply from "../components/Computer/CompApply"
+import CompTestimonials from "../components/Computer/CompTestimonials"
 function Computer() {
   return (
     <div className="">
@@ -25,15 +27,18 @@ function Computer() {
       <ProgramOverview />
       <ComReasons/>
       <CompOffringICEM/>
-      <ComPlacement/>
       <CompRecruiter />
       <CompOfferings />
       <CompStudying />
       <CompBrochure />
       <CompHighlights />
-      <CompJoin />
-      {/* <CompCarrer /> */}
+      <CompTestimonials/>
+      <CompCarrer />
+      <ComPlacement/>
+      <CompBanner/>
+      <CompApply/>
       <AutoChatbot />
+      <CompJoin />
       <MechJourny/>
     </div>
   );

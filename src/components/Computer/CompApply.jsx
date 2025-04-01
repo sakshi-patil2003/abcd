@@ -1,17 +1,17 @@
 import React from "react";
-import backgroundImage from "../../assets/images/plane.png"; // Make sure the path is correct
+import backgroundImage from "../../assets/images/plane.avif"; // Make sure the path is correct
 
 const AdmissionProcess = () => {
   return (
     <div
-      className="bg-[#6095ff] px-8 md:px-16 py-10 text-center text-white mb-12 shadow-lg relative bg-contain bg-no-repeat bg-center"
+      className="bg-[#6095ff] px-8 md:px-16 py-10 text-center text-white  shadow-lg relative bg-contain bg-no-repeat bg-center"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Black overlay */}
       <div className="absolute inset-0 bg-blue-800 opacity-80 z-0"></div>
 
       <div className="relative z-10">
-        <h2 className="text-3xl font-semibold mb-6">How to Apply</h2>
+        <h2 className="text-3xl font-semibold mb-6">Admission Process: Get Started Today! </h2>
         <p className="text-lg mb-6">
           Follow these simple steps to apply for the Computer Engineering
           program at ICEM College Pune:
@@ -90,9 +90,9 @@ const AdmissionProcess = () => {
           </div>
         </div>
 
-        <button className="bg-white text-[#6095ff] py-3 px-8 rounded-full text-xl hover:bg-gray-200 transition-all mt-8">
+        {/* <button className="bg-white text-[#6095ff] py-3 px-8 rounded-full text-xl hover:bg-gray-200 transition-all mt-8">
           Apply Now
-        </button>
+        </button> */}
       </div>
     </div>
   );

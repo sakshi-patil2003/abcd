@@ -2,12 +2,12 @@ import React from "react";
 import Slider from "react-slick"; // Importing react-slick
 
 // Image Imports
-import rahulImage from "../../assets/images/user.png";
-import priyaImage from "../../assets/images/user.png";
-import ravi1Image from "../../assets/images/user.png";
-import nehaImage from "../../assets/images/user.png";
-import ravi2Image from "../../assets/images/user.png";
-import aishaImage from "../../assets/images/user.png";
+import rahulImage from "../../assets/images/user.avif";
+import priyaImage from "../../assets/images/user.avif";
+import ravi1Image from "../../assets/images/user.avif";
+import nehaImage from "../../assets/images/user.avif";
+import ravi2Image from "../../assets/images/user.avif";
+import aishaImage from "../../assets/images/user.avif";
 
 function Testimonials() {
   const testimonials = [

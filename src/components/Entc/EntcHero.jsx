@@ -1,6 +1,6 @@
 import React from 'react';
-import bgImage from '../../assets/images/entc-bg.jpg'; // Adjust the path to your background image
-
+import bgImage from '../../assets/images/Entc-Images/entc-bg.avif'; // Adjust the path to your background image
+ 
 function EntcHero() {
   return (
     <div className="relative h-screen">
@@ -11,31 +11,34 @@ function EntcHero() {
           backgroundImage: `url(${bgImage})`,
           backgroundPosition: 'center',
           backgroundSize: 'cover',
-          transform: 'rotate(180deg)', // Apply rotation only to the background
-          transformOrigin: 'center', // Make sure the rotation is centered
+          transform: 'rotate(180deg)',
+          transformOrigin: 'center',
         }}
       ></div>
-
+ 
       {/* Black Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div> {/* Increased opacity of black overlay for better contrast */}
-
-      {/* Content (Form and Heading) */}
-      <div className="relative z-10 flex flex-col md:flex-row justify-between h-full px-4 md:px-16 py-12 md:py-0">
-        {/* Left side: Heading (Aligned to Top) */}
-        <div className="w-full md:w-1/2 flex flex-col items-start md:pt-10">
-          <h1 className="text-3xl md:text-5xl text-white text-left leading-normal">
-            Shape the Future of Technology with <span className="text-[#9FEDD7]">Electronics and Telecommunication Engineering</span> at ICEM
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
+ 
+      {/* Content Container */}
+      <div className="relative z-10 flex flex-col md:flex-row justify-between items-center h-full p-4 md:px-16 md:py-8">
+        {/* Left Side: Text Content (Hidden only on mobile) */}
+        <div className=" sm:flex w-full md:w-1/2 flex-col justify-center text-left">
+          <h1 className="text-2xl md:text-5xl text-white font-bold leading-tight mb-4">
+            ENTC Engineering at Indira College of Engineering & Management
           </h1>
-          <p className="text-lg md:text-3xl text-white mt-6 md:mt-8 leading-10">
-            Advanced labs, expert faculty, and exceptional career opportunities await you.
+          <p className="hidden sm:flex text-lg md:text-3xl text-white leading-relaxed mb-2">
+            30 Years of Excellence in Education | 5 Specializations | 100% Placement Assistance
+          </p>
+          <p className="hidden sm:flex text-md md:text-2xl text-white leading-relaxed">
+            ENTC at ICEM - Powering the Future with Electronics & Telecommunication!
           </p>
         </div>
-
-        {/* Right side: Form (Vertically Centered) */}
-        <div className="w-full md:w-1/2 flex justify-center items-center mt-10 md:mt-0">
+ 
+        {/* Form Section with Responsive Padding */}
+        <div className="w-full md:w-1/2 flex justify-center items-center">
           <div
-            className="p-6 max-w-md w-full shadow-md rounded-lg"
-            style={{ backgroundColor: "rgba(2, 103, 112, 0.7)" }} // Applying a more opaque deep teal background
+            className="p-4 md:p-6 w-full max-w-md bg-opacity-70 rounded-lg shadow-md"
+            style={{ backgroundColor: "rgba(2, 103, 112, 0.7)" }}
           >
             <form className="space-y-4">
               <div>
@@ -72,7 +75,6 @@ function EntcHero() {
                   required
                 >
                   <option value="">Select State</option>
-                  {/* Add state options here */}
                 </select>
               </div>
               <div>
@@ -82,10 +84,8 @@ function EntcHero() {
                   required
                 >
                   <option value="">Select City</option>
-                  {/* Add city options here */}
                 </select>
               </div>
-              
               <div>
                 <select
                   id="course"
@@ -107,7 +107,6 @@ function EntcHero() {
                   required
                 >
                   <option value="">Select Program</option>
-                  {/* Add program options here */}
                 </select>
               </div>
               <div>
@@ -133,5 +132,5 @@ function EntcHero() {
     </div>
   );
 }
-
+ 
 export default EntcHero;

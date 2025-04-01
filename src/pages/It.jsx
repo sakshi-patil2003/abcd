@@ -14,7 +14,8 @@ import ItOverview from '../components/It/ItOverview';
 import ItReasons from '../components/It/ItReasons';
 import ItPlacement from '../components/It/ItPlacement';
 import CompRecruter from '../components/Computer/CompRecruiter';
-
+import ItCareear from '../components/It/ItCareear';
+import ItBanner from '../components/It/ItBanner';
 function It() {
   return (
     <div>
@@ -23,14 +24,16 @@ function It() {
       <ItInovation/>
       <ItOverview/>
       <ItReasons/>
-      <ItPlacement/>
-      <CompRecruter/>
       <ItOfferings />
       <ItStudying /> 
       <ItBrochure />  
       <ItHighlights /> 
-      <ItApply />  
       <ItTestimonials />
+      <ItCareear/>
+      <ItPlacement/>
+      <CompRecruter/>
+      <ItBanner/>
+      <ItApply />  
       <AutoChatbot />
       <MechJourny/>
     </div>

@@ -53,7 +53,7 @@ function ItOfferings() {
   };
 
   return (
-    <div className="px-4 md:px-8 lg:px-16 py-6 md:py-8 bg-[#ffffff] poppins-regular relative overflow-hidden box-border">
+    <div className="px-4 md:px-8 lg:px-16 py-6 md:py-8 bg-white relative overflow-hidden">
       {/* Tech Dots Image */}
       <img
         src={techDots}
@@ -68,136 +68,37 @@ function ItOfferings() {
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 lg:gap-8 justify-center">
-        {/* IT Program 1: IT Infrastructure Management */}
-        <div
-          className="bg-[linear-gradient(#F7F0FC,_#9002F5,_#390161)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
-          data-aos="fade-up"
-        >
-          <img
-            src={offer1Image}
-            alt="IT Infrastructure Management"
-            className="w-full h-48 md:h-56 lg:h-64 object-cover mb-4"
-          />
-          <div className="text-center px-4 py-2">
-            <h3 className="text-lg md:text-xl font-bold text-white mb-2">Software Engineering & Web Technologies</h3>
-            <p className="text-sm md:text-base text-white"> Master full-stack development and software</p>
+        {[
+          { image: offer1Image, title: "Software Engineering & Web Technologies", description: "Master full-stack development and software" },
+          { image: offer2Image, title: "Data Science & Big Data Analytics", description: "Learn how to handle and analyze massive datasets." },
+          { image: offer3Image, title: "Cloud Computing & Virtualization", description: "Explore AWS, Azure, and modern cloud platforms." },
+          { image: offer4Image, title: "Cybersecurity & Ethical Hacking", description: "Protect digital assets and strengthen network security." },
+          { image: offer5Image, title: "Artificial Intelligence & Machine Learning", description: "Build intelligent systems and automation" },
+          { image: offer6Image, title: "IoT & Smart Systems", description: "Connect devices and develop smart applications for industries." },
+          { image: offer7Image, title: "Enterprise Resource Planning (ERP) Systems", description: "Connect devices and develop smart applications for industries" },
+          { image: offer8Image, title: "Mobile App Development", description: "Create cutting-edge Android & iOS applications." },
+        ].map((offer, index) => (
+          <div
+            key={index}
+            className="bg-[#390161] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
+            data-aos="fade-up"
+          >
+            <img
+              src={offer.image}
+              alt={offer.title}
+              className="w-full h-48 md:h-56 lg:h-64 object-cover mb-4 lazyload"
+              loading="lazy"
+            />
+            <div className="text-center px-4 py-2">
+              <h3 className="text-lg md:text-xl font-bold text-white mb-2">{offer.title}</h3>
+              <p className="text-sm md:text-base text-white">{offer.description}</p>
+            </div>
           </div>
-        </div>
-
-        {/* IT Program 2: Cloud Services & Virtualization */}
-        <div
-          className="bg-[linear-gradient(#F7F0FC,_#9002F5,_#390161)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
-          data-aos="fade-up"
-        >
-          <img
-            src={offer2Image}
-            alt="Cloud Services & Virtualization"
-            className="w-full h-48 md:h-56 lg:h-64 object-cover mb-4"
-          />
-          <div className="text-center px-4 py-2">
-            <h3 className="text-lg md:text-xl font-bold text-white mb-2">Data Science & Big Data Analytics</h3>
-            <p className="text-sm md:text-base text-white">Learn how to handle and analyze massive datasets.</p>
-          </div>
-        </div>
-
-        {/* IT Program 3: IT Security & Risk Management */}
-        <div
-          className="bg-[linear-gradient(#F7F0FC,_#9002F5,_#390161)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
-          data-aos="fade-up"
-        >
-          <img
-            src={offer3Image}
-            alt="IT Security & Risk Management"
-            className="w-full h-48 md:h-56 lg:h-64 object-cover mb-4"
-          />
-          <div className="text-center px-4 py-2">
-            <h3 className="text-lg md:text-xl font-bold text-white mb-2">Cloud Computing & Virtualization</h3>
-            <p className="text-sm md:text-base text-white">Explore AWS, Azure, and modern cloud platforms.</p>
-          </div>
-        </div>
-
-        {/* IT Program 4: Network Administration */}
-        <div
-          className="bg-[linear-gradient(#F7F0FC,_#9002F5,_#390161)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
-          data-aos="fade-up"
-        >
-          <img
-            src={offer4Image}
-            alt="Network Administration"
-            className="w-full h-48 md:h-56 lg:h-64 object-cover mb-4"
-          />
-          <div className="text-center px-4 py-2">
-            <h3 className="text-lg md:text-xl font-bold text-white mb-2">Cybersecurity & Ethical Hacking</h3>
-            <p className="text-sm md:text-base text-white">Protect digital assets and strengthen network security.</p>
-          </div>
-        </div>
-
-        {/* IT Program 5: Database Administration */}
-        <div
-          className="bg-[linear-gradient(#F7F0FC,_#9002F5,_#390161)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
-          data-aos="fade-up"
-        >
-          <img
-            src={offer5Image}
-            alt="Database Administration"
-            className="w-full h-48 md:h-56 lg:h-64 object-cover mb-4"
-          />
-          <div className="text-center px-4 py-2">
-            <h3 className="text-lg md:text-xl font-bold text-white mb-2">Artificial Intelligence & Machine Learning </h3>
-            <p className="text-sm md:text-base text-white">Build intelligent systems and automation</p>
-          </div>
-        </div>
-
-        {/* IT Program 6: IT Support & Services */}
-        <div
-          className="bg-[linear-gradient(#F7F0FC,_#9002F5,_#390161)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
-          data-aos="fade-up"
-        >
-          <img
-            src={offer6Image}
-            alt="IT Support & Services"
-            className="w-full h-48 md:h-56 lg:h-64 object-cover mb-4"
-          />
-          <div className="text-center px-4 py-2">
-            <h3 className="text-lg md:text-xl font-bold text-white mb-2">IoT & Smart Systems</h3>
-            <p className="text-sm md:text-base text-white">Connect devices and develop smart applications for industries..</p>
-          </div>
-        </div>
-        
-        {/* IT Program 7: ERP Systems */}
-        <div
-          className="bg-[linear-gradient(#F7F0FC,_#9002F5,_#390161)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
-          data-aos="fade-up"
-        >
-          <img
-            src={offer7Image}
-            alt="Enterprise Resource Planning (ERP)"
-            className="w-full h-48 md:h-56 lg:h-64 object-cover mb-4"
-          />
-          <div className="text-center px-4 py-2">
-            <h3 className="text-lg md:text-xl font-bold text-white mb-2">Enterprise Resource Planning (ERP) Systems</h3>
-            <p className="text-sm md:text-base text-white">Connect devices and develop smart applications for industries</p>
-          </div>
-        </div>
-
-        {/* IT Program 8: Mobile App Development */}
-        <div
-          className="bg-[linear-gradient(#F7F0FC,_#9002F5,_#390161)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
-          data-aos="fade-up"
-        >
-          <img
-            src={offer8Image}
-            alt="Mobile App Development"
-            className="w-full h-48 md:h-56 lg:h-64 object-cover mb-4"
-          />
-          <div className="text-center px-4 py-2">
-            <h3 className="text-lg md:text-xl font-bold text-white mb-2">Mobile App Development </h3>
-            <p className="text-sm md:text-base text-white">Create cutting-edge Android & iOS applications.</p>
-          </div>
-        </div>
-        
+        ))}
       </div>
-      <h3 className='text-center text-[#390161] font-semibold md:text-xl mt-2'>At ICEM, you don’t just study IT—you build, innovate, and lead in the digital era!</h3>
+      <h3 className='text-center text-[#390161] font-semibold md:text-xl mt-2'>
+        At ICEM, you don’t just study IT—you build, innovate, and lead in the digital era!
+      </h3>
     </div>
   );
 }
