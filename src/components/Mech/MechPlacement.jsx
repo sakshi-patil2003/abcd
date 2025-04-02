@@ -8,7 +8,7 @@ const MechPlacement = () => {
       <img
         src={placementImage}
         alt="Mech Placement"
-        className="w-full h-auto object-cover sm:h-64 md:h-96 lg:h-[370px]"
+        className="w-full h-auto object-cover "
       />
     </div>
   );
