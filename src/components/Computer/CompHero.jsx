@@ -55,7 +55,7 @@ function MechHero() {
       </style>
 
       {/* Black Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70 z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-80 z-10"></div>
 
       {/* Small Half Gear Image */}
       <img

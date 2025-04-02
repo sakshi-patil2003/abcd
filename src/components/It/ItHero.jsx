@@ -53,7 +53,7 @@ function ItHero() {
         {/* Heading - Visible on all screen sizes */}
         <div className="md:mt-6 py-2 px-4 text-center lg:text-left">
           <p className="font-semibold text-3xl md:text-5xl md:mb-6">
-           <span className='text-[#A540FF]'> Mechanical Engineering</span> at Indira College of Engineering & Management
+           <span className='text-[#A540FF]'>Information Technology</span> at Indira College of Engineering & Management
           </p>
           <div className="hidden lg:block">
             <p className="text-xl py-4 italic">

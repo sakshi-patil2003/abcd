@@ -15,18 +15,34 @@ const CompCarrer = () => {
         </p>
 
         {/* Logos Section */}
-        <div className="grid grid-cols-4 grid-row-1 sm:grid-cols-3 lg:grid-cols-4 gap-2  sm:px-8">
-          <div className="flex justify-center items-center md:p-4  hover:scale-110 transition-transform duration-300 ease-in-out">
-            <img src="/src/assets/images/Com-Images/Google.png" alt="TCS" className="max-w-full h-auto object-contain rounded-md" />
-          </div>
-          <div className="flex justify-center items-center md:p-4  hover:scale-110 transition-transform duration-300 ease-in-out">
-            <img src="/src/assets/images/Com-Images/Tcs.avif" alt="Microsoft" className="max-w-full h-auto object-contain rounded-md" />
-          </div>
-          <div className="flex justify-center items-center md:p-4  hover:scale-110 transition-transform duration-300 ease-in-out">
-            <img src="/src/assets/images/Com-Images/Infosys.avif" alt="Infosys" className="max-w-full h-auto object- rounded-md" />
+        <div className="grid grid-cols-4 sm:grid-cols-3 lg:grid-cols-4 gap-6 sm:px-8">
+          <div className="flex justify-center items-center md:p-4 hover:scale-110 transition-transform duration-300 ease-in-out">
+            <img
+              src="/src/assets/images/Com-Images/Google.png"
+              alt="Google"
+              className="max-w-full h-auto object-contain rounded-md"
+            />
           </div>
           <div className="flex justify-center items-center md:p-4 hover:scale-110 transition-transform duration-300 ease-in-out">
-            <img src="/src/assets/images/Com-Images/Microsoft.avif" className="max-w-full h-auto object-contain rounded-md" />
+            <img
+              src="/src/assets/images/Com-Images/Tcs.avif"
+              alt="TCS"
+              className="max-w-full h-auto object-contain rounded-md"
+            />
+          </div>
+          <div className="flex justify-center items-center md:p-4 hover:scale-110 transition-transform duration-300 ease-in-out">
+            <img
+              src="/src/assets/images/Com-Images/Infosys.avif"
+              alt="Infosys"
+              className="max-w-full h-auto object-contain rounded-md"
+            />
+          </div>
+          <div className="flex justify-center items-center md:p-4 hover:scale-110 transition-transform duration-300 ease-in-out">
+            <img
+              src="/src/assets/images/Com-Images/Microsoft.avif"
+              alt="Microsoft"
+              className="max-w-full h-auto object-contain rounded-md"
+            />
           </div>
         </div>
       </div>

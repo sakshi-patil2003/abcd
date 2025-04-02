@@ -41,7 +41,7 @@ const ItApply = () => {
           ))}
         </div>
 
-        <button className="bg-green-400 text-black md:bg-[#390161] md:text-white font-bold py-3 px-8 rounded-full text-xl hover:bg-[#001E5D] hover:text-white transition-all mt-8">
+        <button className=" bg-[#390161]  font-bold py-3 px-8 rounded-full text-xl hover:bg-[#001E5D] hover:text-white transition-all mt-8">
           Apply Now
         </button>
       </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import placementImage from '../../assets/images/MECH-images/MechB2.avif'; // Replace with your image path
+import placementImage from '../../assets/images/MECH-images/MechPlacement.avif'; // Replace with your image path
 
 const MechPlacement = () => {
   return (

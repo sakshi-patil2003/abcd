@@ -22,7 +22,7 @@ const ItHighlights = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Card 1 */}
           <div className="bg-[#F7F0FC] p-6 shadow-lg text-left overflow-hidden rounded-lg">
-            <div className="w-12 h-12 bg-[#390161] text-white rounded-full flex items-center justify-center mb-4">
+            <div className="w-12 h-12 bg-[#390161] text-white rounded-full flex items-center justify-center mb-4 mx-auto">
               <FontAwesomeIcon icon={faTrophy} className="text-2xl" />
             </div>
             <p className="text-[#390161] poppins-regular">
@@ -32,7 +32,7 @@ const ItHighlights = () => {
 
           {/* Card 2 */}
           <div className="bg-[#F7F0FC] p-6 shadow-lg text-left overflow-hidden rounded-lg">
-            <div className="w-12 h-12 bg-[#390161] text-white rounded-full flex items-center justify-center mb-4">
+            <div className="w-12 h-12 bg-[#390161] text-white rounded-full flex items-center justify-center mb-4 mx-auto">
               <FontAwesomeIcon icon={faAward} className="text-2xl" />
             </div>
             <p className="text-[#390161] poppins-regular">
@@ -42,7 +42,7 @@ const ItHighlights = () => {
 
           {/* Card 3 */}
           <div className="bg-[#F7F0FC] p-6 shadow-lg text-left overflow-hidden rounded-lg">
-            <div className="w-12 h-12 bg-[#390161] text-white rounded-full flex items-center justify-center mb-4">
+            <div className="w-12 h-12 bg-[#390161] text-white rounded-full flex items-center justify-center mb-4 mx-auto">
               <FontAwesomeIcon icon={faMedal} className="text-2xl" />
             </div>
             <p className="text-[#390161] poppins-regular">
@@ -52,7 +52,7 @@ const ItHighlights = () => {
 
           {/* Card 4 */}
           <div className="bg-[#F7F0FC] p-6 shadow-lg text-left overflow-hidden rounded-lg">
-            <div className="w-12 h-12 bg-[#390161] text-white rounded-full flex items-center justify-center mb-4">
+            <div className="w-12 h-12 bg-[#390161] text-white rounded-full flex items-center justify-center mb-4 mx-auto">
               <FontAwesomeIcon icon={faCertificate} className="text-2xl" />
             </div>
             <p className="text-[#390161] poppins-regular">

@@ -2,9 +2,17 @@ import React from "react";
 import backgroundImage from "../../assets/images/plane.avif"; // Make sure the path is correct
 
 const AdmissionProcess = () => {
+  // Function to scroll to top when Apply Now button is clicked
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Smooth scrolling
+    });
+  };
+
   return (
     <div
-      className="bg-[#6095ff] px-8 md:px-16 py-10 text-center text-white  shadow-lg relative bg-contain bg-no-repeat bg-center"
+      className="bg-[#6095ff] px-8 md:px-16 py-10 text-center text-white shadow-lg relative bg-contain bg-no-repeat bg-center"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       {/* Black overlay */}
@@ -89,10 +97,24 @@ const AdmissionProcess = () => {
             <p className="text-lg text-white">Confirm your seat and join ICEM College!</p>
           </div>
         </div>
+      </div>
 
-        {/* <button className="bg-white text-[#6095ff] py-3 px-8 rounded-full text-xl hover:bg-gray-200 transition-all mt-8">
-          Apply Now
-        </button> */}
+      {/* Text content */}
+      <div className="relative z-20 px-8 md:px-16 py-4">
+        <div className="text-center mb-2">
+          <h1 className="text-3xl md:text-5xl font-bold text-white mb-6 mt-2">
+            Admissions Open for 2025!
+          </h1>
+          <p className="text-xl text-gray-200 mb-8">
+            Secure your seat & start your journey in the world of technology with ICEM!
+          </p>
+          <button
+            onClick={scrollToTop} // On click scroll to top
+            className="bg-transparent border-2 text-[#ffffff] py-2 px-6 rounded-full text-xl hover:bg-blue-700 hover:text-white transition-all"
+          >
+            Apply Now
+          </button>
+        </div>
       </div>
     </div>
   );
