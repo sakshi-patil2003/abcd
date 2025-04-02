@@ -6,7 +6,7 @@ const CompCarrer = () => {
       <div className="max-w-7xl mx-auto text-center">
         {/* Title Section */}
         <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-[#F7F0FC]">
-          Career Prospects & Placements
+          Career  & Placements
         </h2>
 
         {/* Description Section */}
