@@ -1,5 +1,5 @@
 import { FaRobot, FaDatabase, FaChartLine, FaLaptopCode, FaBrain, FaSearch } from "react-icons/fa";
-import MyImage from "../../assets/images/ICEM 1.avif"; // Example image
+import MyImage from "../../assets/images/ICEM_College.avif"; // Example image
 import Image1 from "../../assets/images/IT-Images/app1.avif"; // Example image
 import Image2 from "../../assets/images/aidslab.avif"; // Example image
  

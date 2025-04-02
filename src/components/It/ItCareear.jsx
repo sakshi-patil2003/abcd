@@ -5,7 +5,9 @@ const CompCarrer = () => {
     <div className="bg-[#390161] py-8 md:py-16 px-8 sm:px-12 shadow-lg transform transition-all duration-700 ease-in-out">
       <div className="max-w-7xl mx-auto text-center">
         {/* Title Section */}
+
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 text-[#F7F0FC]">
+
           Career Prospects & Placements
         </h2>
 

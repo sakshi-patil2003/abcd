@@ -31,6 +31,7 @@ import logo24 from "../../assets/images/COMP-images/wipro-min.avif";
 const sponsorsData = [
   {
     title: "IT RECRUITERS",
+
     logos: [
       logo1,
       logo2,
@@ -51,9 +52,22 @@ const sponsorsData = [
       logo11,
       logo12,
     ],
+
   },
+
   {
     title: "IT RECRUITERS",
+    logos: [logo7,logo8,logo9,logo10,logo11,logo12] 
+  },
+
+  {
+    title: "IT RECRUITERS",
+    logos: [logo13,logo14,logo15,logo16,logo17,logo18] 
+  },
+
+  {
+    title: "IT RECRUITERS",
+
     logos: [
 
       logo19,
@@ -63,6 +77,7 @@ const sponsorsData = [
       logo23,
       logo24,
     ],
+
   },
   {
     title: "IT RECRUITERS",
