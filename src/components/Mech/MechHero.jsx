@@ -7,14 +7,18 @@ function MechHero() {
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    mobile: "",
+    state: "",
+    city: "",
+    course: "",
+    cetScore: ""
+  });
 
   useEffect(() => {
-    const words = [
-      "Innovation",
-      "Automation",
-      "Precision",
-      "Revolution",
-    ];
+    const words = ["Innovation", "Automation", "Precision", "Revolution"];
 
     const handleTyping = () => {
       const currentWord = words[currentWordIndex];
@@ -40,12 +44,55 @@ function MechHero() {
     return () => clearTimeout(timeout);
   }, [currentText, isDeleting, currentWordIndex]);
 
+  // Handle form field changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  // Handle form submission
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent the default form submission behavior
+
+    // Check if all required fields are filled
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.mobile ||
+      !formData.state ||
+      !formData.city ||
+      !formData.course
+    ) {
+      alert("Please fill out all required fields.");
+      return;
+    }
+
+    // You can handle the submission here, such as sending the data to an API or logging it
+    console.log("Form Data Submitted:", formData);
+
+    // Optionally, reset the form after submission
+    setFormData({
+      name: "",
+      email: "",
+      mobile: "",
+      state: "",
+      city: "",
+      course: "",
+      cetScore: ""
+    });
+
+    alert("Form Submitted Successfully!");
+  };
+
   return (
     <div
-      className="px-4 sm:px-8 md:px-16 relative pt-8 h-auto bg-cover bg-right md:bg-center bg-no-repeat text-white flex items-start overflow-hidden"
+      className="relative pt-4 md:pt-8 h-auto bg-cover bg-center bg-no-repeat text-white flex items-start overflow-hidden"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
-      {/* Add custom style for selected text */}
+      {/* Custom style for selected text */}
       <style>
         {`
           ::selection {
@@ -56,15 +103,15 @@ function MechHero() {
       </style>
 
       {/* Black Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70 z-0"></div>
 
       {/* Flex container with column stacking for mobile and row layout for larger screens */}
-      <div className="flex flex-col md:flex-row items-center md:items-start z-20 w-full mb-4 sm:mb-6">
+      <div className="flex flex-col md:flex-row items-center md:items-start z-30 w-full px-4 sm:px-8 md:px-16 mb-4 sm:mb-6">
         {/* Left side content for large screens */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left w-full">
           {/* First Paragraph - Largest */}
-          <p className="mt-4 text-[#ff5d12] py-2 leading-tight font-bold text-2xl md:text-5xl">
-            Mechanical Engineering at Indira College of Engineering & Management
+          <p className="mt-4 leading-tight font-bold text-2xl md:text-5xl">
+            <span className="text-[#ff5d12]">Mechanical Engineering</span> at Indira College of Engineering & Management
           </p>
 
           {/* Second Paragraph - Medium size */}
@@ -81,16 +128,19 @@ function MechHero() {
         </div>
 
         {/* Right side form container (Always visible on mobile) */}
-        <div className="flex justify-center md:justify-end w-full mb-2 sm:mb-2 md:mb-2 mt-6 md:mt-0">
+        <div className="flex justify-center md:justify-end w-full mt-6 md:mt-0 z-30">
           <div
-            className="p-6 max-w-md w-full shadow-md ml-5 rounded-md"
+            className="p-6 max-w-md w-full shadow-md rounded-md"
             style={{ backgroundColor: "rgba(139, 197, 255, 0.3)" }}
           >
-            <form className="space-y-3 p-1">
+            <form className="space-y-3 p-1" onSubmit={handleSubmit}>
               <div>
                 <input
                   type="text"
                   id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
                   placeholder="Enter your name"
                   required
@@ -100,6 +150,9 @@ function MechHero() {
                 <input
                   type="email"
                   id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
                   placeholder="Enter your email"
                   required
@@ -109,6 +162,9 @@ function MechHero() {
                 <input
                   type="tel"
                   id="mobile"
+                  name="mobile"
+                  value={formData.mobile}
+                  onChange={handleChange}
                   className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
                   placeholder="Enter your mobile number"
                   required
@@ -117,6 +173,9 @@ function MechHero() {
               <div>
                 <select
                   id="state"
+                  name="state"
+                  value={formData.state}
+                  onChange={handleChange}
                   className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
                   required
                 >
@@ -127,6 +186,9 @@ function MechHero() {
               <div>
                 <select
                   id="city"
+                  name="city"
+                  value={formData.city}
+                  onChange={handleChange}
                   className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
                   required
                 >
@@ -138,31 +200,28 @@ function MechHero() {
               <div>
                 <select
                   id="course"
+                  name="course"
+                  value={formData.course}
+                  onChange={handleChange}
                   className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
                   required
                 >
                   <option value="">Select Course</option>
                   <option value="Mech">Mechanical Engineering</option>
-                  <option value="AI">Artificial Intelligence</option>
-                  <option value="IT">Information Technology</option>
-                  <option value="CS">Computer Science</option>
+                  <option value="AI">Computer Engineering</option>
+                  <option value="IT">Electronics and Telecommunication</option>
+                  <option value="CS">Information Technology</option>
                   <option value="AIDS">Artificial Intelligence and Data Science</option> {/* Added the new course option */}
                 </select>
               </div>
-              <div>
-                <select
-                  id="program"
-                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
-                  required
-                >
-                  <option value="">Select Program</option>
-                  {/* Add program options here */}
-                </select>
-              </div>
+
               <div>
                 <input
                   type="number"
                   id="cet-score"
+                  name="cetScore"
+                  value={formData.cetScore}
+                  onChange={handleChange}
                   className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
                   placeholder="Enter CET Score"
                 />
@@ -170,7 +229,7 @@ function MechHero() {
               <div>
                 <button
                   type="submit"
-                  className="w-full py-2 bg-[#ff5d12] text-white rounded-lg hover:bg-[#e24601]"
+                  className="w-full py-2 bg-[#ff5d12] text-white rounded-lg hover:bg-[#e24601] transition duration-300"
                 >
                   Submit
                 </button>

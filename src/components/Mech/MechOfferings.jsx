@@ -55,10 +55,11 @@ function MechOfferings() {
             className="w-full h-48 object-cover mb-4"
           />
           <div className="text-center px-4 p-2">
-            <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Advanced CAD/CAM Systems</h3>
-            <p className="text-base text-white">State-of-the-art tools and techniques for precise design and manufacturing.</p>
+            <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Engineering Mechanics</h3>
+            <p className="text-base text-white">The study of forces, motion, and equilibrium in mechanical systems.</p>
           </div>
         </div>
+
 
         {/* Cutting-edge Robotics & Automation */}
         <div
@@ -71,8 +72,8 @@ function MechOfferings() {
             className="w-full h-48 object-cover mb-4"
           />
           <div className="text-center px-4 p-2">
-            <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Cutting-edge Robotics & Automation</h3>
-            <p className="text-base text-white">Automated systems designed to streamline complex industrial processes.</p>
+            <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Strength of Materials</h3>
+            <p className="text-base text-white">Analyzing material behavior under stress, strain, and external loads</p>
           </div>
         </div>
 
@@ -87,8 +88,8 @@ function MechOfferings() {
             className="w-full h-48 object-cover mb-4"
           />
           <div className="text-center px-4 p-2">
-            <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Thermal Engineering & HVAC Systems</h3>
-            <p className="text-base text-white">Innovative solutions for heating, ventilation, and air conditioning needs.</p>
+            <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Thermodynamics</h3>
+            <p className="text-base text-white">Understanding energy transfer, heat flow, and power generation.</p>
           </div>
         </div>
 
@@ -103,10 +104,11 @@ function MechOfferings() {
             className="w-full h-48 object-cover mb-4"
           />
           <div className="text-center px-4 p-2">
-            <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Sustainable Energy Solutions</h3>
-            <p className="text-base text-white">Harnessing renewable energy for efficient, eco-friendly solutions.</p>
+            <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Fluid Mechanics & Hydraulics</h3>
+            <p className="text-base text-white">Examining fluid behavior in motion and its engineering applications.</p>
           </div>
         </div>
+
 
         {/* Mechanical System Design & Prototyping */}
         <div
@@ -119,8 +121,8 @@ function MechOfferings() {
             className="w-full h-48 object-cover mb-4"
           />
           <div className="text-center px-4 p-2">
-            <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Mechanical System Design & Prototyping</h3>
-            <p className="text-base text-white">Designing and prototyping mechanical systems for real-world applications.</p>
+            <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Automobile Engineering</h3>
+            <p className="text-base text-white">Designing and optimizing vehicle systems for efficiency and safety.</p>
           </div>
         </div>
 
@@ -135,8 +137,8 @@ function MechOfferings() {
             className="w-full h-48 object-cover mb-4"
           />
           <div className="text-center px-4 p-2">
-            <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Core Engineering Internships and Industrial Training</h3>
-            <p className="text-base text-white">Gain hands-on experience and industry exposure through internships and training.</p>
+            <h3 className="text-xl md:text-2xl font-bold text-white mb-2">Control Systems & Mechatronics</h3>
+            <p className="text-base text-white">Integrating mechanics, electronics, and automation for precision control.</p>
           </div>
         </div>
       </div>
@@ -145,4 +147,10 @@ function MechOfferings() {
 }
 
 export default MechOfferings;
-    
+    {/* 3. 
+4. 
+5. Manufacturing Processes
+6. Machine Design
+7. Automobile Engineering
+8. Control Systems & Mechatronics
+9. Computer-Aided Design (CAD) & Finite Element Analysis (FEA) */}

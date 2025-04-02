@@ -7,7 +7,7 @@ import {
   FaHandsHelping,
   FaChartLine,
 } from "react-icons/fa";
-import indira from "../../assets/images/ICEM 1.avif";
+import indira from "../../assets/images/ICEM - College.avif";
 import Image1 from "../../assets/images/IT-Images/app1.avif";
 import Image2 from "../../assets/images/IT-Images/app2.avif";
 
@@ -78,11 +78,11 @@ const ItStudying = () => {
         {/* 2x3 Grid for Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
           {/* Card Components */}
-          <Card icon={FaTools} text="25+ YEARS OF IT EXCELLENCE" />
-          <Card icon={FaIndustry} text="500+ INDUSTRY PARTNERS" />
+          <Card icon={FaTools} text="15+ YEARS OF IT EXCELLENCE" />
+          <Card icon={FaIndustry} text="450+ INDUSTRY PARTNERS" />
           <Card icon={FaCogs} text="INNOVATIVE R&D IN IT" />
-          <Card icon={FaLightbulb} text="EXPOSURE TO CUTTING-EDGE TECHNOLOGIES" />
-          <Card icon={FaHandsHelping} text="HANDS-ON TRAINING IN IT LABS" />
+          <Card icon={FaLightbulb} text="EXPOSURE TO INDUSTRIAL GUEST LECTURES" />
+          <Card icon={FaHandsHelping} text="IT and Apple Labs" />
           <Card icon={FaChartLine} text="EXCEPTIONAL GROWTH OPPORTUNITIES" />
         </div>
       </div>

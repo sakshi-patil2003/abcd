@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import std1 from '../../assets/images/MECH-images/std1.avif';
 import std2 from '../../assets/images/MECH-images/std2.avif';
-import indira from '../../assets/images/ICEM 1.jpg';
+import indira from '../../assets/images/ICEM - College.avif';
 
 function MechStudying() {
   return (
@@ -21,7 +21,7 @@ function MechStudying() {
           <img
             src={indira}
             alt="Image 1"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-lg shadow-md"
           />
         </div>
         {/* Second Column: Two Rows with Two Images */}
@@ -30,12 +30,12 @@ function MechStudying() {
             <img
               src={std2}
               alt="Image 2"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-lg shadow-md"
             />
             <img
               src={std1}
               alt="Image 3"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-lg shadow-md"
             />
           </div>
         </div>
@@ -50,54 +50,54 @@ function MechStudying() {
           Mechanical Engineering
         </h1>
         <p className="text-left text-base md:text-lg mb-6">
-        Indira College of Engineering & Management offers a comprehensive mechanical engineering program that blends theoretical knowledge with hands-on experience. Nestled within a vast, vibrant, and lush green campus, the institute provides an inspiring learning environment where innovation meets excellence. The fresh, open spaces and state-of-the-art infrastructure create the perfect setting for students to thrive academically and personally. Our students gain exposure to cutting-edge technologies, industrial practices, and expert mentoring, preparing them for a successful career in the engineering field. 
+          Indira College of Engineering & Management offers a comprehensive mechanical engineering program that blends theoretical knowledge with hands-on experience. Nestled within a vast, vibrant, and lush green campus, the institute provides an inspiring learning environment where innovation meets excellence. The fresh, open spaces and state-of-the-art infrastructure create the perfect setting for students to thrive academically and personally. Our students gain exposure to cutting-edge technologies, industrial practices, and expert mentoring, preparing them for a successful career in the engineering field.
         </p>
 
         {/* 2x3 Grid for Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-2 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {/* Card 1 */}
-          <div className="bg-[#fff4e6] p-4 shadow-lg shadow-[#ffcc66]/50 flex justify-between items-center rounded-lg">
+          <div className="bg-[#fff4e6] p-6 shadow-lg rounded-lg flex justify-between items-center transition-transform transform hover:scale-105">
             <span className="flex items-center">
-              <FaTools className="text-[#ff5d12] mr-4 text-4xl" />
+              <FaTools className="text-[#ff5d12] mr-2 text-4xl" />
               <span className="text-sm text-[#8B4513]">
                 15+ YEARS OF MECHANICAL EXCELLENCE
               </span>
             </span>
           </div>
           {/* Card 2 */}
-          <div className="bg-[#fff4e6] p-4 shadow-lg shadow-[#ffcc66]/50 flex justify-between items-center rounded-lg">
+          <div className="bg-[#fff4e6] p-6 shadow-lg rounded-lg flex justify-between items-center transition-transform transform hover:scale-105">
             <span className="flex items-center">
-              <FaIndustry className="text-[#006BB3] mr-4 text-4xl" />
+              <FaIndustry className="text-[#006BB3] mr-2 text-4xl" />
               <span className="text-sm text-[#8B4513]">450+ INDUSTRY PARTNERS</span>
             </span>
           </div>
           {/* Card 3 */}
-          <div className="bg-[#fff4e6] p-4 shadow-lg shadow-[#ffcc66]/50 flex justify-between items-center rounded-lg">
+          <div className="bg-[#fff4e6] p-6 shadow-lg rounded-lg flex justify-between items-center transition-transform transform hover:scale-105">
             <span className="flex items-center">
-              <FaCogs className="text-[#006BB3] mr-4 text-4xl" />
+              <FaCogs className="text-[#006BB3] mr-2 text-4xl" />
               <span className="text-sm text-[#8B4513]">INNOVATIVE RESEARCH & DEVELOPMENT</span>
             </span>
           </div>
           {/* Card 4 */}
-          <div className="bg-[#fff4e6] p-4 shadow-lg shadow-[#ffcc66]/50 flex justify-between items-center rounded-lg">
+          <div className="bg-[#fff4e6] p-6 shadow-lg rounded-lg flex justify-between items-center transition-transform transform hover:scale-105">
             <span className="flex items-center">
-              <FaLightbulb className="text-[#006BB3] mr-4 text-4xl" />
+              <FaLightbulb className="text-[#006BB3] mr-2 text-4xl" />
               <span className="text-sm text-[#8B4513]">
-                EXPOSURE TO CUTTING-EDGE TECHNOLOGIES
+                EXPOSURE TO INDUSTRIAL GUEST LECTURES
               </span>
             </span>
           </div>
           {/* Card 5 */}
-          <div className="bg-[#fff4e6] p-4 shadow-lg shadow-[#ffcc66]/50 flex justify-between items-center rounded-lg">
+          <div className="bg-[#fff4e6] p-6 shadow-lg rounded-lg flex justify-between items-center transition-transform transform hover:scale-105">
             <span className="flex items-center">
-              <FaHandsHelping className="text-[#008000] mr-4 text-4xl" />
+              <FaHandsHelping className="text-[#008000] mr-2 text-4xl" />
               <span className="text-sm text-[#8B4513]">HANDS-ON TRAINING IN WORKSHOPS</span>
             </span>
           </div>
           {/* Card 6 */}
-          <div className="bg-[#fff4e6] p-4 shadow-lg shadow-[#ffcc66]/50 flex justify-between items-center rounded-lg">
+          <div className="bg-[#fff4e6] p-6 shadow-lg rounded-lg flex justify-between items-center transition-transform transform hover:scale-105">
             <span className="flex items-center">
-              <FaChartLine className="text-[#ff5d12] mr-4 text-4xl" />
+              <FaChartLine className="text-[#ff5d12] mr-2 text-4xl" />
               <span className="text-sm text-[#8B4513]">EXCEPTIONAL GROWTH OPPORTUNITIES</span>
             </span>
           </div>

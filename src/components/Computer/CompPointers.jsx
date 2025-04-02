@@ -55,8 +55,8 @@ function CompPointers() {
           <div className="flex flex-col items-center justify-center"> {/* Added space-x-4 to create gap */}
             <FaMoneyBillWave size={40} className="text-[#8BC5FF]" />
             <div className="text-center"> {/* Added text-center to center the text */}
-              <h2>Program Fees</h2>
-              <p className=" text-2xl font-semibold">Rs. 108000/-</p>
+              <h2>Highest CTC</h2>
+              <p className=" text-2xl font-semibold">27 LPA</p>
             </div>
           </div>
         </div>

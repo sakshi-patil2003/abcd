@@ -63,7 +63,7 @@ function ItOfferings() {
 
       <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center mb-8 text-[#390161]" data-aos="fade-up">
         <span className="technology-text">
-          Information <span style={techStyle}>Technology</span> Offerings
+           <span style={techStyle}>Information Technology</span> Offerings
         </span>
       </h2>
 

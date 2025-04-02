@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { FaStar, FaBuilding, FaUsers, FaLaptop, FaGraduationCap, FaChartLine } from 'react-icons/fa'; // Added FaChartLine for the new card icon
-import MyImage from '../../assets/images/ICEM 1.avif'; // Import your first PNG image
+import MyImage from '../../assets/images/ICEM - College.avif'; // Import your first PNG image
 import AnotherImage from '../../assets/images/IT-Images/app1.avif'; // Import your second PNG image
 import ThirdImage from '../../assets/images/IT-Images/app2.avif'; // Import your third PNG image
 import AOS from 'aos'; // Import AOS
@@ -38,28 +38,28 @@ function CompStudying() {
           <div className="bg-white p-4 shadow-lg shadow-blue-500/50 flex justify-between items-center rounded-lg" data-aos="zoom-in">
             <span className="flex flex-col md:flex-row items-center">
               <FaUsers className="text-blue-500 mr-4 text-4xl" /> 
-              <span className="text-sm text-center">350+ LEADING RECRUITERS</span>
+              <span className="text-sm text-center">450+ LEADING RECRUITERS</span>
             </span>
           </div>
           {/* Card 3 */}
           <div className="bg-white p-4 shadow-lg shadow-blue-500/50 flex justify-between items-center rounded-lg" data-aos="zoom-in">
             <span className="flex flex-col md:flex-row items-center">
               <FaBuilding className="text-blue-500 mr-4 text-4xl" /> 
-              <span className="text-sm text-center">INDIRA STUDENT DEVELOPMENT PROGRAM</span>
+              <span className="text-sm text-center">EXPOSURE TO INDUSTRIAL GUEST LECTURES</span>
             </span>
           </div>
           {/* Card 4 */}
           <div className="bg-white p-4 shadow-lg shadow-blue-500/50 flex justify-between items-center rounded-lg" data-aos="zoom-in">
             <span className="flex flex-col md:flex-row items-center">
               <FaLaptop className="text-blue-500 mr-4 text-4xl" /> 
-              <span className="text-sm text-center">14 LAKHS HIGHEST PACKAGE OFFERED</span>
+              <span className="text-sm text-center">HIGHEST PACKAGE OFFERED</span>
             </span>
           </div>
           {/* Card 5 */}
           <div className="bg-white p-4 shadow-lg shadow-blue-500/50 flex justify-between items-center rounded-lg" data-aos="zoom-in">
             <span className="flex flex-col md:flex-row items-center">
               <FaGraduationCap className="text-green-500 mr-4 text-4xl" /> 
-              <span className="text-sm text-center">STATE OF THE ART INFRASTRUCTURE</span>
+              <span className="text-sm text-center">IT and Apple Labs</span>
             </span>
           </div>
           {/* Card 6 */}

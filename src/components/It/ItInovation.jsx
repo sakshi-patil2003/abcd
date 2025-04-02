@@ -21,7 +21,7 @@ const ItInovation = () => {
               Where Innovation Meets Technology!               </h2>
               <p className="text-md sm:text-2xl md:text-xl text-gray-600 tracking-wide mt-4 px-2">
               From cloud computing to cybersecurity, and from AI-driven applications to web development, Information Technology (IT) is the driving force behind today’s digital revolution. 
-            At Indira College of Engineering & Management (ICEM), Pune, we prepare students to code, innovate, and build the future of intelligent systems, software solutions, and digital infrastructures. .
+           
             </p>
             </div>
           </div>

@@ -2,6 +2,14 @@ import React from "react";
 import backgroundImage from "../../assets/images/plane.avif"; // Make sure the path is correct
 
 const MechApply = () => {
+  // Function to scroll to the top of the page
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Smooth scrolling
+    });
+  };
+
   return (
     <div
       className="bg-[#ff5d12] py-10 px-8 md:px-16 text-center text-white mb-12 shadow-lg relative bg-contain bg-no-repeat bg-center"
@@ -11,7 +19,7 @@ const MechApply = () => {
       <div className="absolute inset-0 bg-[#ff5d12] opacity-60 z-0"></div>
 
       <div className="relative z-10">
-        <h2 className="text-3xl font-semibold mb-6">How to Apply</h2>
+        <h2 className="text-3xl font-semibold mb-6">Admission Process: Get Started Today!</h2>
         <p className="text-lg mb-6">
           Follow these simple steps to apply for the Mechanical Engineering
           program at ICEM College Pune:
@@ -22,11 +30,11 @@ const MechApply = () => {
           {/* Step 1 */}
           <div
             className="relative bg-white p-6 shadow-xl w-full"
-            style={{ backgroundColor: "rgba(255, 165, 0, 0.3)" }}  
+            style={{ backgroundColor: "rgba(255, 165, 0, 0.3)" }}
           >
             <div
               className="font-bold absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
-              style={{ backgroundColor: "white ",color:"DarkOrange",}}
+              style={{ backgroundColor: "white ", color: "DarkOrange" }}
             >
               1
             </div>
@@ -36,11 +44,11 @@ const MechApply = () => {
           {/* Step 2 */}
           <div
             className="relative bg-white p-6 shadow-xl w-full"
-            style={{ backgroundColor: "rgba(255, 165, 0, 0.3)" }}  
+            style={{ backgroundColor: "rgba(255, 165, 0, 0.3)" }}
           >
             <div
               className="font-bold absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
-              style={{ backgroundColor: "white ",color:"DarkOrange" }}
+              style={{ backgroundColor: "white ", color: "DarkOrange" }}
             >
               2
             </div>
@@ -50,11 +58,11 @@ const MechApply = () => {
           {/* Step 3 */}
           <div
             className="relative bg-white p-6 shadow-xl w-full"
-            style={{ backgroundColor: "rgba(255, 165, 0, 0.3)" }}  
+            style={{ backgroundColor: "rgba(255, 165, 0, 0.3)" }}
           >
             <div
               className="font-bold absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
-              style={{ backgroundColor: "white ",color:"DarkOrange" }}
+              style={{ backgroundColor: "white ", color: "DarkOrange" }}
             >
               3
             </div>
@@ -64,11 +72,11 @@ const MechApply = () => {
           {/* Step 4 */}
           <div
             className="relative bg-white p-6 shadow-xl w-full"
-            style={{ backgroundColor: "rgba(255, 165, 0, 0.3)" }}  
+            style={{ backgroundColor: "rgba(255, 165, 0, 0.3)" }}
           >
             <div
               className="font-bold absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
-              style={{ backgroundColor: "white ",color:"DarkOrange" }}
+              style={{ backgroundColor: "white ", color: "DarkOrange" }}
             >
               4
             </div>
@@ -78,11 +86,11 @@ const MechApply = () => {
           {/* Step 5 */}
           <div
             className="relative bg-white p-6 shadow-xl w-full"
-            style={{ backgroundColor: "rgba(255, 165, 0, 0.3)" }}  
+            style={{ backgroundColor: "rgba(255, 165, 0, 0.3)" }}
           >
             <div
               className="font-bold absolute top-[-15px] left-[-15px] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
-              style={{ backgroundColor: "white ",color:"DarkOrange"}}
+              style={{ backgroundColor: "white ", color: "DarkOrange" }}
             >
               5
             </div>
@@ -90,7 +98,10 @@ const MechApply = () => {
           </div>
         </div>
 
-        <button className="bg-white text-[#FF5722] py-3 px-8 rounded-full text-xl hover:bg-gray-200 transition-all mt-8">
+        <button
+          className="bg-white text-[#FF5722] py-3 px-8 rounded-full text-xl hover:bg-gray-200 transition-all mt-8"
+          onClick={handleScrollToTop} // Add the onClick handler here
+        >
           Apply Now
         </button>
       </div>

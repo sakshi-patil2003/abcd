@@ -9,8 +9,6 @@ import bgImage from '../../assets/images/highbg.avif';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import the AOS styles
 
-
-
 function CompHighlights() {
   useEffect(() => {
     AOS.init({
@@ -41,8 +39,8 @@ function CompHighlights() {
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <div className="w-12 h-12 bg-[#6095ff] text-white rounded-full flex items-center justify-center mb-4">
-              <FontAwesomeIcon icon={faTrophy} className="text-2xl" />
+            <div className="w-16 h-16 bg-[#6095ff] text-white rounded-full flex items-center justify-center mb-4 mx-auto">
+              <FontAwesomeIcon icon={faTrophy} className="text-3xl" />
             </div>
             <p className="text-gray-600 poppins-regular">
               Ranked 49th in Top 100 Private Engineering Institutes and Ranked 61st in Top 140 Engineering Institutes conducted by Times of India Engineering Colleges.
@@ -55,8 +53,8 @@ function CompHighlights() {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <div className="w-12 h-12 bg-[#6095ff] text-white rounded-full flex items-center justify-center mb-4">
-              <FontAwesomeIcon icon={faAward} className="text-2xl" />
+            <div className="w-16 h-16 bg-[#6095ff] text-white rounded-full flex items-center justify-center mb-4 mx-auto">
+              <FontAwesomeIcon icon={faAward} className="text-3xl" />
             </div>
             <p className="text-gray-600 poppins-regular">
               Ranking Survey - 2019 Winners of SmartIndia Hackathon for consecutive three years organized by Ministry of HRD, AICTE in association with NASSCOM.
@@ -69,8 +67,8 @@ function CompHighlights() {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <div className="w-12 h-12 bg-[#6095ff] text-white rounded-full flex items-center justify-center mb-4">
-              <FontAwesomeIcon icon={faMedal} className="text-2xl" />
+            <div className="w-16 h-16 bg-[#6095ff] text-white rounded-full flex items-center justify-center mb-4 mx-auto">
+              <FontAwesomeIcon icon={faMedal} className="text-3xl" />
             </div>
             <p className="text-gray-600 poppins-regular">
               Received Outstanding Education Institute (West) Award by National Education Awards 2018.
@@ -83,16 +81,14 @@ function CompHighlights() {
             data-aos="fade-up"
             data-aos-delay="400"
           >
-            <div className="w-12 h-12 bg-[#6095ff] text-white rounded-full flex items-center justify-center mb-4">
-              <FontAwesomeIcon icon={faCertificate} className="text-2xl" />
+            <div className="w-16 h-16 bg-[#6095ff] text-white rounded-full flex items-center justify-center mb-4 mx-auto">
+              <FontAwesomeIcon icon={faCertificate} className="text-3xl" />
             </div>
             <p className="text-gray-600 poppins-regular">
               ICEM has been accredited with ‘B++’ grade by National Accreditation and Assessment Council (NAAC).
             </p>
           </div>
         </div>
-
-
       </div>
     </div>
   );

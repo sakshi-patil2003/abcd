@@ -1,4 +1,3 @@
-// MechForklift.jsx
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
 import forkliftImage from "../../assets/images/forklift-cropped.avif"; // Adjust the path to your forklift image
@@ -19,11 +18,11 @@ const MechForklift = () => {
   }, []);
 
   return (
-    <div className="absolute bottom-[-0rem] left-0 z-20">
+    <div className="absolute bottom-[-0rem] left-0 z-1">
       <img
         src={forkliftImage}
         alt="Forklift"
-        className="forklift w-1/2  md:w-1/3 lg:w-1/4 xl:w-1/6" // Responsively adjust width for different screen sizes
+        className="forklift w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6" // Responsively adjust width for different screen sizes
       />
     </div>
   );

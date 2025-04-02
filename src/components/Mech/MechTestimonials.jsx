@@ -3,12 +3,7 @@ import Slider from "react-slick"; // Importing react-slick
 
 // Image Imports
 import vikramImage from "../../assets/images/user-org-icon.png";
-import simranImage from "../../assets/images/user-org.png";
-import arjunImage from "../../assets/images/user-org-icon.png";
-import meeraImage from "../../assets/images/user-org.png";
-import karanImage from "../../assets/images/user-org-icon.png";
-import nishaImage from "../../assets/images/user-org.png";
-import aartiImage from "../../assets/images/user-org-icon.png";
+
 
 function MechTestimonials() {
   const testimonials = [
@@ -16,164 +11,119 @@ function MechTestimonials() {
       name: "Vikram Singh - Junior Mechanical Engineer",
       department: "Mechanical Engineering",
       year: "Batch-24",
-      text: '"ICEM provided me with the skills and knowledge I needed to succeed in the engineering world. The faculty and resources are top-notch!"',
+      text: '"ICEM has been the launchpad for my engineering dreams. With world-class faculty, cutting-edge labs, and industry-focused training, I’ve gained the confidence to step into the professional world. The hands-on experience here has truly shaped my career!"',
       image: vikramImage,
     },
     {
       name: "Simran Kaur - Mechanical Engineer Trainee",
       department: "Mechanical Engineering",
       year: "Batch-23",
-      text: '"The exposure to real-world projects and internships helped me land a job at a leading manufacturing firm straight out of college! The curriculum is well-structured."',
-      image: simranImage,
+      text: 'My journey at ICEM has been nothing short of amazing! The curriculum, practical exposure, and placement opportunities have prepared me for industry challenges. I am grateful for the immense learning and growth I have experienced here.',
+      image: vikramImage,
     },
     {
       name: "Arjun Rao - Junior Mechanical Engineer",
       department: "Mechanical Engineering",
       year: "Batch-25",
-      text: '"ICEM is a fantastic place to study, with the best infrastructure and an extremely supportive environment! From well-equipped labs to knowledgeable professors."',
-      image: arjunImage,
-    },
-    {
-      name: "Meera Patel - Mechanical Engineering Intern",
-      department: "Mechanical Engineering",
-      year: "Batch-24",
-      text: '"The practical experience I gained at ICEM really helped me adapt quickly in the engineering industry! The focus on real-world applications and exposure to emerging technologies was invaluable."',
-      image: meeraImage,
+      text: 'ICEM prepares you for the real world. The Industry Readiness Programme, expert guidance, and technical workshops have given me a competitive edge. I feel fully equipped to excel in my career.',
+      image: vikramImage,
     },
     {
       name: "Karan Desai - CAD Design Intern",
       department: "Mechanical Engineering",
       year: "Batch-24",
-      text: '"I had access to top-tier resources and mentorship, making my learning journey smooth and enriching! ICEM\'s environment encouraged creativity and collaboration."',
-      image: karanImage,
-    },
-    {
-      name: "Nisha Gupta - Junior Design Engineer",
-      department: "Mechanical Engineering",
-      year: "Batch-25",
-      text: '"The real-world challenges and hands-on projects at ICEM were the highlight of my college life! The faculty ensures that we are always up-to-date with the latest industry trends."',
-      image: nishaImage,
+      text: 'The learning environment at ICEM is dynamic, inspiring, and filled with opportunities. The modern infrastructure, Apple labs, and top-notch faculty have helped me sharpen my technical and analytical skills, making me industry-ready.',
+      image: vikramImage,
     },
     {
       name: "Aarti Sharma - Junior Mechanical Engineer",
       department: "Mechanical Engineering",
       year: "Batch-25",
-      text: '"The real-world challenges and hands-on projects at ICEM were the highlight of my college life! The faculty ensures that we are always up-to-date with the latest industry trends."',
-      image: aartiImage,
+      text: 'Engineering at ICEM has been an enriching journey of knowledge, innovation, and professional growth. The support from faculty and the placement cell has helped me secure a great opportunity in my field of interest.',
+      image: vikramImage,
     },
     {
       name: "Aarti Sharma - Junior Mechanical Engineer",
       department: "Mechanical Engineering",
       year: "Batch-25",
-      text: '"The real-world challenges and hands-on projects at ICEM were the highlight of my college life! The faculty ensures that we are always up-to-date with the latest industry trends."',
-      image: aartiImage,
+      text: 'ICEM has given me a home away from home, where I’ve built friendships, explored my potential, and grown beyond academics. The mix of technical learning, cultural events, and career support makes ICEM an unforgettable experience.',
+      image: vikramImage,
+    },
+    {
+      name: "Aarti Sharma - Junior Mechanical Engineer",
+      department: "Mechanical Engineering",
+      year: "Batch-25",
+      text: 'At ICEM, learning goes beyond textbooks. With hands-on projects, industrial visits, and expert mentorship, I have developed real-world problem-solving skills. The exposure here has been instrumental in shaping my engineering journey.',
+      image: vikramImage,
+    },
+    {
+      name: "Aarti Sharma - Junior Mechanical Engineer",
+      department: "Mechanical Engineering",
+      year: "Batch-25",
+      text: 'Choosing ICEM for my engineering studies was the best decision. The rigorous training, campus placements, and exposure to emerging technologies have helped me secure a promising career. ICEM truly prepares you for the future!',
+      image: vikramImage,
     },
   ];
 
   const settings = {
-    dots: true, // Navigation dots
+    dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2, // Show 1 slide at a time (to ensure each slide holds 2 items)
-    slidesToScroll: 2,
-    vertical: false, // Change to false for horizontal scrolling
-    centerMode: true, // Center the active slide
-    centerPadding: "0", // No padding around centered slide
-    autoplay: true, // Enable autoplay
-    autoplaySpeed: 5000, // Set autoplay speed (5 seconds here)
-    pauseOnHover: false, // Disable stopping on hover
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    pauseOnHover: true,
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          vertical: false, // Adjust for responsiveness
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          vertical: false, // Adjust for responsiveness
-        },
-      },
+      { breakpoint: 1024, settings: { slidesToShow: 2, slidesToScroll: 1 } },
+      { breakpoint: 600, settings: { slidesToShow: 1, slidesToScroll: 1 } },
     ],
   };
 
-  // Function to pair testimonials for each slide
-  const pairedTestimonials = [];
-  for (let i = 0; i < testimonials.length; i += 2) {
-    pairedTestimonials.push([testimonials[i], testimonials[i + 1]]);
-  }
-
   return (
-    <div className="mb-8 px-8 md:px-16 ">
-      {/* Main Heading outside the white rectangle */}
-      <div className="flex justify-around">
-        <h2 className="text-4xl font-semibold text-[#ff7f4f] text-center mb-4">
+    <div className="mb-8 px-8 md:px-16">
+      {/* Main Heading */}
+      <div className="flex justify-center">
+        <h2 className="text-3xl md:text-4xl mt-6 font-semibold text-[#ff7f4f] text-center">
           What Our Students Say
         </h2>
       </div>
 
-      {/* Single white rectangle container */}
-      <div className="bg-white shadow-lg">
-        <div className="flex justify-between items-center gap-4">
-          {/* Testimonial Section - 60% */}
-          <div className="w-full">
-            {/* Slick Slider */}
-            <Slider {...settings}>
-              {pairedTestimonials.map((pair, index) => (
-                <div key={index} className="flex flex-col">
-                  {/* First Card: Profile and Testimonial */}
-                  <div className="p-6 mx-2 flex flex-col mb-6 bg-[#ffefda] border border-[#ff7f4f] rounded-lg">
-                    <div className="flex items-center mb-4">
-                      <img
-                        src={pair[0].image}
-                        alt={pair[0].name}
-                        className="w-12 h-12 rounded-full mr-4"
-                      />
-                      <div className="text-left">
-                        <p className="text-lg font-semibold text-[#4e4e4e]">
-                          {pair[0].name}
-                        </p>
-                        <hr className="my-1 border-t border-gray-300" />
-                        <p className="text-sm text-[#ff7f4f]">
-                          {pair[0].department} | {pair[0].year}
-                        </p>
-                      </div>
-                    </div>
-                    <p className="text-[#4e4e4e]">{pair[0].text}</p>
-                  </div>
-
-                  {/* Second Card (for the next testimonial) */}
-                  {pair[1] && (
-                    <div className="p-6 mx-2 flex flex-col mb-6 bg-[#ffefda] border border-[#ff7f4f] rounded-lg">
-                      <div className="flex items-center mb-4">
-                        <img
-                          src={pair[1].image}
-                          alt={pair[1].name}
-                          className="w-12 h-12 rounded-full mr-4"
-                        />
-                        <div className="text-left">
-                          <p className="text-lg font-semibold text-[#4e4e4e]">
-                            {pair[1].name}
-                          </p>
-                          <hr className="my-1 border-t border-gray-300" />
-                          <p className="text-sm text-[#ff7f4f]">
-                            {pair[1].department} | {pair[1].year}
-                          </p>
-                        </div>
-                      </div>
-                      <p className="text-[#4e4e4e]">{pair[1].text}</p>
-                    </div>
-                  )}
+      {/* Testimonial Slider */}
+      <div className="bg-white shadow-lg p-4 sm:p-6">
+        <Slider {...settings}>
+          {testimonials.map((testimonial, i) => (
+            <div key={i} className="p-2">
+              {/* Testimonial Card */}
+              <div className="bg-[#ffefda] border-2 border-[#ff7f4f] rounded-lg p-4 sm:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 w-[90%] sm:w-auto mx-auto sm:mx-0 flex flex-col justify-between h-[380px]">
+                {/* Profile Icon at the Top */}
+                <div className="flex justify-center mb-4">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-white shadow-lg"
+                  />
                 </div>
-              ))}
-            </Slider>
-          </div>
-        </div>
+
+                {/* Name */}
+                <p className="text-lg font-semibold text-[#4e4e4e] text-center">
+                  {testimonial.name}
+                </p>
+                {/* Department and Year */}
+                <p className="text-sm text-[#ff7f4f] text-center">
+                  {testimonial.department} | {testimonial.year}
+                </p>
+                <hr className="my-1 border-t border-gray-300" />
+                {/* Testimonial Text */}
+                <div className="flex-grow">
+                  <p className="text-[#4e4e4e] text-center text-sm h-[120px] overflow-hidden ">
+                    {testimonial.text}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { FaLaptopCode } from 'react-icons/fa'; // Laptop code icon for IT
 import { FaNetworkWired } from 'react-icons/fa'; // Network wired icon for IT
-import { FaCloud } from 'react-icons/fa'; // Cloud icon for IT
+import { FaDollarSign } from 'react-icons/fa'; // Dollar sign icon for Highest CTC
 
 // Import AOS for animations
 import AOS from 'aos';
@@ -47,16 +47,16 @@ function ItPointers() {
           </div>
         </div>
 
-        {/* Card 3: Program Fees */}
+        {/* Card 3: Highest CTC */}
         <div
           className="bg-[#F7F0FC] p-6 z-10 shadow-lg flex items-center justify-center"
           data-aos="fade-up"
         >
           <div className="flex flex-col items-center justify-center ">
-            <FaCloud size={40} className="text-[#390161]" />
+            <FaDollarSign size={40} className="text-[#390161]" /> {/* Updated icon */}
             <div className="text-center ">
-              <h2 className="text-[#390161] text-xl sm:text-2xl font-semibold">Program Fees</h2>
-              <p className="text-xl sm:text-2xl font-semibold text-[#390161]">Rs. 120000/-</p>
+              <h2 className="text-[#390161] text-xl sm:text-2xl font-semibold">Highest CTC</h2>
+              <p className="text-xl sm:text-2xl font-semibold text-[#390161]">27 LPA</p>
             </div>
           </div>
         </div>
