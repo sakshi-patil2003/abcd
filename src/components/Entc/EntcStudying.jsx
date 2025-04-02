@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 import std1 from '../../assets/images/IT-Images/app1.avif';
 import std2 from '../../assets/images/Entc-Images/entclab.avif';
-import indira from '../../assets/images/Entc-Images/ICEM - College.avif';
+import indira from '../../assets/images/ICEM_College.avif';
  
 function EntcStudying() {
   return (

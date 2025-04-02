@@ -2,24 +2,24 @@ import { FaRobot, FaBrain, FaSatellite } from "react-icons/fa"; // AI-related ic
  
 export default function AidsInovaiton() {
   return (
-    <div className="relative bg-gradient-to-br from-teal-700 to-blue-900 flex items-center justify-center p-4 sm:p-10 overflow-hidden">
+    <div className="relative  flex items-center justify-center p-4 sm:p-10 overflow-hidden">
       {/* Animated AI-related icons */}
-      <div className="absolute left-4 sm:left-10 top-4 sm:top-10 animate-floating text-white opacity-70">
+      <div className="absolute left-4 sm:left-10 top-4 sm:top-10 animate-floating text-black opacity-70">
         <FaRobot size={60} smSize={80} /> {/* Robot Icon */}
       </div>
-      <div className="absolute right-4 sm:right-10 top-40 sm:top-60 animate-spin-slow text-white opacity-70">
+      <div className="absolute right-4 sm:right-10 top-40 sm:top-60 animate-spin-slow text-black opacity-70">
         <FaBrain size={70} smSize={90} /> {/* Brain Icon */}
       </div>
  
       {/* Satellite moving from left to right */}
-      <div className="absolute top-1/2 transform -translate-y-1/2 animate-fly text-white opacity-70">
+      <div className="absolute top-1/2 transform -translate-y-1/2 animate-fly text-black opacity-70">
         <FaSatellite size={60} smSize={80} /> {/* Satellite Icon */}
       </div>
  
       {/* Main content container */}
       <div
         className="p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-white/30 w-full max-w-lg sm:max-w-6xl bg-black/30
-                    hover:bg-black/50 hover:scale-105 transform transition duration-500 shadow-xl"
+                    hover:bg-black/50 hover:scale-105 transform transition duration-500 shadow-xl bg-gradient-to-br from-teal-700 to-blue-900"
       >
         <h1 className="text-2xl sm:text-4xl font-bold text-white text-center">
           Where AI Meets Innovation – Welcome to the Future!
