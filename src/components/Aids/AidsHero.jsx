@@ -1,7 +1,7 @@
 import React from "react";
 import robotImage from "../../assets/images/AIDS-Imagegs/aids-robot-tab (1).avif";
 import mouseIcon from "../../assets/images/AIDS-Imagegs/whitemouse.avif";
- 
+
 function AidsHero() {
   const handleScrollDown = () => {
     window.scrollBy({
@@ -9,11 +9,11 @@ function AidsHero() {
       behavior: "smooth",
     });
   };
- 
+
   return (
     <div className="relative px-8 md:px-16 pt-12 text-white flex flex-col md:flex-row items-center justify-between bg-gradient-to-r from-[#0c3249] via-[#1e5f76] to-[#41b9d0]">
       <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
- 
+
       <div className="relative w-full md:w-1/2 flex items-center justify-center mb-8 md:mb-0">
         <img src={robotImage} alt="Robot" className="animate-robot object-contain h-auto" />
         <div className="absolute top-10 left-4 md:left-8 lg:left-16 p-8 z-20 text-start">
@@ -26,7 +26,7 @@ function AidsHero() {
           </p>
         </div>
       </div>
- 
+
       <div className="flex flex-col items-center md:items-end w-full md:w-1/2 z-20 mb-20">
         <div className="p-6 max-w-md w-full shadow-md bg-opacity-30 bg-[#41b9d0] border-2 border-[#1e5f76] rounded-lg">
           <form className="space-y-4">
@@ -34,7 +34,6 @@ function AidsHero() {
               { type: "text", id: "name", placeholder: "Enter your name" },
               { type: "email", id: "email", placeholder: "Enter your email" },
               { type: "tel", id: "mobile", placeholder: "Enter your mobile number" },
-              { type: "number", id: "cet-score", placeholder: "Enter CET Score" },
             ].map((input, index) => (
               <input
                 key={index}
@@ -59,7 +58,6 @@ function AidsHero() {
                   "Artificial Intelligence and Data Science (AIDS)",
                 ],
               },
-              { id: "program", options: ["Select Program"] },
             ].map((select, index) => (
               <select
                 key={index}
@@ -68,19 +66,26 @@ function AidsHero() {
                 required
               >
                 {select.options.map((option, idx) => (
-                  <option key={idx} value={option === "Select State" || option === "Select City" || option === "Select Course" || option === "Select Program" ? "" : option}>
+                  <option key={idx} value={option === "Select State" || option === "Select City" || option === "Select Course" ? "" : option}>
                     {option}
                   </option>
                 ))}
               </select>
             ))}
+            <input
+              type="number"
+              id="cet-score"
+              className="w-full p-1.5 bg-gradient-to-r from-white via-[#f0f8ff] to-[#d6f0ff] text-black rounded border border-[#8BC5FF] focus:outline-none focus:ring-2 focus:ring-[#006BB3]"
+              placeholder="Enter CET Score"
+              required
+            />
             <button type="submit" className="w-full py-2 bg-[#006BB3] text-white rounded-lg hover:bg-[#00508D]">
               Submit
             </button>
           </form>
         </div>
       </div>
- 
+
       <div className="absolute bottom-5 right-5 z-20 text-white text-lg flex cursor-pointer" onClick={handleScrollDown}>
         <div className="flex items-center justify-center mr-4">
           <img src={mouseIcon} alt="Scroll Down" className="w-8 h-12 animate-bounce" />
@@ -90,7 +95,7 @@ function AidsHero() {
           <p className="text-sm text-gray-300">to know more</p>
         </div>
       </div>
- 
+
       <style>
         {`
           @keyframes robotMove {
@@ -105,5 +110,5 @@ function AidsHero() {
     </div>
   );
 }
- 
+
 export default AidsHero;

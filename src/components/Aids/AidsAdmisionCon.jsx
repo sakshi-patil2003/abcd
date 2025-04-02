@@ -1,5 +1,6 @@
 import React from "react";
  
+
 function AidsAdmisionCon() {
   return (
     <div className="bg-[#0c3249] text-white py-4 px-6  shadow-lg text-center ">

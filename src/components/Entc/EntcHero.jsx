@@ -100,7 +100,7 @@ function EntcHero() {
                   <option value="AIDS">Artificial Intelligence and Data Science (AIDS)</option>
                 </select>
               </div>
-              <div>
+              {/* <div>
                 <select
                   id="program"
                   className="w-full p-2 bg-white text-black rounded border border-[#374151] focus:outline-none focus:ring-2 focus:ring-[#374151]"
@@ -108,7 +108,7 @@ function EntcHero() {
                 >
                   <option value="">Select Program</option>
                 </select>
-              </div>
+              </div> */}
               <div>
                 <input
                   type="number"
