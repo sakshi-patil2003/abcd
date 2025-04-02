@@ -86,7 +86,7 @@ function AidsHero() {
         </div>
       </div>
 
-      <div className="absolute bottom-5 right-5 z-20 text-white text-lg flex cursor-pointer" onClick={handleScrollDown}>
+      {/* <div className="absolute bottom-5 right-5 z-20 text-white text-lg flex cursor-pointer" onClick={handleScrollDown}>
         <div className="flex items-center justify-center mr-4">
           <img src={mouseIcon} alt="Scroll Down" className="w-8 h-12 animate-bounce" />
         </div>
@@ -94,7 +94,7 @@ function AidsHero() {
           <p className="text-lg">Scroll Down</p>
           <p className="text-sm text-gray-300">to know more</p>
         </div>
-      </div>
+      </div> */}
 
       <style>
         {`
