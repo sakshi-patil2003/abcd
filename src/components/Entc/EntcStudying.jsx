@@ -49,14 +49,14 @@ function EntcStudying() {
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-left mb-4 text-white">
           Grow. Connect. Lead with Indira!!  
         </h1>
-        <p className="text-left text-sm md:text-base lg:text-lg mb-8 md:mb-16 text-white ">
+        <p className="text-left text-sm md:text-base lg:text-lg mb-8 md:mb-8 text-white ">
           At Indira College of Engineering & Management, our spacious, high-tech campus provides the perfect environment for innovation.
           Nestled in lush greenery, the campus blends natural beauty with cutting-edge labs, making every moment of learning an experience in itself.
           Our program equips students with practical expertise, live projects, and mentorship from top industry experts, ensuring they are industry-ready from day one.
         </p>
  
         {/* 2x3 Grid for Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-3 gap-6  lg:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 grid-rows-3 gap-6  lg:gap-8">
           {/* Card 1 */}
           <div className="bg-[#9FEDD7] p-4 shadow-lg shadow-[#026670]/50 flex items-center rounded-lg">
             <FaTools className="text-[#026670] mr-4 text-3xl lg:text-4xl" />
