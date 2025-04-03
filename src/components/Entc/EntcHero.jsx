@@ -26,7 +26,7 @@ function EntcHero() {
           <h1 className="text-2xl md:text-5xl text-white font-bold leading-tight mb-4">
             ENTC Engineering at Indira College of Engineering & Management
           </h1>
-          <p className="hidden sm:flex text-lg md:text-3xl text-white leading-relaxed mb-2">
+          <p className="hidden sm:flex text-lg md:text-3xl text-white leading-relaxed mb-2 italic">
             30 Years of Excellence in Education | 5 Specializations | 100% Placement Assistance
           </p>
           <p className="hidden sm:flex text-md md:text-2xl text-white leading-relaxed">
