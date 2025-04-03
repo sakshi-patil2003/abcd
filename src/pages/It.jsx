@@ -34,7 +34,7 @@ function It() {
       <CompRecruter/>
       <ItBanner/>
       <ItApply />  
-      <AutoChatbot />
+      {/* <AutoChatbot /> */}
       <MechJourny/>
     </div>
   );

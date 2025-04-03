@@ -37,7 +37,7 @@ function Aids() {
       <AidsApply/>
       <AidsAdmisionCon/>
       
-      <AutoChatbot />
+      {/* <AutoChatbot /> */}
       <MechJourny/>
     </div>
   );

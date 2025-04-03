@@ -1,74 +1,21 @@
-import Slider from "react-slick"; // Importing react-slick
- 
+import { useEffect, useRef, useState, useMemo } from 'react';
+import Slider from "react-slick";
+
 // Image Imports
 import vikramImage from "../../assets/images/AIDS-Imagegs/user-aids.avif";
-import simranImage from "../../assets/images/AIDS-Imagegs/user-aids.avif";
-import arjunImage from "../../assets/images/AIDS-Imagegs/user-aids.avif";
-import meeraImage from "../../assets/images/AIDS-Imagegs/user-aids.avif";
-import karanImage from "../../assets/images/AIDS-Imagegs/user-aids.avif";
-import nishaImage from "../../assets/images/AIDS-Imagegs/user-aids.avif";
- 
-function AidsTestimonials() {
-  const testimonials = [
-    {
-      name: "Vikram Singh - Junior Mechanical Engineer",
-      department: "Mechanical Engineering",
-      year: "Batch-24",
-      text: '"ICEM has been the launchpad for my engineering dreams. With world-class faculty, cutting-edge labs, and industry-focused training, I’ve gained the confidence to step into the professional world. The hands-on experience here has truly shaped my career!"',
-      image: vikramImage,
-    },
-    {
-      name: "Simran Kaur - Mechanical Engineer Trainee",
-      department: "Mechanical Engineering",
-      year: "Batch-23",
-      text: 'My journey at ICEM has been nothing short of amazing! The curriculum, practical exposure, and placement opportunities have prepared me for industry challenges. I am grateful for the immense learning and growth I have experienced here.',
-      image: vikramImage,
-    },
-    {
-      name: "Arjun Rao - Junior Mechanical Engineer",
-      department: "Mechanical Engineering",
-      year: "Batch-25",
-      text: 'ICEM prepares you for the real world. The Industry Readiness Programme, expert guidance, and technical workshops have given me a competitive edge. I feel fully equipped to excel in my career.',
-      image: vikramImage,
-    },
-    {
-      name: "Karan Desai - CAD Design Intern",
-      department: "Mechanical Engineering",
-      year: "Batch-24",
-      text: 'The learning environment at ICEM is dynamic, inspiring, and filled with opportunities. The modern infrastructure, Apple labs, and top-notch faculty have helped me sharpen my technical and analytical skills, making me industry-ready.',
-      image: vikramImage,
-    },
-    {
-      name: "Aarti Sharma - Junior Mechanical Engineer",
-      department: "Mechanical Engineering",
-      year: "Batch-25",
-      text: 'Engineering at ICEM has been an enriching journey of knowledge, innovation, and professional growth. The support from faculty and the placement cell has helped me secure a great opportunity in my field of interest.',
-      image: vikramImage,
-    },
-    {
-      name: "Aarti Sharma - Junior Mechanical Engineer",
-      department: "Mechanical Engineering",
-      year: "Batch-25",
-      text: 'ICEM has given me a home away from home, where I’ve built friendships, explored my potential, and grown beyond academics. The mix of technical learning, cultural events, and career support makes ICEM an unforgettable experience.',
-      image: vikramImage,
-    },
-    {
-      name: "Aarti Sharma - Junior Mechanical Engineer",
-      department: "Mechanical Engineering",
-      year: "Batch-25",
-      text: 'At ICEM, learning goes beyond textbooks. With hands-on projects, industrial visits, and expert mentorship, I have developed real-world problem-solving skills. The exposure here has been instrumental in shaping my engineering journey.',
-      image: vikramImage,
-    },
-    {
-      name: "Aarti Sharma - Junior Mechanical Engineer",
-      department: "Mechanical Engineering",
-      year: "Batch-25",
-      text: 'Choosing ICEM for my engineering studies was the best decision. The rigorous training, campus placements, and exposure to emerging technologies have helped me secure a promising career. ICEM truly prepares you for the future!',
-      image: vikramImage,
-    },
- 
-  ];
- 
+
+function CompTestimonials() {
+  const testimonials = useMemo(() => [
+    { name: "Vikram Singh - Junior Mechanical Engineer", department: "Mechanical Engineering", year: "Batch-24", text: '"ICEM has been the launchpad for my engineering dreams. With world-class faculty, cutting-edge labs, and industry-focused training, I’ve gained the confidence to step into the professional world. The hands-on experience here has truly shaped my career!"', image: vikramImage },
+    { name: "Simran Kaur - Mechanical Engineer Trainee", department: "Mechanical Engineering", year: "Batch-23", text: 'My journey at ICEM has been nothing short of amazing! The curriculum, practical exposure, and placement opportunities have prepared me for industry challenges. I am grateful for the immense learning and growth I have experienced here.', image: vikramImage },
+    { name: "Arjun Rao - Junior Mechanical Engineer", department: "Mechanical Engineering", year: "Batch-25", text: 'ICEM prepares you for the real world. The Industry Readiness Programme, expert guidance, and technical workshops have given me a competitive edge. I feel fully equipped to excel in my career.', image: vikramImage },
+    { name: "Karan Desai - CAD Design Intern", department: "Mechanical Engineering", year: "Batch-24", text: 'The learning environment at ICEM is dynamic, inspiring, and filled with opportunities. The modern infrastructure, Apple labs, and top-notch faculty have helped me sharpen my technical and analytical skills, making me industry-ready.', image: vikramImage },
+    { name: "Aarti Sharma - Junior Mechanical Engineer", department: "Mechanical Engineering", year: "Batch-25", text: 'Engineering at ICEM has been an enriching journey of knowledge, innovation, and professional growth. The support from faculty and the placement cell has helped me secure a great opportunity in my field of interest.', image: vikramImage },
+    { name: "Aarti Sharma - Junior Mechanical Engineer", department: "Mechanical Engineering", year: "Batch-25", text: 'ICEM has given me a home away from home, where I’ve built friendships, explored my potential, and grown beyond academics. The mix of technical learning, cultural events, and career support makes ICEM an unforgettable experience.', image: vikramImage },
+    { name: "Aarti Sharma - Junior Mechanical Engineer", department: "Mechanical Engineering", year: "Batch-25", text: 'At ICEM, learning goes beyond textbooks. With hands-on projects, industrial visits, and expert mentorship, I have developed real-world problem-solving skills. The exposure here has been instrumental in shaping my engineering journey.', image: vikramImage },
+    { name: "Aarti Sharma - Junior Mechanical Engineer", department: "Mechanical Engineering", year: "Batch-25", text: 'Choosing ICEM for my engineering studies was the best decision. The rigorous training, campus placements, and exposure to emerging technologies have helped me secure a promising career. ICEM truly prepares you for the future!', image: vikramImage },
+  ], []);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -83,22 +30,40 @@ function AidsTestimonials() {
       { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } },
     ],
   };
- 
+
+  const cardRefs = useRef([]);
+  const [maxHeight, setMaxHeight] = useState(0);
+
+  useEffect(() => {
+    const updateMaxHeight = () => {
+      const heights = cardRefs.current.map(ref => ref && ref.offsetHeight).filter(Boolean);
+      const tallest = Math.max(...heights);
+      setMaxHeight(tallest);
+    };
+
+    updateMaxHeight();
+
+    const resizeObserver = new ResizeObserver(updateMaxHeight);
+    cardRefs.current.forEach(ref => ref && resizeObserver.observe(ref));
+
+    return () => resizeObserver.disconnect();
+  }, [testimonials]);
+
   return (
-    <div className=" px-4 md:px-10">
+    <div className="px-4 md:px-10">
       <h2 className="text-3xl md:text-4xl mt-4 font-semibold text-[#0c3249] text-center">
         What Our Students Say
       </h2>
- 
+
       <div className="bg-white shadow-lg p-4 sm:p-6">
         <Slider {...settings}>
           {testimonials.map((testimonial, i) => (
             <div key={i} className="p-2">
-              <div className="bg-[#0c3249] border-4 border-[#41b9d0] rounded-lg
-                  p-4 sm:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300
-                  w-[90%] sm:w-auto mx-auto sm:mx-0 h-auto sm:h-[320px]"> {/* Reduced height for mobile */}
-               
-                {/* Profile Icon at the Top */}
+              <div
+                ref={el => (cardRefs.current[i] = el)}
+                className="border-4 border-[#41b9d0] rounded-lg p-4 sm:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 w-[90%] sm:w-auto mx-auto sm:mx-0"
+                style={{ minHeight: maxHeight, backgroundColor: '#0c3249', color: '#e1dede' }}
+              >
                 <div className="flex justify-center mb-4">
                   <img
                     src={testimonial.image}
@@ -106,13 +71,13 @@ function AidsTestimonials() {
                     className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-white shadow-lg"
                   />
                 </div>
- 
-                <p className="text-lg font-semibold text-white text-center">{testimonial.name}</p>
+
+                <p className="text-lg font-semibold text-[#e1dede] text-center">{testimonial.name}</p>
                 <p className="text-sm text-[#d3d1d1] text-center">
                   {testimonial.department} | {testimonial.year}
                 </p>
-                <hr className="my-1 border-t border-gray-300" />
-                <p className="text-[#e1dede] text-center">{testimonial.text}</p>
+                <hr className="my-1 border-t border-[#41b9d0]" />
+                <p className="text-[#e1dede] text-sm text-center">{testimonial.text}</p>
               </div>
             </div>
           ))}
@@ -121,5 +86,5 @@ function AidsTestimonials() {
     </div>
   );
 }
- 
-export default AidsTestimonials;
+
+export default CompTestimonials;
