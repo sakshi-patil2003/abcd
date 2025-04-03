@@ -5,8 +5,6 @@ import {
   FaCogs,
   FaLightbulb,
   FaHandsHelping,
-  FaChartLine,
-  FaNetworkWired,
   FaRobot
 } from "react-icons/fa";
 import std1 from '../../assets/images/IT-Images/app1.avif';
@@ -15,24 +13,36 @@ import indira from '../../assets/images/ICEM_College.avif';
  
 function EntcStudying() {
   return (
-    <div className="flex flex-col md:flex-row px-4 md:px-8 lg:px-16 py-6 poppins-regular">
-      {/* Left Side (Image Section with full height and 50% width) */}
-      <div className="w-full md:w-1/2 grid grid-cols-2 gap-4">
-        {/* First Image: Takes the full width and 50% height */}
-        <div className="col-span-2 flex items-center aspect-square md:aspect-auto">
-          <img src={indira} alt="Image 1" className="w-full h-full md:h-100 object-cover rounded-lg max-w-full" />
-        </div>
- 
-        {/* Two Smaller Images with Adjusted Sizes */}
-        <div className="col-span-2 flex gap-2">
-          <div className="flex-1 aspect-square md:aspect-auto">
-            <img src={std2} alt="Image 2" className="w-full h-full md:h-80 object-cover rounded-lg max-w-full" />
+     <div className="flex flex-col lg:flex-row px-4 md:px-8 lg:px-16 py-4 poppins-regular bg-gradient-to-r from-[#0c3249] to-[#41b9d0] gap-6">
+          {/* Left Side: Image Section */}
+          <div className="lg:w-[45%] w-full flex flex-col gap-4">
+            {/* Main Image */}
+            <div className="w-full h-[250px] md:h-[350px] ">
+              <img
+                src={indira}
+                alt="Main College Building"
+                className="w-full h-full object-cover rounded-xl shadow-lg"
+              />
+            </div>
+     
+            {/* Second and Third Images in a Row on Mobile */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="h-[200px] md:h-[200px]">
+                <img
+                  src={std1}
+                  alt="Lab Image 1"
+                  className="w-full h-full object-cover rounded-xl shadow-lg"
+                />
+              </div>
+              <div className="h-[200px] md:h-[200px]">
+                <img
+                  src={std2}
+                  alt="Lab Image 2"
+                  className="w-full h-full object-contain rounded-xl shadow-lg"
+                />
+              </div>
+            </div>
           </div>
-          <div className="flex-1 aspect-square md:aspect-auto">
-            <img src={std1} alt="Image 3" className="w-full h-full md:h-80 object-cover rounded-lg max-w-full" />
-          </div>
-        </div>
-      </div>
  
       {/* Right Side (Text Content Section) */}
       <div className="w-full md:w-1/2 pl-0 md:pl-8 mt-8 md:mt-0">
@@ -51,14 +61,14 @@ function EntcStudying() {
           <div className="bg-[#9FEDD7] p-4 shadow-lg shadow-[#026670]/50 flex items-center rounded-lg">
             <FaTools className="text-[#026670] mr-4 text-3xl lg:text-4xl" />
             <span className="text-xs lg:text-sm text-[#006BB3]">
-              25+ YEARS OF ELECTRICAL EXCELLENCE
+              15+ YEARS OF ENGINEERING EXCELLENCE
             </span>
           </div>
  
           {/* Card 2 */}
           <div className="bg-[#9FEDD7] p-4 shadow-lg shadow-[#026670]/50 flex items-center rounded-lg">
             <FaIndustry className="text-[#026670] mr-4 text-3xl lg:text-4xl" />
-            <span className="text-xs lg:text-sm text-[#006BB3]">400+ INDUSTRY PARTNERS</span>
+            <span className="text-xs lg:text-sm text-[#006BB3]">450+ INDUSTRY PARTNERS</span>
           </div>
  
           {/* Card 3 */}
@@ -71,27 +81,20 @@ function EntcStudying() {
           <div className="bg-[#9FEDD7] p-4 shadow-lg shadow-[#026670]/50 flex items-center rounded-lg">
             <FaLightbulb className="text-[#026670] mr-4 text-3xl lg:text-4xl" />
             <span className="text-xs lg:text-sm text-[#006BB3]">
-              EXPOSURE TO CUTTING-EDGE TECHNOLOGIES
+              EXPOSURE TO INDUSTRY GUEST LECTURES
             </span>
           </div>
  
           {/* Card 5 */}
           <div className="bg-[#9FEDD7] p-4 shadow-lg shadow-[#026670]/50 flex items-center rounded-lg">
             <FaHandsHelping className="text-[#026670] mr-4 text-3xl lg:text-4xl" />
-            <span className="text-xs lg:text-sm text-[#006BB3]">HANDS-ON TRAINING IN LABS</span>
+            <span className="text-xs lg:text-sm text-[#006BB3]">HANDS-ON TRAINING (IT & APPLE LABS)</span>
           </div>
  
-          {/* Card 6 */}
-          <div className="bg-[#9FEDD7] p-4 shadow-lg shadow-[#026670]/50 flex items-center rounded-lg">
-            <FaChartLine className="text-[#026670] mr-4 text-3xl lg:text-4xl" />
-            <span className="text-xs lg:text-sm text-[#006BB3]">EXCEPTIONAL GROWTH OPPORTUNITIES</span>
-          </div>
+       
  
-          {/* Card 5 */}
-          <div className="bg-[#9FEDD7] p-4 shadow-lg shadow-[#026670]/50 flex items-center rounded-lg">
-            <FaNetworkWired className="text-[#026670] mr-4 text-3xl lg:text-4xl" />
-            <span className="text-xs lg:text-sm text-[#006BB3]">ADVANCED NETWORKING LABS</span>
-          </div>
+        
+        
  
           {/* Card 6 */}
           <div className="bg-[#9FEDD7] p-4 shadow-lg shadow-[#026670]/50 flex items-center rounded-lg">

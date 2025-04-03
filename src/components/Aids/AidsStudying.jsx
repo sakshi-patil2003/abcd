@@ -43,9 +43,12 @@ function AidsStudying() {
         </h1>
  
         <p className="text-left text-sm sm:text-lg mb-6 leading-relaxed">
-          Indira College of Engineering & Management offers a comprehensive mechanical engineering program that blends
-          theoretical knowledge with hands-on experience. Nestled within a vast, vibrant, and lush green campus, the
-          institute provides an inspiring learning environment where innovation meets excellence.
+        Indira College of Engineering & Management offers a comprehensive mechanical engineering program 
+        that blends theoretical knowledge with hands-on experience. Nestled within a vast, vibrant, and lush green campus,
+         the institute provides an inspiring learning environment where innovation meets excellence. The fresh, open spaces
+          and state-of-the-art infrastructure create the perfect setting for students to thrive academically and personally.
+           Our students gain exposure to cutting-edge technologies, industrial practices, and expert mentoring, preparing them 
+           for a successful career in the engineering field.
         </p>
  
         {/* Cards Section */}

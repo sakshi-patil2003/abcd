@@ -108,15 +108,14 @@ const CompRecruter = () => {
     <div className="flex flex-col justify-center items-center py-2 md:py-6 bg-white px-4 md:px-16 overflow-hidden">
       {/* Heading above the slider */}
       <div className="text-xl md:text-4xl font-semibold text-[#001E5D] mb-2 text-center">
-        Our IT Recruiters
+        Our Recruiters
       </div>
 
       <Slider {...settings} className="w-full">
         {sponsorsData.map((slide, index) => (
           <div key={index} className="flex flex-col items-center">
             <div className="flex flex-row justify-center items-center w-full px-4">
-              <div
-                className="grid grid-cols-3 md:grid-cols-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 justify-items-center w-full px-4"
+              <div className="grid grid-cols-3 md:grid-cols-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 justify-items-center w-full px-4"
                 style={{ gridTemplateRows: "repeat(2, auto)" }} // Enforcing only two rows
               >
                 {slide.logos.map((logo, idx) => (

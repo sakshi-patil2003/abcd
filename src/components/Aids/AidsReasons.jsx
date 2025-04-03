@@ -1,99 +1,34 @@
-import { FaRobot, FaChartBar, FaNetworkWired, FaRocket, FaBriefcase, FaGlobe, FaMedal, FaMicrophone, FaTrophy } from "react-icons/fa";
- 
-export default function AidsReasons() {
+function AidsReasons() {
   return (
-    <div className=" flex items-center justify-center py-8">
-      <div className="p-8 rounded-2xl border-transparent w-full max-w-7xl bg-gradient-to-br from-teal-700 to-blue-900 shadow-xl">
-        <h1 className="text-xl md:text-4xl font-bold text-white text-center mb-6">
-          Why Choose ICEM for Your AIDS Engineering Journey?
-        </h1>
- 
-        {/* Grid Container */}
-        <div className="grid grid-cols sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4 lg:gap-6">
-         
-          {/* Card 1 */}
-          <div className="p-2 bg-transparent rounded-lg hover:bg-black/60 transform hover:scale-105 transition-all text-white flex flex-col items-center space-y-2 sm:space-y-4 md:flex-row md:space-y-0 md:space-x-4">
-            <FaRobot size={40} className="text-teal-300" />
-            <div className="text-center md:text-left">
-              <h2 className="text-xl font-semibold">AI & Machine Learning</h2>
-              <p className="text-sm">Train AI models and build self-learning applications!</p>
-            </div>
+    <div className="px-6 md:px-10 lg:px-16 py-8 ">
+      <h2 className="text-2xl md:text-4xl lg:text-4xl font-bold text-center text-[#0c3249] mb-6">
+        Why Choose ICEM for Your AIDS Engineering Journey?
+      </h2>
+
+      {/* Grid Container */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
+        {[
+          { icon: "🖥", title: "Industry-Integrated Curriculum", desc: "Learn trending tech like AI & Cloud computing!" },
+          { icon: "🚀", title: "Live Projects & Internships", desc: "Gain hands-on experience with real-world projects!" },
+          { icon: "🎓", title: "Expert Faculty & Industry Mentors", desc: "Learn from top professionals!" },
+          { icon: "💼", title: "Top Placements", desc: "Get hired by leading tech giants & startups!" },
+          { icon: "🌍", title: "Global Career Prospects", desc: "Opportunities in MNCs across the world!" },
+          { icon: "🏆", title: "Hackathons & Coding Competitions", desc: "Compete, innovate & build solutions!" },
+          { icon: "🏫", title: "State-of-the-Art Labs", desc: "High tech IT & Apple labs!" },
+          { icon: "🎉", title: "Exciting Campus Life", desc: "Sports, events & tech fests to fuel your passion!" },
+        ].map((item, index) => (
+          <div
+            key={index}
+            className="bg-white shadow-[0px_0px_20px_5px_rgba(12,50,73,0.4)] p-6 text-center rounded-lg transition-transform transform hover:scale-105 hover:shadow-[0px_0px_25px_7px_rgba(12,50,73,0.6)]"
+          >
+            <div className="text-4xl text-[#390161] mb-4">{item.icon}</div>
+            <h3 className="text-xl font-semibold text-[#035450] mb-2">{item.title}</h3>
+            <p className="text-sm md:text-base text-gray-700">{item.desc}</p>
           </div>
- 
-          {/* Card 2 */}
-          <div className="p-2 bg-transparent rounded-lg hover:bg-black/60 transform hover:scale-105 transition-all text-white flex flex-col items-center space-y-2 sm:space-y-4 md:flex-row md:space-y-0 md:space-x-4">
-            <FaChartBar size={40} className="text-teal-300" />
-            <div className="text-center md:text-left">
-              <h2 className="text-xl font-semibold">Big Data & Analytics</h2>
-              <p className="text-sm">Decode massive datasets for smarter decision-making!</p>
-            </div>
-          </div>
- 
-          {/* Card 3 */}
-          <div className="p-4 bg-transparent rounded-lg hover:bg-black/60 transform hover:scale-105 transition-all text-white flex flex-col items-center space-y-2 sm:space-y-4 md:flex-row md:space-y-0 md:space-x-4">
-            <FaRocket size={40} className="text-teal-300" />
-            <div className="text-center md:text-left">
-              <h2 className="text-xl font-semibold">Neural Networks & Deep Learning</h2>
-              <p className="text-sm">Explore the tech behind self-driving cars & AI assistants!</p>
-            </div>
-          </div>
- 
-          {/* Card 4 */}
-          <div className="p-2 bg-transparent rounded-lg hover:bg-black/60 transform hover:scale-105 transition-all text-white flex flex-col items-center space-y-2 sm:space-y-4 md:flex-row md:space-y-0 md:space-x-4">
-            <FaBriefcase size={40} className="text-teal-300" />
-            <div className="text-center md:text-left">
-              <h2 className="text-xl font-semibold">Industry-Aligned Curriculum</h2>
-              <p className="text-sm">Hands-on projects, hackathons & real-world applications!</p>
-            </div>
-          </div>
- 
-          {/* Card 5 */}
-          <div className="p-2 bg-transparent rounded-lg hover:bg-black/60 transform hover:scale-105 transition-all text-white flex flex-col items-center space-y-2 sm:space-y-4 md:flex-row md:space-y-0 md:space-x-4">
-            <FaGlobe size={40} className="text-teal-300" />
-            <div className="text-center md:text-left">
-              <h2 className="text-xl font-semibold">Global Career Opportunities</h2>
-              <p className="text-sm">Work in AI-driven industries worldwide!</p>
-            </div>
-          </div>
- 
-          {/* Card 6 */}
-          <div className="p-2 bg-transparent rounded-lg hover:bg-black/60 transform hover:scale-105 transition-all text-white flex flex-col items-center space-y-2 sm:space-y-4 md:flex-row md:space-y-0 md:space-x-4">
-            <FaMedal size={40} className="text-teal-300" />
-            <div className="text-center md:text-left">
-              <h2 className="text-xl font-semibold">Top-Notch Placements</h2>
-              <p className="text-sm">Secure jobs with core and IT companies!</p>
-            </div>
-          </div>
- 
-          {/* Card 7 */}
-          <div className="p-2 bg-transparent rounded-lg hover:bg-black/60 transform hover:scale-105 transition-all text-white flex flex-col items-center space-y-2 sm:space-y-4 md:flex-row md:space-y-0 md:space-x-4">
-            <FaTrophy size={40} className="text-teal-300" />
-            <div className="text-center md:text-left">
-              <h2 className="text-xl font-semibold">Thriving Sports Culture</h2>
-              <p className="text-sm">Stay active and build teamwork with top-class sports facilities!</p>
-            </div>
-          </div>
- 
-          {/* Card 8 */}
-          <div className="p-2 bg-transparent rounded-lg hover:bg-black/60 transform hover:scale-105 transition-all text-white flex flex-col items-center space-y-2 sm:space-y-4 md:flex-row md:space-y-0 md:space-x-4">
-            <FaMicrophone size={40} className="text-teal-300" />
-            <div className="text-center md:text-left">
-              <h2 className="text-xl font-semibold">Expert Guest Lectures</h2>
-              <p className="text-sm">Learn from industry leaders and mechanical pioneers!</p>
-            </div>
-          </div>
- 
-          {/* Card 9 */}
-          <div className="p-2 bg-transparent rounded-lg hover:bg-black/60 transform hover:scale-105 transition-all text-white flex flex-col items-center space-y-2 sm:space-y-4 md:flex-row md:space-y-0 md:space-x-4">
-            <FaRocket size={40} className="text-teal-300" />
-            <div className="text-center md:text-left">
-              <h2 className="text-xl font-semibold">Mega Events & Competitions</h2>
-              <p className="text-sm">Engage in tech fests, project expos, and national-level challenges!</p>
-            </div>
-          </div>
- 
-        </div>
+        ))}
       </div>
     </div>
   );
 }
+
+export default AidsReasons;

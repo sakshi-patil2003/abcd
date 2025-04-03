@@ -1,5 +1,5 @@
 import React from 'react';
-import placementBanner from '../../assets/images/Entc-Images/banner.avif'; // Adjust the path accordingly
+import placementBanner from '../../assets/images/Entc-Images/ENTCBanner.avif'; // Adjust the path accordingly
  
 const EntcPlacement = () => {
   return (

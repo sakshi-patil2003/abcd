@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { FaCog } from 'react-icons/fa';  // Mechanical cog icon
 import { FaTools } from 'react-icons/fa'; // Tools icon
-import { FaIndustry } from 'react-icons/fa'; // Factory icon
+import { FaDollarSign } from 'react-icons/fa'; // Factory icon
  
 // Import AOS for animations
 import AOS from 'aos';
@@ -44,9 +44,9 @@ function EntcPointers() {
           className="bg-[#9FEDD7] p-6 shadow-lg flex flex-col items-center text-center"
           data-aos="fade-up"
         >
-          <FaIndustry size={50} className="text-[#026670]" />
-          <h2 className="text-lg text-sm md:text-2xl font-medium">Program Fees</h2>
-          <p className="mt-2 text-sm md:text-2xl font-bold">Rs. 1,08,000/-</p> {/* Responsive text */}
+          <FaDollarSign size={50} className="text-[#026670]" />
+          <h2 className="text-lg text-sm md:text-2xl font-medium">Highest CTC</h2>
+          <p className="mt-2 text-sm md:text-2xl font-bold">27 LPA</p> {/* Responsive text */}
         </div>
       </div>
     </div>

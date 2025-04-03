@@ -21,8 +21,7 @@ function AidsHero() {
             Decode the Future with AI & Data Science at ICEM!
           </h1>
           <p className="hidden md:block text-lg md:text-3xl font-extralight mt-4">
-            Apply now to join the cutting-edge of technology education in the
-            field of AIDS Research & Development!
+            Apply now for the exciting field of AIDS Research & Development!
           </p>
         </div>
       </div>
