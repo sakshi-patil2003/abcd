@@ -18,7 +18,7 @@ function AidsHero() {
         <img src={robotImage} alt="Robot" className="animate-robot object-contain h-auto" />
         <div className="absolute top-10 left-4 md:left-8 lg:left-16 p-8 z-20 text-start">
           <h1 className="text-2xl md:text-5xl font-bold leading-tight mb-4">
-            Decode the Future with AI & Data Science at ICEM!
+            Decode the Future with AIDS & Data Science at ICEM!
           </h1>
           <p className="hidden md:block text-lg md:text-3xl font-extralight mt-4">
             Apply now for the exciting field of AIDS Research & Development!
