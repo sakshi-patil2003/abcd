@@ -37,7 +37,7 @@ function Computer() {
       <CompRecruiter />
       <CompBanner/>
       <CompApply/>
-      <AutoChatbot />
+      {/* <AutoChatbot /> */}
       <CompJoin />
       <MechJourny/>
     </div>

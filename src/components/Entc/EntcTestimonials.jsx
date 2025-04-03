@@ -1,17 +1,11 @@
-import React from "react";
-import Slider from "react-slick"; // Importing react-slick
- 
+import { useEffect, useRef, useState, useMemo } from 'react';
+import Slider from "react-slick";
+
 // Image Imports
-import vikramImage from "../../assets/images/Entc-Images/user-green.avif";
-import simranImage from "../../assets/images/Entc-Images/user-green.avif";
-import arjunImage from "../../assets/images/Entc-Images/user-green.avif";
-import meeraImage from "../../assets/images/Entc-Images/user-green.avif";
-import karanImage from "../../assets/images/Entc-Images/user-green.avif";
-import nishaImage from "../../assets/images/Entc-Images/user-green.avif";
-import aartiImage from "../../assets/images/Entc-Images/user-green.avif";
- 
-function EntcTestimonials() {
-  const testimonials = [
+import vikramImage from "../../assets/images/AIDS-Imagegs/user-aids.avif";
+
+function CompTestimonials() {
+  const testimonials = useMemo(() => [
     {
       name: "Vikram Singh - Junior Mechanical Engineer",
       department: "Mechanical Engineering",
@@ -68,9 +62,8 @@ function EntcTestimonials() {
       text: 'Choosing ICEM for my engineering studies was the best decision. The rigorous training, campus placements, and exposure to emerging technologies have helped me secure a promising career. ICEM truly prepares you for the future!',
       image: vikramImage,
     },
- 
-  ];
- 
+  ], []);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -85,19 +78,45 @@ function EntcTestimonials() {
       { breakpoint: 480, settings: { slidesToShow: 1, slidesToScroll: 1 } },
     ],
   };
- 
+
+  const cardRefs = useRef([]);
+  const [maxHeight, setMaxHeight] = useState(0);
+
+  useEffect(() => {
+    const updateMaxHeight = () => {
+      const heights = cardRefs.current
+        .map(ref => ref && ref.offsetHeight)
+        .filter(Boolean);
+
+      const tallest = Math.max(...heights);
+      setMaxHeight(tallest);
+    };
+
+    updateMaxHeight();
+
+    const resizeObserver = new ResizeObserver(updateMaxHeight);
+    cardRefs.current.forEach(ref => {
+      if (ref) resizeObserver.observe(ref);
+    });
+
+    return () => resizeObserver.disconnect();
+  }, [testimonials]);
+
   return (
     <div className="px-4 md:px-10">
-      <h2 className="text-2xl md:text-4xl mt-4 font-semibold text-[#026670] text-center">
+      <h2 className="text-3xl md:text-4xl mt-4 font-semibold text-[#026670] text-center">
         What Our Students Say
       </h2>
- 
+
       <div className="bg-white shadow-lg p-4 sm:p-6">
         <Slider {...settings}>
           {testimonials.map((testimonial, i) => (
             <div key={i} className="p-2">
-              <div className="bg-[#026670] border-4 border-[#00B5A0] rounded-lg p-4 sm:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 w-[90%] sm:w-auto mx-auto sm:mx-0 h-auto sm:h-[320px]">
-                {/* Profile Icon at the Top */}
+              <div
+                ref={el => (cardRefs.current[i] = el)}
+                className="border-4 border-[#00B5A0] rounded-lg p-4 sm:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 w-[90%] sm:w-auto mx-auto sm:mx-0"
+                style={{ minHeight: maxHeight, backgroundColor: '#026670', color: '#e1dede' }}
+              >
                 <div className="flex justify-center mb-4">
                   <img
                     src={testimonial.image}
@@ -105,13 +124,13 @@ function EntcTestimonials() {
                     className="w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-white shadow-lg"
                   />
                 </div>
- 
+
                 <p className="text-lg font-semibold text-white text-center">{testimonial.name}</p>
                 <p className="text-sm text-[#d3d1d1] text-center">
                   {testimonial.department} | {testimonial.year}
                 </p>
-                <hr className="my-1 border-t border-gray-300" />
-                <p className="text-[#e1dede] text-center">{testimonial.text}</p>
+                <hr className="my-1 border-t border-[#00B5A0]" />
+                <p className="text-white text-sm text-center">{testimonial.text}</p>
               </div>
             </div>
           ))}
@@ -120,7 +139,5 @@ function EntcTestimonials() {
     </div>
   );
 }
- 
-export default EntcTestimonials;
- 
- 
+
+export default CompTestimonials;
