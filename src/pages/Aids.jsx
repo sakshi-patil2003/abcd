@@ -25,17 +25,18 @@ function Aids() {
       <AidsInovation/>
       <AidsOverview/>
       <AidsReasons/>
+      <AidsOfferings/>
       <AidsStudying/>
-      <AidsBrochure />  
+      <AidsBrochure /> 
+      <AidsHighlights/>
+      <AidsTestimonials />
+      <AidsCareer/>   
       <AidsPlacement/>
       <CompRecruter/>
-      <AidsOfferings/>
-      <AidsHighlights/>
-      <AidsCareer/>
       <AidsBanner/>
       <AidsApply/>
       <AidsAdmisionCon/>
-      <AidsTestimonials />  
+      
       <AutoChatbot />
       <MechJourny/>
     </div>

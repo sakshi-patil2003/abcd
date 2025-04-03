@@ -2,7 +2,7 @@ import { FaRobot, FaBrain, FaSatellite } from "react-icons/fa"; // AI-related ic
  
 export default function AidsInovaiton() {
   return (
-    <div className="relative  flex items-center justify-center p-4 sm:p-10 overflow-hidden">
+    <div className="relative  flex items-center justify-center p-4 sm:p-10  overflow-hidden">
       {/* Animated AI-related icons */}
       <div className="absolute left-4 sm:left-10 top-4 sm:top-10 animate-floating text-black opacity-70">
         <FaRobot size={60} smSize={80} /> {/* Robot Icon */}
@@ -18,25 +18,25 @@ export default function AidsInovaiton() {
  
       {/* Main content container */}
       <div
-        className="p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-white/30 w-full max-w-lg sm:max-w-6xl bg-black/30
+        className="p-4 sm:p-6 rounded-xl  sm:rounded-2xl border border-white/30 w-full max-w-lg sm:max-w-6xl bg-black/30
                     hover:bg-black/50 hover:scale-105 transform transition duration-500 shadow-xl bg-gradient-to-br from-teal-700 to-blue-900"
       >
         <h1 className="text-2xl sm:text-4xl font-bold text-white text-center">
           Where AI Meets Innovation – Welcome to the Future!
         </h1>
  
-        <p className="mt-4 sm:mt-6 text-sm sm:text-base text-center text-white leading-relaxed">
+        <p className="mt-4 sm:mt-6 text-base md:text-xl text-center text-white leading-relaxed">
           Have you ever wondered how Netflix recommends your favorite shows, how chatbots talk like humans, or how AI
           can diagnose diseases faster than doctors? That’s the power of Artificial Intelligence and Data Science!
         </p>
  
-        <p className="mt-2 sm:mt-4 text-sm sm:text-base text-center text-white">
+        <p className="mt-2 sm:mt-4 text-base md:text-xl  text-center text-white">
           At <strong>ICEM</strong>, we turn curiosity into expertise by combining AI, programming, and data analytics
           into a future-ready curriculum!
         </p>
  
         <p className="mt-4 sm:mt-6 text-sm sm:text-base text-center text-white/80">
-          🚀 Hands-on training and real-world innovation await you.
+          
         </p>
       </div>
  

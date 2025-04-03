@@ -20,12 +20,12 @@ const AidsApply = () => {
       <div className="absolute inset-0 bg-[#0c3249] opacity-60 z-0"></div>
 
       <div className="relative z-10">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-6">
+        <h2 className="text-3xl md:text-3xl font-semibold mb-6">
           Admission Process: Get Started Today!
         </h2>
         <p className="text-lg mb-6">
-          Follow these simple steps to apply for the Mechanical Engineering
-          program at ICEM College Pune:
+          Follow these simple steps to apply for the AIDS Engineering
+          program at ICEM College Pune
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mx-auto">

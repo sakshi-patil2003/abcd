@@ -2,6 +2,12 @@ import React from "react";
 import backgroundImage from "../../assets/images/plane.avif"; // Make sure the path is correct
  
 const EntcApply = () => {
+  const handleClick = () => {
+    window.scrollTo({
+      top: 0, // Scroll to the top of the page
+      behavior: "smooth", // Smooth scroll effect
+    });
+  }; 
   return (
     <div
       className="bg-[#ffffff] py-10 px-8 md:px-16 text-center text-white mb-12 shadow-lg relative bg-contain bg-no-repeat bg-center"
@@ -18,7 +24,7 @@ const EntcApply = () => {
         </p>
  
         {/* Container for steps */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2 md:gap-8 mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2 md:gap-8 mx-auto mb-8">
           {[  
             "Fill out the online application form on our website.",
             "Submit the required documents (mark sheets, ID, etc.)",
@@ -43,9 +49,13 @@ const EntcApply = () => {
         </div>
  
         {/* Apply Now Button with Pulsating Effect */}
-        <button className="bg-[#026670] text-white py-2 md:py-3 px-6 md:px-8 rounded-full text-xl hover:bg-[#001E5D] transition-all mt-4 md:mt-8 ">
-          Apply Now
-        </button>
+        
+        <a
+        href="#apply"
+        onClick={handleClick} // Call handleClick on click
+        className=" bg-[#41b9d0] text-[#0c3249] py-4 px-8 rounded-full text-xl font-semibold shadow-md hover:bg-gray-200 hover:scale-105 hover:shadow-lg transition-transform duration-300 ease-in-out mt-8">
+         Apply Now
+      </a>
       </div>
     </div>
   );

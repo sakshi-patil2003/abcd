@@ -21,21 +21,21 @@ import EntcAdmission from '../components/Entc/EntcAdmission'
 function Entc() {
   return (
     <div>
-        <EntcHero />  {/* Call the EntcHero component */}
-        <EntcPointers />  {/* Call the EntcPointers component */}
+        <EntcHero />  
+        <EntcPointers />  
         <EntcInovation/>
         <EntcOverview/>
         <EntcReasons/>
+        <EntcOfferings /> 
         <EntcStudying />
         <EntcBrochure />
+        <EntcHighlights/>
+        <EntcTestimonials />
         <EntcCareer/>
         <EntcPlacement/>
         <EntcRecruiters/>
-        <EntcOfferings />  {/* Call the EntcOfferings component */}
-        <EntcHighlights/>
         <EntcAdmission/>
         <EntcApply />
-        <EntcTestimonials />  {/* Call the EntcTestimonials component */}
         <MechJourny/>
     </div>
   )
