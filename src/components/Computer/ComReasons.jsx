@@ -3,82 +3,84 @@ import { FaLaptop, FaCode, FaChalkboardTeacher, FaBriefcase, FaGlobe, FaTrophy, 
 
 function ComReasons() {
   return (
-    <div className="px-8 md:px-14 py-2 poppins-regular">
-      <h1 className="text-2xl md:text-4xl font-semibold text-left mb-6 text-[#000000]">
+    <div className="px-6 md:px-10 lg:px-16 py-8 bg-[#F6FBFF]">
+      <h2 className="text-3xl md:text-4xl lg:text-4xl font-bold text-center mb-6">
         Why Choose ICEM for Your Computer Engineering Journey?
-      </h1>
+      </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6 md:gap-8">
+      {/* Grid Container */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
+        
         {/* Industry-Integrated Curriculum */}
-        <div className="flex items-start bg-[#f0f8ff] p-4 shadow-lg shadow-[#66ccff]/50 rounded-lg">
-          <FaLaptop className="text-[#1e90ff] mr-4 text-4xl" />
-          <div className="py-2">
-            <h3 className="text-lg font-semibold text-[#4682b4]">Industry-Integrated Curriculum</h3>
-            <p className="text-sm text-[#4682b4]">Learn trending tech like AI, Cloud, & DevOps!</p>
+        <div className="bg-white shadow-md p-6 flex flex-col items-center text-center rounded-lg hover:shadow-xl transition-shadow">
+          <div className="text-4xl text-[#8BC5FF] mb-4">
+            <FaLaptop />
           </div>
+          <h3 className="text-xl font-semibold text-[#390161] mb-2">Industry-Integrated Curriculum</h3>
+          <p className="text-sm md:text-base text-gray-700">Learn trending tech like AI, Cloud, & DevOps!</p>
         </div>
 
         {/* Live Projects & Internships */}
-        <div className="flex items-start bg-[#f0f8ff] p-4 shadow-lg shadow-[#66ccff]/50 rounded-lg">
-          <FaCode className="text-[#32cd32] mr-4 text-4xl" />
-          <div className="py-2">
-            <h3 className="text-lg font-semibold text-[#4682b4]">Live Projects & Internships</h3>
-            <p className="text-sm text-[#4682b4]">Gain hands-on experience with real-world projects!</p>
+        <div className="bg-white shadow-md p-6 flex flex-col items-center text-center rounded-lg hover:shadow-xl transition-shadow">
+          <div className="text-4xl text-[#8BC5FF] mb-4">
+            <FaCode />
           </div>
+          <h3 className="text-xl font-semibold text-[#390161] mb-2">Live Projects & Internships</h3>
+          <p className="text-sm md:text-base text-gray-700">Gain hands-on experience with real-world projects!</p>
         </div>
 
         {/* Expert Faculty & Industry Mentors */}
-        <div className="flex items-start bg-[#f0f8ff] p-4 shadow-lg shadow-[#66ccff]/50 rounded-lg">
-          <FaChalkboardTeacher className="text-[#ff5d12] mr-4 text-4xl" />
-          <div className="py-2">
-            <h3 className="text-lg font-semibold text-[#4682b4]">Expert Faculty & Industry Mentors</h3>
-            <p className="text-sm text-[#4682b4]">Learn from top professionals in the field!</p>
+        <div className="bg-white shadow-md p-6 flex flex-col items-center text-center rounded-lg hover:shadow-xl transition-shadow">
+          <div className="text-4xl text-[#8BC5FF] mb-4">
+            <FaChalkboardTeacher />
           </div>
+          <h3 className="text-xl font-semibold text-[#390161] mb-2">Expert Faculty & Industry Mentors</h3>
+          <p className="text-sm md:text-base text-gray-700">Learn from top professionals in the field!</p>
         </div>
 
         {/* Top Placements */}
-        <div className="flex items-start bg-[#f0f8ff] p-4 shadow-lg shadow-[#66ccff]/50 rounded-lg">
-          <FaBriefcase className="text-[#006BB3] mr-4 text-4xl" />
-          <div className="py-2">
-            <h3 className="text-lg font-semibold text-[#4682b4]">Top Placements</h3>
-            <p className="text-sm text-[#4682b4]">Get hired by leading tech giants & startups!</p>
+        <div className="bg-white shadow-md p-6 flex flex-col items-center text-center rounded-lg hover:shadow-xl transition-shadow">
+          <div className="text-4xl text-[#8BC5FF] mb-4">
+            <FaBriefcase />
           </div>
+          <h3 className="text-xl font-semibold text-[#390161] mb-2">Top Placements</h3>
+          <p className="text-sm md:text-base text-gray-700">Get hired by leading tech giants & startups!</p>
         </div>
 
         {/* Global Career Prospects */}
-        <div className="flex items-start bg-[#f0f8ff] p-4 shadow-lg shadow-[#66ccff]/50 rounded-lg">
-          <FaGlobe className="text-[#1e90ff] mr-4 text-4xl" />
-          <div className="py-2">
-            <h3 className="text-lg font-semibold text-[#4682b4]">Global Career Prospects</h3>
-            <p className="text-sm text-[#4682b4]">Opportunities in MNCs across the world!</p>
+        <div className="bg-white shadow-md p-6 flex flex-col items-center text-center rounded-lg hover:shadow-xl transition-shadow">
+          <div className="text-4xl text-[#8BC5FF] mb-4">
+            <FaGlobe />
           </div>
+          <h3 className="text-xl font-semibold text-[#390161] mb-2">Global Career Prospects</h3>
+          <p className="text-sm md:text-base text-gray-700">Opportunities in MNCs across the world!</p>
         </div>
 
         {/* Hackathons & Coding Competitions */}
-        <div className="flex items-start bg-[#f0f8ff] p-4 shadow-lg shadow-[#66ccff]/50 rounded-lg">
-          <FaTrophy className="text-[#ff5d12] mr-4 text-4xl" />
-          <div className="py-2">
-            <h3 className="text-lg font-semibold text-[#4682b4]">Hackathons & Coding Competitions</h3>
-            <p className="text-sm text-[#4682b4]">Compete, innovate & build solutions!</p>
+        <div className="bg-white shadow-md p-6 flex flex-col items-center text-center rounded-lg hover:shadow-xl transition-shadow">
+          <div className="text-4xl text-[#8BC5FF] mb-4">
+            <FaTrophy />
           </div>
+          <h3 className="text-xl font-semibold text-[#390161] mb-2">Hackathons & Coding Competitions</h3>
+          <p className="text-sm md:text-base text-gray-700">Compete, innovate & build solutions!</p>
         </div>
 
         {/* State-of-the-Art Labs */}
-        <div className="flex items-start bg-[#f0f8ff] p-4 shadow-lg shadow-[#66ccff]/50 rounded-lg">
-          <FaDesktop className="text-[#32cd32] mr-4 text-4xl" />
-          <div className="py-2">
-            <h3 className="text-lg font-semibold text-[#4682b4]">State-of-the-Art Labs</h3>
-            <p className="text-sm text-[#4682b4]">Work in high-tech IT & Apple labs!</p>
+        <div className="bg-white shadow-md p-6 flex flex-col items-center text-center rounded-lg hover:shadow-xl transition-shadow">
+          <div className="text-4xl text-[#8BC5FF] mb-4">
+            <FaDesktop />
           </div>
+          <h3 className="text-xl font-semibold text-[#390161] mb-2">State-of-the-Art Labs</h3>
+          <p className="text-sm md:text-base text-gray-700">Work in high-tech IT & Apple labs!</p>
         </div>
 
         {/* Exciting Campus Life */}
-        <div className="flex items-start bg-[#f0f8ff] p-4 shadow-lg shadow-[#66ccff]/50 rounded-lg">
-          <FaTrophy className="text-[#008000] mr-4 text-4xl" />
-          <div className="py-2">
-            <h3 className="text-lg font-semibold text-[#4682b4]">Exciting Campus Life</h3>
-            <p className="text-sm text-[#4682b4]">Sports, events & tech fests to fuel your passion!</p>
+        <div className="bg-white shadow-md p-6 flex flex-col items-center text-center rounded-lg hover:shadow-xl transition-shadow">
+          <div className="text-4xl text-[#8BC5FF] mb-4">
+            <FaTrophy />
           </div>
+          <h3 className="text-xl font-semibold text-[#390161] mb-2">Exciting Campus Life</h3>
+          <p className="text-sm md:text-base text-gray-700">Sports, events & tech fests to fuel your passion!</p>
         </div>
       </div>
     </div>

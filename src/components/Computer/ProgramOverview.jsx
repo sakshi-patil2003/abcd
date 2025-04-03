@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 // Import the image
-import ProgramImage from '../../assets/images/Com-Images/macpng.avif';
+import ProgramImage from '../../assets/images/Com-Images/3d-rendering-futuristic-computer.avif';
 import HatImage from '../../assets/images/hat.avif';  // Import the floating hat image
 
 // Import AOS and its CSS
@@ -31,7 +31,7 @@ function ProgramOverview() {
           Program Overview
         </h2>
         <p className="text-md sm:text-2xl md:text-xl text-gray-600 tracking-wide mt-4">
-        At ICEM, learning goes beyond textbooks. Our modern, lush-green campus is a hub of innovation, collaboration, and hands-on learning. With world-class infrastructure, cutting-edge labs, and industry partnerships, we ensure our students are career-ready from day one. Our Computer Engineering program is designed to provide a strong foundation in software development, AI, and networking, with real-world projects, hackathons, and expert mentoring.          </p>
+        At ICEM, learning goes beyond textbooks. With student centric built infrastructure, advanced Apple & IT labs and industry partnerships, we ensure our students are career-ready from day one. the Computer Engineering program at ICEM is designed to provide a strong foundation in software development, AI and networking, cybersecurity, IoT, and cloud computing with real-world projects, hackathons, expert mentoring.</p>
       </div>
 
       {/* Right Part: Image */}

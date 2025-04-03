@@ -27,14 +27,14 @@ function Computer() {
       <ProgramOverview />
       <ComReasons/>
       <CompOffringICEM/>
-      <CompRecruiter />
-      <CompOfferings />
+      {/* <CompOfferings /> */}
       <CompStudying />
       <CompBrochure />
       <CompHighlights />
       <CompTestimonials/>
       <CompCarrer />
       <ComPlacement/>
+      <CompRecruiter />
       <CompBanner/>
       <CompApply/>
       <AutoChatbot />

@@ -18,13 +18,16 @@ const ComCreative = () => {
 
         {/* Right Part: Paragraph */}
         <div className="w-full sm:w-1/2 mt-4 sm:mt-0">
-          <h2 className=" text-2xl sm:text-3xl lg:text-4xl font-bold text-center sm:text-left mt-2 ">
+          <h2 className=" text-2xl sm:text-3xl lg:text-3xl font-bold text-center sm:text-left mt-2 ">
             Where Technology Meets Creativity!
           </h2>
           <p className="text-md sm:text-2xl md:text-xl text-gray-600 tracking-wide mt-4 px-2">
-            Ever wondered how apps like Instagram process millions of images per second? Or how AI chatbots can talk just like humans? What about self-driving cars and blockchain security?
-
-            That’s the magic of Computer Engineering! At Indira College of Engineering & Management (ICEM), Pune, we don’t just teach programming—we shape future tech leaders who build smart software, intelligent systems, and innovative solutions.
+          <strong className='text-blue-600 text-2xl'>Ever wondered?</strong> <br />
+          How apps like <strong>Instagram</strong> process millions of images per second? <br />
+          How <strong>AI chatbots</strong> can talk just like humans? <br />
+          How self-driving cars and blockchain security do all the technicalities behind? <br />
+          That’s the magic of Computer Engineering! <br /> 
+          At ICEM, we shape future tech leaders who build smart software, intelligent systems, and innovative solutions.
           </p>
         </div>
       </div>

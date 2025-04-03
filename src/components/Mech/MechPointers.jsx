@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { FaCog } from 'react-icons/fa';  // Mechanical cog icon
 import { FaTools } from 'react-icons/fa'; // Tools icon
-import { FaIndustry } from 'react-icons/fa'; // Factory icon
+import { FaDollarSign } from 'react-icons/fa'; // Dollar sign icon (replacing FaIndustry)
 
 // Import AOS for animations
 import AOS from 'aos';
@@ -29,7 +29,7 @@ function MechPointers() {
             <FaCog size={40} className="text-[#ff5d12]" />
             <div className="text-center">
               <h2 className="text-lg sm:text-xl md:text-2xl">Program Format</h2>
-              <p className=" text-xl sm:text-2xl font-semibold">Offline</p>
+              <p className="text-xl sm:text-2xl font-semibold">Offline</p>
             </div>
           </div>
         </div>
@@ -44,22 +44,22 @@ function MechPointers() {
             <FaTools size={40} className="text-[#ff5d12]" />
             <div className="text-center">
               <h2 className="text-lg sm:text-xl md:text-2xl">Duration</h2>
-              <p className=" text-xl sm:text-2xl font-semibold">4 Years</p>
+              <p className="text-xl sm:text-2xl font-semibold">4 Years</p>
             </div>
           </div>
         </div>
 
-        {/* Card 3: Program Fees */}
+        {/* Card 3: Highest CTC */}
         <div
           className="bg-[#fff4e6] p-6 z-10 shadow-lg flex items-center justify-center sm:col-span-2 md:col-span-1" // Center last card on tablet screen
           data-aos="fade-up"
           data-aos-delay="300" // Optional: Staggered animation
         >
           <div className="flex flex-col items-center justify-center">
-            <FaIndustry size={40} className="text-[#ff5d12]" />
+            <FaDollarSign size={40} className="text-[#ff5d12]" /> {/* Replaced FaIndustry with FaDollarSign */}
             <div className="text-center">
-              <h2 className="text-lg sm:text-xl md:text-2xl">Program Fees</h2>
-              <p className=" text-xl sm:text-2xl font-semibold">Rs. 108000/-</p>
+              <h2 className="text-lg sm:text-xl md:text-2xl">Highest CTC</h2>
+              <p className="text-xl sm:text-2xl font-semibold">27 LPA</p>
             </div>
           </div>
         </div>

@@ -28,7 +28,7 @@ const successors = [
     id: 2,
     name: 'Arpita Jha',
     image: arpita,
-    details: (<>'An exemplary scholar from Indira, initially served as a content writer. She received an <strong>Internship+ PPO offer from Microsoft</strong>, but instead she chose to embark on her entrepreneurial journey.'</>),
+    details: (<>'An exemplary scholar from Indira, initially served as a content writer. She received an <strong>Internship+ offer from Microsoft</strong>, but instead she chose her entrepreneurial journey.'</>),
     location: 'India',
     degree: '(Computer Engineering)',
     companyLogo: micro,
@@ -99,7 +99,7 @@ const MechJourny = () => {
 
   return (
     <div className="w-full h-auto bg-white shadow-lg px-2 mt-6 overflow-hidden">
-      <h3 className="text-center font-bold text-2xl text-[#0c3249] mb-2">Alumni Speak</h3>
+      <h3 className="text-center font-bold text-2xl text-[#0c3249] mb-2">Alumni Journey</h3>
       {/* Slider for the 3 Successor Cards */}
       <Slider {...settings}>
         {successors.map((successor) => (

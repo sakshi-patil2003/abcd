@@ -1,5 +1,5 @@
 import React from 'react';
-import placementImage from '../../assets/images/MECH-images/MechB2.avif'; // Replace with your image path
+import placementImage from '../../assets/images/MECH-images/MechPlacement.avif'; // Replace with your image path
 
 const MechPlacement = () => {
   return (
@@ -8,7 +8,7 @@ const MechPlacement = () => {
       <img
         src={placementImage}
         alt="Mech Placement"
-        className="w-full h-auto object-cover sm:h-64 md:h-96 lg:h-[370px]"
+        className="w-full h-auto object-cover "
       />
     </div>
   );

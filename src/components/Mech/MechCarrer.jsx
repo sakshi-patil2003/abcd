@@ -23,7 +23,7 @@ const MechCarreer = () => {
 
         {/* Description Section */}
         <p className="text-sm sm:text-xl font-bold text-white">
-          Our students have been placed with highest packages (11-27 LPA) in top companies like Force Motors, Tata Motors, Mahindra & Mahindra, Vanderlande, and more!
+          Our students have been placed with highest packages (11-27 LPA) in top companies like Force Motors, Juspay, Data Axle, Philips, Nutanix, Mastercard and Sas.
         </p>
       </div>
     </div>
