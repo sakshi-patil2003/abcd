@@ -1,16 +1,12 @@
-import React from 'react';
-import Slider from "react-slick"; // Importing react-slick
+import { useEffect, useRef, useState, useMemo } from 'react';
+import Slider from "react-slick";
 
 // Image Imports
 import vikramImage from "../../assets/images/AIDS-Imagegs/user-aids.avif";
-import simranImage from "../../assets/images/AIDS-Imagegs/user-aids.avif";
-import arjunImage from "../../assets/images/AIDS-Imagegs/user-aids.avif";
-import meeraImage from "../../assets/images/AIDS-Imagegs/user-aids.avif";
-import karanImage from "../../assets/images/AIDS-Imagegs/user-aids.avif";
-import nishaImage from "../../assets/images/AIDS-Imagegs/user-aids.avif";
 
 function CompTestimonials() {
-  const testimonials = [
+  // Memoize testimonials to prevent unnecessary re-renders
+  const testimonials = useMemo(() => [
     {
       name: "Vikram Singh - Junior Mechanical Engineer",
       department: "Mechanical Engineering",
@@ -67,7 +63,7 @@ function CompTestimonials() {
       text: 'Choosing ICEM for my engineering studies was the best decision. The rigorous training, campus placements, and exposure to emerging technologies have helped me secure a promising career. ICEM truly prepares you for the future!',
       image: vikramImage,
     },
-  ];
+  ], []);
 
   const settings = {
     dots: true,
@@ -84,6 +80,29 @@ function CompTestimonials() {
     ],
   };
 
+  const cardRefs = useRef([]);
+  const [maxHeight, setMaxHeight] = useState(0);
+
+  useEffect(() => {
+    const updateMaxHeight = () => {
+      const heights = cardRefs.current
+        .map(ref => ref && ref.offsetHeight)
+        .filter(Boolean);
+
+      const tallest = Math.max(...heights);
+      setMaxHeight(tallest);
+    };
+
+    updateMaxHeight();
+
+    const resizeObserver = new ResizeObserver(updateMaxHeight);
+    cardRefs.current.forEach(ref => {
+      if (ref) resizeObserver.observe(ref);
+    });
+
+    return () => resizeObserver.disconnect();
+  }, [testimonials]);
+
   return (
     <div className="px-4 md:px-10">
       <h2 className="text-3xl md:text-4xl mt-4 font-semibold text-[#6095ff] text-center">
@@ -94,9 +113,11 @@ function CompTestimonials() {
         <Slider {...settings}>
           {testimonials.map((testimonial, i) => (
             <div key={i} className="p-2">
-              <div className="border-4 border-[#6095ff] rounded-lg p-4 sm:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 w-[90%] sm:w-auto mx-auto sm:mx-0 h-auto sm:h-[320px]">
-               
-                {/* Profile Icon at the Top */}
+              <div
+                ref={el => (cardRefs.current[i] = el)}
+                className="border-4 border-[#6095ff] rounded-lg p-4 sm:p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 w-[90%] sm:w-auto mx-auto sm:mx-0"
+                style={{ minHeight: maxHeight }}
+              >
                 <div className="flex justify-center mb-4">
                   <img
                     src={testimonial.image}
