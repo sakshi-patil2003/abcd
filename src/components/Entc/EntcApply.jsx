@@ -17,7 +17,7 @@ const EntcApply = () => {
       <div className="absolute inset-0 bg-[#F7F0FC] opacity-60 z-0"></div>
  
       <div className="relative z-10">
-        <h2 className="text-3xl font-semibold text-[#026670] mb-6">How to Apply</h2>
+        <h2 className="text-3xl font-semibold text-[#026670] mb-6"> Admission Process: Get Started Today!</h2>
         <p className="text-sm md:text-lg mb-6 text-gray-700">
           Follow these simple steps to apply for the Information Technology
           program at ICEM College Pune:
