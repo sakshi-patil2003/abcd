@@ -48,9 +48,9 @@ function ItHero() {
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70"></div> {/* Black overlay with 70% opacity */}
 
       {/* Wrapper for Heading and Form */}
-      <div className="flex flex-col lg:flex-row items-center lg:items-start z-20 w-full mb-4 sm:mb-6">
+      <div className="flex flex-col lg:flex-row-reverse items-center lg:items-start z-20 w-full mb-4 sm:mb-6">
         
-        {/* Heading - Visible on all screen sizes */}
+        {/* Right side Heading - Now moved to the right side */}
         <div className="md:mt-6 py-2 px-4 text-center lg:text-left">
           <p className="font-semibold text-3xl md:text-5xl md:mb-6">
            <span className='text-[#A540FF]'>Information Technology</span> at Indira College of Engineering & Management
@@ -65,7 +65,7 @@ function ItHero() {
           </div>
         </div>
 
-        {/* Right side form container */}
+        {/* Left side form container - Now moved to the left side */}
         <div className="flex justify-center lg:justify-start z-20 w-full mb-4 sm:mb-6 md:mb-6 mt-4 lg:mt-0">
           <div className="p-6 max-w-md w-full shadow-md ml-5 rounded-md" style={{ backgroundColor: "rgba(139, 197, 255, 0.3)" }}>
             <form className="space-y-3 p-1">

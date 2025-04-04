@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import AOS from 'aos';  // Import AOS
-import 'aos/dist/aos.css';  // mport AOS CSS
+import 'aos/dist/aos.css';  // Import AOS CSS
 import offer2Image from '../../assets/images/MECH-images/offer-5.avif';  // Import the robotics image
 import offer3Image from '../../assets/images/MECH-images/offer-4.avif';  // Import the thermal engineering image
 import offer4Image from '../../assets/images/MECH-images/offer-3.avif';  // Import the energy solutions image
-import offer5Image from '../../assets/images/MECH-images/offer-2.avif';  // Import the prototyping image
+import offer5Image from '../../assets/images/MECH-images/portrait-engineers-work-hours-job-site.jpg';  // Import the prototyping image
 import offer6Image from '../../assets/images/MECH-images/offer-1.avif';  // Import the internships image
 import offer1Image from '../../assets/images/MECH-images/offer-6.avif';  // Import the CAD/CAM image
 
@@ -38,20 +38,21 @@ function MechOfferings() {
   }, []);
 
   return (
-    <div className="px-4 md:px-8 lg:px-16 py-6 md:py-8 bg-[#ffffff] poppins-regular">
-      <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#000]" data-aos="fade-up">
+    <div className="px-4 md:px-8 lg:px-16 py-6 md:py-8  poppins-regular">
+      <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#01224F]" data-aos="fade-up">
         Mechanical Engineering Offerings
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-y-8 gap-x-4 md:gap-x-8 lg:gap-x-10">
-        {/* Advanced CAD/CAM Systems */}
+        
+        {/* Engineering Mechanics */}
         <div
-          className="bg-[linear-gradient(#d9774f,_#f97316_51%,_#fb923c)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
+          className="bg-[#01224F] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
           data-aos="fade-up"
         >
           <img
             src={offer1Image}
-            alt="CAD/CAM Systems"
+            alt="Engineering Mechanics"
             className="w-full h-48 object-cover mb-4"
           />
           <div className="text-center px-4 p-2">
@@ -60,15 +61,14 @@ function MechOfferings() {
           </div>
         </div>
 
-
-        {/* Cutting-edge Robotics & Automation */}
+        {/* Strength of Materials */}
         <div
-          className="bg-[linear-gradient(#d9774f,_#f97316_51%,_#fb923c)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
+          className="bg-[#01224F] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
           data-aos="fade-up"
         >
           <img
             src={offer2Image}
-            alt="Robotics & Automation"
+            alt="Strength of Materials"
             className="w-full h-48 object-cover mb-4"
           />
           <div className="text-center px-4 p-2">
@@ -77,14 +77,14 @@ function MechOfferings() {
           </div>
         </div>
 
-        {/* Thermal Engineering & HVAC Systems */}
+        {/* Thermodynamics */}
         <div
-          className="bg-[linear-gradient(#d9774f,_#f97316_51%,_#fb923c)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
+          className="bg-[#01224F] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
           data-aos="fade-up"
         >
           <img
             src={offer3Image}
-            alt="Thermal Engineering"
+            alt="Thermodynamics"
             className="w-full h-48 object-cover mb-4"
           />
           <div className="text-center px-4 p-2">
@@ -93,14 +93,14 @@ function MechOfferings() {
           </div>
         </div>
 
-        {/* Sustainable Energy Solutions */}
+        {/* Fluid Mechanics & Hydraulics */}
         <div
-          className="bg-[linear-gradient(#d9774f,_#f97316_51%,_#fb923c)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
+          className="bg-[#01224F] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
           data-aos="fade-up"
         >
           <img
             src={offer4Image}
-            alt="Energy Solutions"
+            alt="Fluid Mechanics"
             className="w-full h-48 object-cover mb-4"
           />
           <div className="text-center px-4 p-2">
@@ -109,15 +109,14 @@ function MechOfferings() {
           </div>
         </div>
 
-
-        {/* Mechanical System Design & Prototyping */}
+        {/* Automobile Engineering */}
         <div
-          className="bg-[linear-gradient(#d9774f,_#f97316_51%,_#fb923c)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
+          className="bg-[#01224F] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
           data-aos="fade-up"
         >
           <img
             src={offer5Image}
-            alt="System Design & Prototyping"
+            alt="Automobile Engineering"
             className="w-full h-48 object-cover mb-4"
           />
           <div className="text-center px-4 p-2">
@@ -126,14 +125,14 @@ function MechOfferings() {
           </div>
         </div>
 
-        {/* Core Engineering Internships and Industrial Training */}
+        {/* Control Systems & Mechatronics */}
         <div
-          className="bg-[linear-gradient(#d9774f,_#f97316_51%,_#fb923c)] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
+          className="bg-[#01224F] shadow-xl flex flex-col items-center justify-start text-center h-full relative"
           data-aos="fade-up"
         >
           <img
             src={offer6Image}
-            alt="Internships & Training"
+            alt="Control Systems & Mechatronics"
             className="w-full h-48 object-cover mb-4"
           />
           <div className="text-center px-4 p-2">
@@ -147,10 +146,3 @@ function MechOfferings() {
 }
 
 export default MechOfferings;
-    {/* 3. 
-4. 
-5. Manufacturing Processes
-6. Machine Design
-7. Automobile Engineering
-8. Control Systems & Mechatronics
-9. Computer-Aided Design (CAD) & Finite Element Analysis (FEA) */}

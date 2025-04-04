@@ -17,21 +17,20 @@ import MechPlacement from '../components/Mech/MechPlacement.jsx'
 function Mechanical() {
   return (
     <div>
-      <Mechhero />  
-      <MechPointers />  
-      <MechInovation/>
-      <MechOverview />  
-      <MechReasons/>
-      <MechOfferings /> 
-      <MechStudying /> 
-      <MechBrochure />  {/* Call the MechBrochure component */}
-      <MechHighlights />  {/* Call the MechHighlights component */}
-      <MechTestimonials />  {/* Call the MechTestimonials component */}
-      <MechCarrer />
+      <Mechhero />
       <MechPlacement/>
-      <MechRecruiters/>
+      <MechRecruiters/>  
+      <MechInovation/>
+      <MechReasons/>
+      <MechOfferings />
+      <MechBrochure />
+      <MechPointers />  
+      <MechStudying /> 
+      {/* <MechHighlights />  Call the MechHighlights component */}
+      <MechTestimonials />  {/* Call the MechTestimonials component */}
+      {/* <MechCarrer /> */}
       <MechApply />
-      <MechJourny/>
+      {/* <MechJourny/> */}
     </div>
   )
 }

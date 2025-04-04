@@ -1,12 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import backgroundImage from '../../assets/images/brochure-bg.png';
+import backgroundImage from '../../assets/images/Com-Images/broImage.jpg';
 
 function CompBrochure() {
   return (
     <div
-      className="flex justify-between items-center bg-cover bg-center text-white shadow-lg h-48 px-8 md:px-16 poppins-regular"
+      className="flex justify-between items-center bg-contain bg-center text-white shadow-lg h-48 px-8 md:px-16 poppins-regular"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="w-full bg-blue-700 p-6 rounded-3xl flex flex-col md:flex-row justify-between items-center">

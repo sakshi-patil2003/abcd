@@ -19,20 +19,20 @@ import ItBanner from '../components/It/ItBanner';
 function It() {
   return (
     <div>
-      <ItHero />  
+      <ItHero />
+      <ItPlacement/>
+      <CompRecruter/>
+      <ItBanner/>  
       <ItPointers />  
+      {/* <ItOverview/> */}
       <ItInovation/>
-      <ItOverview/>
+      <ItStudying /> 
       <ItReasons/>
       <ItOfferings />
-      <ItStudying /> 
       <ItBrochure />  
       <ItHighlights /> 
       <ItTestimonials />
-      <ItCareear/>
-      <ItPlacement/>
-      <CompRecruter/>
-      <ItBanner/>
+      {/* <ItCareear/> */}
       <ItApply />  
       {/* <AutoChatbot /> */}
       <MechJourny/>

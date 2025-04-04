@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import AOS from 'aos';  // Import AOS
 import 'aos/dist/aos.css';  // Import AOS CSS
@@ -7,7 +7,11 @@ import offer2Image from '../../assets/images/Com-Images/AI.avif';  // Import the
 import offer3Image from '../../assets/images/Com-Images/algorithem.avif';  // Import the thermal engineering image
 import offer4Image from '../../assets/images/Com-Images/AppDev.avif';  // Import the energy solutions image
 import offer5Image from '../../assets/images/Com-Images/cloudComp.avif';  // Import the prototyping image
-import offer6Image from '../../assets/images/Com-Images/Blockchain.avif'; 
+import offer6Image from '../../assets/images/Com-Images/Blockchain.avif';  // Import the blockchain image
+
+// Import the background image
+import backgroundImage from '../../assets/images/Com-Images/broImage.jpg'; // replace with the actual path to your image
+
 const CompOffringICEM = () => {
   useEffect(() => {
     AOS.init({
@@ -37,9 +41,15 @@ const CompOffringICEM = () => {
   }, []);
 
   return (
-    <div className="px-4 md:px-8 lg:px-16 py-6 md:py-8 bg-[#ffffff] poppins-regular">
+    <div className="relative px-4 md:px-8 lg:px-16 py-6 md:py-8 bg-[#ffffff] poppins-regular">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-contain bg-center opacity-40" 
+        style={{ backgroundImage: `url(${backgroundImage})` }} 
+      ></div>
+
       <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#000]" data-aos="fade-up">
-      Computer Engineering Offerings  
+        Computer Engineering Offerings  
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-y-8 gap-x-4 md:gap-x-8 lg:gap-x-10">
@@ -144,5 +154,4 @@ const CompOffringICEM = () => {
   );
 }
 
-
-export default CompOffringICEM
+export default CompOffringICEM;
