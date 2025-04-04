@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 import logo from "../assets/images/Icem-footer-logo.png";
-// import blogImage1 from "../assets/images/blog1.png";
-// import blogImage2 from "../assets/images/blog2.png";
 
 function Footer() {
   useEffect(() => {
@@ -49,6 +47,21 @@ function Footer() {
                 <i className="fas fa-envelope text-xl hover:text-gray-500"></i>
                 <div>
                   <p>info@indiraicem.ac.in</p>
+                </div>
+              </div>
+
+              {/* Add Website Link */}
+              <div className="flex items-center space-x-2">
+                <i className="fas fa-globe text-xl hover:text-blue-600"></i>
+                <div>
+                  <a
+                    href="https://www.indiraicem.ac.in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-700"
+                  >
+                    www.indiraicem.ac.in
+                  </a>
                 </div>
               </div>
             </div>

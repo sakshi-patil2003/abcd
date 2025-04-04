@@ -15,7 +15,7 @@ function Navbar() {
             <img
               src={logo}
               alt="Logo"
-              className="h-auto max-w-[180px] sm:max-w-[190px] md:max-w-[220px] lg:max-w-[280px]"
+              className="h-auto max-w-[180px] sm:max-w-[190px] md:max-w-[220px] lg:max-w-[350px]"
             />
           </a>
         </div>

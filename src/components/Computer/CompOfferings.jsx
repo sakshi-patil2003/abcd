@@ -33,7 +33,10 @@ function CompOfferings() {
   }, []);
 
   return (
-    <div className="px-8 md:px-16 py-6 md:py-8 bg-[#ffffff] poppins-regular">
+    <div className="relative px-8 md:px-16 py-6 md:py-8 bg-[#ffffff] poppins-regular">
+      {/* Background Image */}
+      <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: 'url("../../assets/images/Com-Images/broImage.jpg")' }}></div>
+
       <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 text-[#000]" data-aos="fade-up">
         Top Offerings
       </h2>
@@ -51,7 +54,7 @@ function CompOfferings() {
 
         {/* Quality Holistic Infrastructure */}
         <div
-          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-2 md:p-4shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
+          className="bg-[linear-gradient(#161e3a,_#2241ac_51%,_#3473cd)] p-2 md:p-4 shadow-xl flex flex-col items-center justify-center text-center h-full relative rounded-xl transform transition-transform duration-300 hover:scale-105"
           data-aos="fade-up"
         >
           <FaUniversity size={50} className="text-white mb-4 icon" />

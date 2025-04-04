@@ -73,8 +73,9 @@ function MechHero() {
             Computer Engineering at Indira College of Engineering & Management
           </p>
           <div className="hidden lg:block ">
-            <p className=" md:text-xl py-4 italic">
-              30 Years of Excellence in Education | 5 Specializations | 100% Placement Assistance
+            <p className=" md:text-xl py-4">
+              2 Decades of Excellence in Education | 5 Specializations | 
+               <br /> <p className="text-[#006BB3] font-bold" >100% Placement Assistance</p>
             </p>
             <p className=" md:text-3xl py-4">
             Code Your Future with <span className="text-[#006BB3] font-bold">Computer Engineering</span> at ICEM!
@@ -116,26 +117,24 @@ function MechHero() {
                   required
                 />
               </div>
-              <div>
+              {/* <div>
                 <select
                   id="state"
                   className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#F0F8FF] to-[#d6F0FF] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
                   required
                 >
                   <option value="">Select State</option>
-                  {/* Add state options here */}
                 </select>
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <select
                   id="city"
                   className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#F0F8FF] to-[#d6F0FF] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
                   required
                 >
                   <option value="">Select City</option>
-                  {/* Add city options here */}
                 </select>
-              </div>
+              </div> */}
 
               <div>
                 <select
@@ -151,24 +150,23 @@ function MechHero() {
                   <option value="AIDS">Artificial Intelligence and Data Science</option>
                 </select>
               </div>
-              <div>
+              {/* <div>
                 <select
                   id="program"
                   className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#F0F8FF] to-[#d6F0FF] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
                   required
                 >
                   <option value="">Select Program</option>
-                  {/* Add program options here */}
                 </select>
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <input
                   type="number"
                   id="cet-score"
                   className="w-full p-1.5 bg-gradient-to-r from-[#FFFFFF] via-[#F0F8FF] to-[#d6F0FF] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
                   placeholder="Enter CET Score"
                 />
-              </div>
+              </div> */}
               <div>
                 <button
                   type="submit"

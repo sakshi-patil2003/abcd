@@ -111,13 +111,13 @@ function MechHero() {
         <div className="flex flex-col items-center md:items-start text-center md:text-left w-full">
           {/* First Paragraph - Largest */}
           <p className="mt-4 leading-tight font-bold text-2xl md:text-5xl">
-            <span className="text-[#ff5d12]">Mechanical Engineering</span> at Indira College of Engineering & Management
+            <span className="text-[#FAB701]">Mechanical Engineering</span> at Indira College of Engineering & Management
           </p>
 
           {/* Second Paragraph - Medium size */}
           <div className="hidden lg:block">
-            <p className="text-xl py-4 italic">
-              30 Years of Excellence in Education | 5 Specializations | 100% Placement Assistance
+            <p className="text-xl py-4 ">
+              2 Decades of Excellence in Education | 5 Specializations | 100% Placement Assistance
             </p>
 
             {/* Third Paragraph - Smaller than the second */}
@@ -141,7 +141,7 @@ function MechHero() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FAB701]"
                   placeholder="Enter your name"
                   required
                 />
@@ -153,7 +153,7 @@ function MechHero() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FAB701]"
                   placeholder="Enter your email"
                   required
                 />
@@ -165,45 +165,18 @@ function MechHero() {
                   name="mobile"
                   value={formData.mobile}
                   onChange={handleChange}
-                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FAB701]"
                   placeholder="Enter your mobile number"
                   required
                 />
               </div>
               <div>
                 <select
-                  id="state"
-                  name="state"
-                  value={formData.state}
-                  onChange={handleChange}
-                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
-                  required
-                >
-                  <option value="">Select State</option>
-                  {/* Add state options here */}
-                </select>
-              </div>
-              <div>
-                <select
-                  id="city"
-                  name="city"
-                  value={formData.city}
-                  onChange={handleChange}
-                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
-                  required
-                >
-                  <option value="">Select City</option>
-                  {/* Add city options here */}
-                </select>
-              </div>
-
-              <div>
-                <select
                   id="course"
                   name="course"
                   value={formData.course}
                   onChange={handleChange}
-                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
+                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FAB701]"
                   required
                 >
                   <option value="">Select Course</option>
@@ -214,22 +187,10 @@ function MechHero() {
                   <option value="AIDS">Artificial Intelligence and Data Science</option> {/* Added the new course option */}
                 </select>
               </div>
-
-              <div>
-                <input
-                  type="number"
-                  id="cet-score"
-                  name="cetScore"
-                  value={formData.cetScore}
-                  onChange={handleChange}
-                  className="w-full p-1.5 bg-gradient-to-r from-[#FFF8F0] via-[#FFF0E0] to-[#FFE8D1] text-black rounded border border-[#FFD1A3] focus:outline-none focus:ring-2 focus:ring-[#FFB88C]"
-                  placeholder="Enter CET Score"
-                />
-              </div>
               <div>
                 <button
                   type="submit"
-                  className="w-full py-2 bg-[#ff5d12] text-white rounded-lg hover:bg-[#e24601] transition duration-300"
+                  className="w-full py-2 bg-[#FAB701] text-white rounded-lg hover:bg-[#01224F] transition duration-300"
                 >
                   Submit
                 </button>

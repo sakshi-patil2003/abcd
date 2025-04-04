@@ -19,7 +19,7 @@ const ItHighlights = () => {
         <h1 className="text-4xl font-bold text-center mb-8 poppins-bold text-[#390161]">
           ICEM Highlights
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Card 1 */}
           <div className="bg-[#F7F0FC] p-6 shadow-lg text-left overflow-hidden rounded-lg">
             <div className="w-12 h-12 bg-[#390161] text-white rounded-full flex items-center justify-center mb-4 mx-auto">
@@ -51,14 +51,14 @@ const ItHighlights = () => {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-[#F7F0FC] p-6 shadow-lg text-left overflow-hidden rounded-lg">
+          {/* <div className="bg-[#F7F0FC] p-6 shadow-lg text-left overflow-hidden rounded-lg">
             <div className="w-12 h-12 bg-[#390161] text-white rounded-full flex items-center justify-center mb-4 mx-auto">
               <FontAwesomeIcon icon={faCertificate} className="text-2xl" />
             </div>
             <p className="text-[#390161] poppins-regular">
               ICEM has been accredited with ‘B++’ grade by National Accreditation and Assessment Council (NAAC).
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
