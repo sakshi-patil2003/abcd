@@ -26,7 +26,7 @@ function App() {
           <Route path="/entc" element={<PageWithDynamicTitle title="ENTC" />} />
           <Route path="/bca" element={<PageWithDynamicTitle title="Bca" />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
         <ApplyNowButton />
       </div>
     </Router>
