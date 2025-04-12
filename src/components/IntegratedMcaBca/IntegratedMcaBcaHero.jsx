@@ -19,9 +19,10 @@ function BcaHero() {
 
       {/* Left Side Content */}
       <div className="relative z-10 text-black text-center lg:text-left max-w-2xl lg:mb-0">
-        <h1 className="text-2xl md:text-4xl lg:text-6xl font-bold leading-tight">
-        One <span className='text-[#f37021]'>Integrated</span> Path. Endless Tech Opportunities.
-        </h1>
+        <h2 className="text-2xl  lg:text-6xl font-bold leading-tight">
+        Pune’s Leading Tech-Forward Institution
+Indira Group of Institutes
+        </h2>
 
         {/* 🔶 Custom Banner Box */}
         <div className="mt-6 inline-block">
