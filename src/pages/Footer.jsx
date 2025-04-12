@@ -28,8 +28,8 @@ function Footer() {
             </div>
 
             {/* Contact Info */}
-            <div className="text-sm space-y-6">
-              <div className="flex items-center space-x-2">
+            <div className="text-sm space-y-4">
+              <div className="flex items-center space-x-3">
                 <i className="fas fa-map-marker-alt text-xl hover:text-blue-500"></i>
                 <div>
                   <p>Indira College of Engineering and Management (ICEM)</p>
