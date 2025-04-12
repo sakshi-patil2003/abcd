@@ -16,7 +16,6 @@ import AidsApply from '../components/Aids/AidsApply'
 import AidsAdmisionCon from '../components/Aids/AidsAdmisionCon'
 import AidsTestimonials from '../components/Aids/AidsTestimonials'
 import AutoChatbot from '../components/AutoChatbot'
-import MechJourny from '../components/Mech/MechJourny'
 function Aids() {
   return (
     <div>
@@ -37,7 +36,6 @@ function Aids() {
       <AidsAdmisionCon/>
       <AidsTestimonials />  
       <AutoChatbot />
-      <MechJourny/>
     </div>
   );
 }
