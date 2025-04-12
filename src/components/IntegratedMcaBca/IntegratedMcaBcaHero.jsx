@@ -26,13 +26,13 @@ function BcaHero() {
         {/* 🔶 Custom Banner Box */}
         <div className="mt-6 inline-block">
           {/* Top small box */}
-          <div className="bg-transparent border border-[#ff9900] text-[#600000] px-3 py-1 text-sm font-semibold rounded-t-md tracking-wide">
+          <div className="bg-transparent border border-[#ff9900] text-[#600000] px-3 py-1 text-2xl font-bold rounded-t-md tracking-wide">
             ADMISSIONS OPEN FOR
           </div>
 
           {/* Bottom big box */}
           <div className="bg-[#f37021] text-[#600000] px-6 py-3 rounded-b-md shadow-md">
-            <div className="text-lg font-semibold">Integrated</div>
+            <div className="text-2xl font-bold">Integrated</div>
             <div className="text-3xl lg:text-5xl font-extrabold tracking-wide">BCA + MCA</div>
           </div>
         </div>
@@ -50,7 +50,7 @@ function BcaHero() {
             borderImage: "linear-gradient(to right, #f37021, #f37021) 1",
             background: "rgba(255, 255, 255, 0.1)",
             backdropFilter: "blur(10px)",
-            maxHeight: "80vh",
+            maxHeight: "70vh",
             overflowY: "auto",
           }}
         >

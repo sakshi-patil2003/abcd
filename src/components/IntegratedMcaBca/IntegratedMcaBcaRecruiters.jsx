@@ -24,13 +24,21 @@ import logo21 from "../../assets/images/COMP-images/sigma-min.avif";
 import logo22 from "../../assets/images/COMP-images/Tcs-min.avif";
 import logo23 from "../../assets/images/COMP-images/tibco-min.avif";
 import logo24 from "../../assets/images/COMP-images/wipro-min.avif";
+import logo25 from '../../assets/images/bca/tetrapak.png';
+import logo26 from '../../assets/images/bca/mastercard.png';
+import logo27 from '../../assets/images/bca/thermax.png';
+import logo28 from '../../assets/images/bca/prgx.png';
+import logo29 from '../../assets/images/bca/schlumberger.png';
+import logo30 from '../../assets/images/bca/nutanix.png';
  
 const IntegratedMcaBCaRecruiters = () => {
   const logos = [
-    logo1, logo2, logo3, logo4, logo5, logo6,
+    logo1, logo2, logo24, logo4, logo5, logo6,
+    logo25, logo26, logo30, logo28, logo29, logo27,
     logo7, logo8, logo9, logo10, logo11, logo12,
     logo13, logo14, logo15, logo16, logo17, logo18,
-    logo19, logo20, logo21, logo22, logo23, logo24
+    logo19, logo20, logo21, logo22, logo23, logo3,
+     
   ];
  
   return (

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
- 
+
 // Image Imports
 import logo1 from "../../assets/images/COMP-images/sas-min.avif";
 import logo2 from "../../assets/images/COMP-images/yash-min.avif";
@@ -25,18 +25,25 @@ import logo21 from "../../assets/images/COMP-images/sigma-min.avif";
 import logo22 from "../../assets/images/COMP-images/Tcs-min.avif";
 import logo23 from "../../assets/images/COMP-images/tibco-min.avif";
 import logo24 from "../../assets/images/COMP-images/wipro-min.avif";
- 
+import logo25 from '../../assets/images/bca/tetrapak.png';
+import logo26 from '../../assets/images/bca/mastercard.png';
+import logo27 from '../../assets/images/bca/thermax.png';
+import logo28 from '../../assets/images/bca/prgx.png';
+import logo29 from '../../assets/images/bca/schlumberger.png';
+import logo30 from '../../assets/images/bca/nutanix.png';
+
 const IntegratedMcaBcaMajorRecruiters = () => {
   const [reverse, setReverse] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
- 
+
   const logoImages = [
     logo1, logo2, logo3, logo4, logo5, logo6,
     logo7, logo8, logo9, logo10, logo11, logo12,
     logo13, logo14, logo15, logo16, logo17, logo18,
     logo19, logo20, logo21, logo22, logo23, logo24,
+    logo25, logo26, logo27, logo28, logo29, logo30
   ];
- 
+
   const logos = logoImages.map((src, index) => (
     <div key={`first-${index}`} className="flex-none px-4 py-2">
       <img
@@ -46,11 +53,11 @@ const IntegratedMcaBcaMajorRecruiters = () => {
       />
     </div>
   ));
- 
+
   const duplicatedLogos = logos.map((logo, index) =>
     React.cloneElement(logo, { key: `second-${index}` })
   );
- 
+
   useEffect(() => {
     const handleAnimationEnd = (e) => {
       if (e.animationName === (isMobile ? "scroll-mobile" : "scroll")) {
@@ -59,22 +66,22 @@ const IntegratedMcaBcaMajorRecruiters = () => {
         setReverse(false);
       }
     };
- 
+
     const logoSlider = document.querySelector(".logo-slider-track");
     if (logoSlider) logoSlider.addEventListener("animationend", handleAnimationEnd);
- 
+
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
- 
+
     window.addEventListener("resize", handleResize);
- 
+
     return () => {
       if (logoSlider) logoSlider.removeEventListener("animationend", handleAnimationEnd);
       window.removeEventListener("resize", handleResize);
     };
   }, [isMobile]);
- 
+
   return (
     <div className="logo-slider-section roboto-regular relative w-full">
       {/* Info box */}
@@ -85,7 +92,7 @@ const IntegratedMcaBcaMajorRecruiters = () => {
           Collaboration
         </h2>
       </div>
- 
+
       {/* Logo slider */}
       <div className="logo-slider relative w-full overflow-hidden pl-[180px] sm:pl-[260px] md:pl-[300px]">
         <div
@@ -96,41 +103,41 @@ const IntegratedMcaBcaMajorRecruiters = () => {
           {[...logos, ...duplicatedLogos]}
         </div>
       </div>
- 
-      {/* Inline CSS */}
+
+      {/* Inline CSS for animation */}
       <style>{`
         .logo-slider-track {
           display: flex;
           min-width: max-content;
         }
- 
+
         .animate-scroll {
           animation: scroll 20s linear forwards;
         }
- 
+
         .animate-scroll-mobile {
           animation: scroll-mobile 15s linear forwards;
         }
- 
+
         .reverse {
           animation: reverseScroll 5s linear forwards;
         }
- 
+
         @keyframes scroll {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }
         }
- 
+
         @keyframes scroll-mobile {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }
         }
- 
+
         @keyframes reverseScroll {
           0% { transform: translateX(-50%); }
           100% { transform: translateX(0); }
         }
- 
+
         .logo-slider-track:hover {
           animation-play-state: paused;
         }
@@ -138,5 +145,5 @@ const IntegratedMcaBcaMajorRecruiters = () => {
     </div>
   );
 };
- 
+
 export default IntegratedMcaBcaMajorRecruiters;

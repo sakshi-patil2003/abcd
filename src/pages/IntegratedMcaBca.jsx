@@ -21,10 +21,11 @@ import IntegratedMcaBcaFooter from '../components/IntegratedMcaBca/IntegratedMca
 const IntegratedMcaBca = () => {
   return (
     <div>
+    
         <IntegratedMcaBcaHero/>
-        <IntegratedMcaBcaPlacement/>
+        {/* <IntegratedMcaBcaPlacement/> */}
         <IntegratedMcaBcaRecruiters/>
-        {/* <IntegratedMcaBcaPointers/> */}
+        <IntegratedMcaBcaPointers/>
         <IntegratedMcaBcaOverview/>
         <IntegratedMcaBcaBanner/>
         {/* <IntegratedMcaBcaInnovation/> */}

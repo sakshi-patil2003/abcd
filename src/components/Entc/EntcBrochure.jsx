@@ -19,7 +19,7 @@ function EntcBrochure() {
         <div className=" md:mb-0 text-center md:text-left">
           <h2 className="text-md md:text-2xl font-bold mb-2 md:mb-4 text-white">Syllabus</h2>
           <p className="text-lg hidden sm:block text-white">
-            Get access to the best-in-class content provided by leading trainers and industry experts in the form of videos, real-life case studies, projects, and live sessions.
+          Explore the latest in Electronics and Telecommunication, including VLSI design, embedded systems, signal processing, and IoT-based communication.
           </p>
         </div>
  

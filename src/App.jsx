@@ -19,14 +19,14 @@ function App() {
       <div className="relative">
         <Navbar />
         <Routes>
-          <Route path="/comp" element={<PageWithDynamicTitle title="Comp" />} />
-          <Route path="/mech" element={<PageWithDynamicTitle title="Mech" />} />
+          {/* <Route path="/comp" element={<PageWithDynamicTitle title="Comp" />} /> */}
+          {/* <Route path="/mech" element={<PageWithDynamicTitle title="Mech" />} /> */}
           <Route path="/aids" element={<PageWithDynamicTitle title="AIDS" />} />
-          <Route path="/it" element={<PageWithDynamicTitle title="IT" />} />
+          {/* <Route path="/it" element={<PageWithDynamicTitle title="IT" />} /> */}
           <Route path="/entc" element={<PageWithDynamicTitle title="ENTC" />} />
           <Route path="/bca" element={<PageWithDynamicTitle title="Bca" />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
         <ApplyNowButton />
       </div>
     </Router>

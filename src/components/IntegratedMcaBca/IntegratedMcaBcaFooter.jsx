@@ -18,12 +18,12 @@ function IntegratedMcaBcaFooter() {
 
   return (
     <div className="font-baskerville-regular">
-      <div className="bg-gray-100 px-8 md:px-16 text-black py-8 rounded-tl-4xl rounded-tr-4xl flex-grow">
+      <div className="bg-gray-100 px-8 md:px-16 text-black py-4 rounded-tl-4xl rounded-tr-4xl flex-grow">
         <div className="flex flex-col sm:flex-row justify-around">
           {/* Left Column */}
-          <div className="flex flex-col sm:items-start mb-6 sm:mb-0">
+          <div className="flex flex-col sm:items-start  ">
             {/* Logo Section */}
-            <div className="mb-6 flex">
+            <div className="flex">
               <img src={logo} alt="ICEM Logo" className="w-40 sm:w-48" />
             </div>
 

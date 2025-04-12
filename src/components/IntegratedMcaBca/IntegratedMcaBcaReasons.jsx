@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 
 function IntegratedMcaBcaReasons() {
-  const iconSizeClass = "text-[28px] sm:text-[36px] md:text-[56px]"; // Smaller on mobile, original on desktop
+  const iconSizeClass = "text-[25px]  md:text-[56px]"; // Smaller on mobile, original on desktop
 
   const cardData = [
     {
@@ -40,7 +40,7 @@ function IntegratedMcaBcaReasons() {
 
   return (
     <div className="relative py-6 md:py-12 bg-[#FCFAEE] overflow-hidden px-4 sm:px-6 md:px-16">
-      <h2 className="text-lg sm:text-xl md:text-4xl font-bold text-center mb-6 md:mb-8 text-[#555555]">
+      <h2 className="text-2xl md:text-4xl font-bold text-center mb-6 md:mb-8 text-[#555555]">
         Why Choose ICEM for Your Integrated BCA/MCA Journey?
       </h2>
 
@@ -50,8 +50,8 @@ function IntegratedMcaBcaReasons() {
             key={index}
             className="bg-[#F5F0EB] shadow-md rounded-xl p-3 sm:p-4 md:p-6 flex flex-row items-center gap-3 sm:gap-4 md:gap-6 hover:scale-105 hover:border hover:border-[#555555] transition-transform"
           >
-            <div className="min-w-[4.5rem] sm:min-w-[5.5rem] md:min-w-[6.5rem] flex justify-center">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full border-4 border-dotted border-[#f37021] flex items-center justify-center">
+            <div className="w-auto flex justify-center">
+              <div className="w-12 h-12 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full border-4 border-dotted border-[#f37021] flex items-center justify-center">
                 {card.icon}
               </div>
             </div>

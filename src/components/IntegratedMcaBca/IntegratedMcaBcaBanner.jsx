@@ -14,18 +14,16 @@ const IntegratedBcaMcaBanner = () => {
         </h1>
 
         {/* Subheading */}
-        <p className="text-lg sm:text-xl font-semibold mb-2 md:mb-4 animate__animated animate__fadeIn animate__delay-2s text-[#555555]">
+        <p className="text-xl font-semibold mb-2 md:mb-4 animate__animated animate__fadeIn animate__delay-2s text-[#555555]">
           Your search ends at ICEM!
         </p>
 
         <button
   onClick={scrollToTop}
-  className="bg-[#FCFAEE] text-[#555] font-bold py-3 px-8 rounded-full bordrer border-2 shadow-lg hover:bg-[#555555] hover:text-white transition-all duration-300 ease-in-out"
+  className="bg-[#FCFAEE] text-[#555] font-bold py-2 md:py-3 px-4 md:px-8 rounded-full bordrer border-2 shadow-lg hover:bg-[#555555] hover:text-white transition-all duration-300 ease-in-out"
   style={{
     boxShadow: '0 4px 14px 0 #F5F0EB',
-  }}
->
-  Apply Now
+  }}> Apply Now
 </button>
 
         </div>

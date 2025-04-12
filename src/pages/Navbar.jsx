@@ -13,7 +13,7 @@ function Navbar() {
         <div className="p-2 flex-shrink-0 z-20">
           <a href="/">
             <img
-              src={logo}
+              src={logo}  
               alt="Logo"
               className="h-auto max-w-[180px] sm:max-w-[190px] md:max-w-[220px] lg:max-w-[350px]"
             />

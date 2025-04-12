@@ -3,7 +3,7 @@ import bgImage from '../../assets/images/Entc-Images/entc-bg.avif'; // Adjust th
  
 function EntcHero() {
   return (
-    <div className="relative h-screen">
+    <div className="relative h-auto">
       {/* Background Image */}
       <div
         className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
@@ -23,13 +23,13 @@ function EntcHero() {
       <div className="relative z-10 flex flex-col md:flex-row justify-between items-center h-full p-4 md:px-16 md:py-8">
         {/* Left Side: Text Content (Hidden only on mobile) */}
         <div className=" sm:flex w-full md:w-1/2 flex-col justify-center text-left">
-          <h1 className="text-2xl md:text-5xl text-white font-bold leading-tight mb-4">
+          <h1 className="text-2xl md:text-5xl text-white font-bold leading-tight mb-8">
             ENTC Engineering at Indira College of Engineering & Management
           </h1>
-          <p className="hidden sm:flex text-lg md:text-3xl text-white leading-relaxed mb-2 ">
+          <p className="hidden sm:flex text-lg md:text-3xl text-white leading-relaxed mb-8 ">
             2 Decades of Excellence in Education | 5 Specializations | 100% Placement Assistance
           </p>
-          <p className="hidden sm:flex text-md md:text-2xl text-white leading-relaxed">
+          <p className="hidden sm:flex text-md md:text-2xl text-white leading-relaxed mb-8">
             ENTC at ICEM - Powering the Future with Electronics & Telecommunication!
           </p>
         </div>
@@ -41,6 +41,7 @@ function EntcHero() {
             style={{ backgroundColor: "rgba(2, 103, 112, 0.7)" }}
           >
             <form className="space-y-4">
+            <h2 className="text-white text-2xl font-semibold mb-4 text-center">Apply Now</h2> 
               <div>
                 <input
                   type="text"
