@@ -13,9 +13,9 @@ function Navbar() {
         <div className="p-2 flex-shrink-0 z-20">
           <a href="/">
             <img
-              src={logo}
+              src={logo}  
               alt="Logo"
-              className="h-auto max-w-[180px] sm:max-w-[190px] md:max-w-[220px] lg:max-w-[260px] xl:max-w-[180px]"
+              className="h-auto max-w-[180px] sm:max-w-[190px] md:max-w-[220px] lg:max-w-[350px]"
             />
           </a>
         </div>
@@ -26,7 +26,7 @@ function Navbar() {
             <img
               src={autonomousLogo}
               alt="Autonomous Logo"
-              className="h-auto max-w-[80px] sm:max-w-[140px] md:max-w-[90px] lg:max-w-[110px] xl:max-w-[80px]"
+              className="h-auto max-w-[80px] sm:max-w-[140px] md:max-w-[90px] lg:max-w-[120px]"
             />
           </a>
         </div>
