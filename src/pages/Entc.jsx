@@ -7,13 +7,12 @@ import EntcOfferings from '../components/Entc/EntcOfferings'
 import EntcStudying from '../components/Entc/EntcStudying'
 import EntcTestimonials from '../components/Entc/EntcTestimonials'
 import EntcInovation from "../components/Entc/EntcInovation"
-// import EntcOverview from '../components/Entc/EntcOverview'
 import EntcReasons from "../components/Entc/EntcReasons"
 import EntcPlacement from '../components/Entc/EntcPlacement'
 import EntcRecruiters from '../components/Entc/EntcRecruiters'
-// import EntcHighlights from '../components/Entc/EntcHighlights'
 import EntcAdmission from '../components/Entc/EntcAdmission'
-// import AutoChatbot from '../components/AutoChatbot'  // Import AutoChatbot
+import EntcFooter from '../components/Entc/EntcFooter'
+
 
 function Entc() {
   return (
@@ -32,6 +31,7 @@ function Entc() {
         {/* <EntcHighlights/> */}
         <EntcTestimonials />
         <EntcApply />
+        <EntcFooter/>
     </div>
   )
 }

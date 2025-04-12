@@ -12,7 +12,7 @@ import MyImage from '../../assets/images/Com-Images/ICEM - Landing Page Banner (
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-function CompStudying() {
+function AidsStudying() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -59,46 +59,46 @@ function CompStudying() {
         </div>
 
         {/* Achievements Section */}
-        <div className="mt-16" data-aos="fade-up">
-          <h2 className="text-3xl font-semibold text-center text-[#117577] mb-10">
-            Our Achievements
-          </h2>
+<div className="mt-16" data-aos="fade-up">
+  <h2 className="text-3xl font-semibold text-center text-[#117577] mb-10">
+    Our Achievements
+  </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
-            {/* Card 1 */}
-            <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300">
-              <div className="flex items-center mb-4">
-                <FaChartLine className="text-[#117577] text-5xl mr-4" />
-                <h3 className="text-lg font-semibold text-[#003b4d]">National Rankings</h3>
-              </div>
-              <p className="text-sm text-gray-700 leading-relaxed">
-                Ranked <span className="font-semibold text-[#117577]">49th</span> in Top 100 Private Engineering Institutes and <span className="font-semibold text-[#117577]">61st</span> in Top 140 Engineering Institutes by Times of India Engineering Colleges.
-              </p>
-            </div>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+    {/* Card 1 */}
+    <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300">
+      <div className="flex flex-col items-center mb-4">
+        <FaChartLine className="text-[#117577] text-5xl mb-4" />
+        <h3 className="text-lg font-semibold text-[#003b4d] mb-2">National Rankings</h3>
+        <p className="text-sm text-gray-700 leading-relaxed text-center">
+          Ranked <span className="font-semibold text-[#117577]">49th</span> in Top 100 Private Engineering Institutes and <span className="font-semibold text-[#117577]">61st</span> in Top 140 Engineering Institutes by Times of India Engineering Colleges.
+        </p>
+      </div>
+    </div>
 
-            {/* Card 2 */}
-            <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300">
-              <div className="flex items-center mb-4">
-                <FaLaptopCode className="text-[#117577] text-5xl mr-4" />
-                <h3 className="text-lg font-semibold text-[#003b4d]">Smart India Hackathon</h3>
-              </div>
-              <p className="text-sm text-gray-700 leading-relaxed">
-                Winners of <span className="font-semibold text-[#117577]">Smart India Hackathon</span> for 3 consecutive years organized by <span className="font-semibold text-[#117577]">Ministry of HRD, AICTE</span> & <span className="font-semibold text-[#117577]">NASSCOM</span>.
-              </p>
-            </div>
+    {/* Card 2 */}
+    <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300">
+      <div className="flex flex-col items-center mb-4">
+        <FaLaptopCode className="text-[#117577] text-5xl mb-4" />
+        <h3 className="text-lg font-semibold text-[#003b4d] mb-2">Smart India Hackathon</h3>
+        <p className="text-sm text-gray-700 leading-relaxed text-center">
+          Winners of <span className="font-semibold text-[#117577]">Smart India Hackathon</span> for 3 consecutive years organized by <span className="font-semibold text-[#117577]">Ministry of HRD, AICTE</span> & <span className="font-semibold text-[#117577]">NASSCOM</span>.
+        </p>
+      </div>
+    </div>
 
-            {/* Card 3 */}
-            <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300">
-              <div className="flex items-center mb-4">
-                <FaGraduationCap className="text-[#117577] text-5xl mr-4" />
-                <h3 className="text-lg font-semibold text-[#003b4d]">National Education Award</h3>
-              </div>
-              <p className="text-sm text-gray-700 leading-relaxed">
-                Received <span className="font-semibold text-[#117577]">Outstanding Education Institute (West)</span> Award by National Education Awards <span className="font-semibold text-[#117577]">2018</span>.
-              </p>
-            </div>
-          </div>
-        </div>
+    {/* Card 3 */}
+    <div className="bg-white rounded-xl shadow-md border border-gray-200 p-6 hover:shadow-xl transition-shadow duration-300">
+      <div className="flex flex-col items-center mb-4">
+        <FaGraduationCap className="text-[#117577] text-5xl mb-4" />
+        <h3 className="text-lg font-semibold text-[#003b4d] mb-2">National Education Award</h3>
+        <p className="text-sm text-gray-700 leading-relaxed text-center">
+          Received <span className="font-semibold text-[#117577]">Outstanding Education Institute (West)</span> Award by National Education Awards <span className="font-semibold text-[#117577]">2018</span>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
       </div>
 
       {/* 30% Right Side with Main Image */}
@@ -115,4 +115,4 @@ function CompStudying() {
   );
 }
 
-export default CompStudying;
+export default AidsStudying;
